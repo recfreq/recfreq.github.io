@@ -1,0 +1,15 @@
+@font-face {
+	font-family: "Quicksand";
+	src: url("/lib/Quicksand.otf") format("woff2"),
+}
+
+a:link {
+	font-family: 'Quicksand', sans-serif;
+	text-decoration: none;	
+}
+
+a:hover {
+	font-family: 'Quicksand', sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+}

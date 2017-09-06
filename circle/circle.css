@@ -1,0 +1,111 @@
+@font-face {
+	font-family: "Quicksand";
+	src: url("../lib/Quicksand.otf") format("woff2"),
+}
+@font-face {
+	font-family: "CircleD";
+	src: url("../lib/CircleD.ttf") format("woff2"),
+}
+@font-face {
+	font-family: "Existence";
+	src: url("../lib/Existence.otf") format("woff2"),
+}
+
+
+
+h1 {
+	font-family: "CircleD", sans-serif;
+	color: gray;
+	text-align: center;
+	font-size: 250%;
+}
+body {
+	font-family: "Existence", sans-serif;
+	font-size: 100%;
+}
+a:link {
+	font-family: 'Quicksand', sans-serif;
+	text-decoration: none;	
+}
+a:hover {
+	font-family: 'Quicksand', sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+
+#menu {
+	position: sticky;
+	width: 16%;
+	height: 98vh;
+}
+#menu-logo {
+	background: url("images/circlelogo-01.png") center no-repeat;
+	background-size: 10vw 20vh;
+	padding: 0.1em;
+	position: relative;
+	width: 10vw;
+	height: 20vh;
+}
+
+
+
+.menu-item {
+	padding: 0.1em;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 10vw;
+	height: 20vh;	
+}
+.menu-item img {
+	width: 10vw;
+	height: 20vh;
+	opacity: 0.7;	
+}
+.menu-item:hover img {
+	transform: rotate(-90deg);
+	opacity: 1;
+}
+.text-box {
+	position: absolute;
+	height: 100%;
+    width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 10;
+}
+.text-box p {
+	text-align: center;
+	font-weight: bold;
+}
+
+
+
+#content {
+	position:absolute;
+	left: 15%;
+	top: 0%;
+	width: 70%;
+}
+#video-pax {
+	background-image: url("images/figs_marienbad01.jpg");
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    height: 65%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#video-array {
+
+}
+#image-array {
+	
+}
