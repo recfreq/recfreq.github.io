@@ -1,8 +1,3 @@
-/**
- * Created by lucien on 4/27/17.
- */
-
-    //This is the array of the images
 var images = ["circlefashion-01.jpg",
     "circlefashion-02.jpg",
     "circlefashion-03.jpg",
@@ -25,13 +20,10 @@ var images = ["circlefashion-01.jpg",
     "circlefashion-20.jpg",
     "circlefashion-21.jpg",
     "circlefashion-22.jpg",
-    "circlefashion-23.jpg"];
+    "circlefashion-23.jpg",
+    "circlefashion-24.jpg"];
 
 document.addEventListener("DOMContentLoaded", function (event) {
-    //Checking if the js file is linked to html
-    console.log("hello world");
-
-    //Calling the function
     loadImages();
 });
 
@@ -58,7 +50,7 @@ function loadImages() {
         newImg.className = "images";
 
         //Set the src attribute of the new <img> tag
-        newImg.src = "./image/"+images[i];
+        newImg.src = "./images/"+images[i];
 
         //ID is for the click event to track which image it is
         newImg.id = i;
@@ -104,7 +96,7 @@ function popUp(imgCount){
     });
 
     //put the address of the image in <img>
-    img.src = "./image/"+images[imgCount];
+    img.src = "./images/"+images[imgCount];
 }
 
 //close the popup div
@@ -144,6 +136,6 @@ function change(direction){
     }
 
     //store the index of the showing image into imgSwitch
-    img.src = "./image/"+images[next];
+    img.src = "./images/"+images[next];
     imgSwitch = next;
 }
