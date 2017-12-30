@@ -79,7 +79,7 @@ iframe::-webkit-scrollbar {
 }
 .pdf {
 	position: relative;
-	padding-bottom: 34%;
+	padding-bottom: 30%;
 	height: 0;	
 }
 .pdf iframe {
