@@ -30,98 +30,46 @@ a:hover {
 
 
 
-#logo {
-	position: absolute;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 10vw;
-	height: 20vh;
-	left: 60vw;
-	top: 50vh;
-}
-#logo img {
-	width: 100%;
-}
-#logo-text {
-	position: absolute;
-	padding-top: 140%;
-	z-index: 10;
-}
-#logo-text-p {
-	text-align: center;
-}
-
-
-
 .draggablex {
-	position: absolute;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 10vw;
-	height: 20vh;
+	display: inline-block;
+	border-radius: 50%;
+	width: 19.5%;
+	height: 19.5%;
 }
-.draggablex img{
+.draggablex img {
 	width: 100%;
+}
+.draggablex:hover {
+	cursor: pointer;
 }
 .draggabley {
-	position: absolute;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 10vw;
-	height: 20vh;
+	display: inline-block;
+	border-radius: 50%;
+	width: 19.5%;
+	height: 19.5%;
 }
 .draggabley img{
 	width: 100%;
 }
-.drag-textx {
+.draggabley:hover {
+	cursor: pointer;
+}
+#banner {
 	position: absolute;
-	padding-top: 140%;
+	padding-top: 60%;
+	text-align: center;	
+	left: 0;
+	right: 0;
 	z-index: 10;
 }
-.drag-textx p {
-	text-align: center;
-}
-.drag-texty {
-	position: absolute;
-	padding-top: 0;
-	padding-left: 170%;
-	z-index: 10;
-}
-.drag-texty p {
-	text-align: center;
-}
-#drag1 {
-	left: 20vw;
-	top: 50vh;
-}
-#drag2 {
-	left: 30vw;
-	top: 50vh;
-}
-#drag3 {
-	left: 40vw;
-	top: 50vh;
-}
-#drag4 {
-	left: 50vw;
-	top: 50vh;
-}
-#drag5 {
-	left: 70vw;
-	top: 10vh;
-}
-#drag6 {
-	left: 70vw;
-	top: 30vh;
-}
-#drag7 {
-	left: 70vw;
-	top: 50vh;
-}
-#drag8 {
-	left: 10vw;
-	top: 50vh;
+
+
+
+@media only screen and (max-width : 500px) {
+	.draggablex {
+		width: 49%;
+	}
+	.draggabley {
+		width: 49%;
+	}
 }
