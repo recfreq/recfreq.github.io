@@ -8,8 +8,8 @@ body {
 	text-decoration: none;
 }
 @font-face {
-	font-family: "Quicksand";
-	src: url("/lib/Quicksand.otf") format("woff2"),
+	font-family: 'Quicksand';
+	src: url('lib/Quicksand.otf') format('woff2');
 }
 a:link {
 	font-family: 'Quicksand', sans-serif;
@@ -91,6 +91,7 @@ a:hover {
 #banner {
 	position: absolute;
 	padding-top: 65%;
+	font-size: 1.5em;
 	text-align: center;	
 	left: 0;
 	right: 0;

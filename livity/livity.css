@@ -6,8 +6,8 @@
 */}
 
 @font-face {
-	font-family: "Existence";
-	src: url("/lib/Existence.otf") format("woff2"),
+	font-family: 'Existence';
+	src: url('../lib/Existence.otf') format('woff2');
 }
 
 #panorama {
