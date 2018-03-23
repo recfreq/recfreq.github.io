@@ -9,11 +9,11 @@ body {
 }
 @font-face {
 	font-family: "Quicksand";
-	src: url("/lib/Quicksand.otf") format("woff2"),
+	src: url("../lib/Quicksand.otf") format("woff2");
 }
 @font-face {
 	font-family: "Existence";
-	src: url("../lib/Existence.otf") format("woff2"),
+	src: url("../lib/Existence.otf") format("woff2");
 }
 a:link {
 	font-family: 'Quicksand', sans-serif;

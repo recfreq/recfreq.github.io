@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;  /* for packery and draggable */
+/*	border: 1px solid rgba(0, 0, 0, 0.3);
+*/}
+body {
+	background-color: #ffffff;
+	color: #4c4c4c;
+	font-family: "Lato-Regular", sans-serif;
+	font-size: 1.2em;
+}
+h1 {
+    color: #4c4c4c;
+    font-family: "NewsCycle-Bold", sans-serif;
+}
+@font-face {
+	font-family: "lib/NewsCycle-Bold";
+	src: url("NewsCycle-Bold.ttf");
+}
+@font-face {
+	font-family: "lib/Lato-Regular";
+	src: url("Lato-Regular.ttf");
+}
+a:link {
+	font-family: 'Lato-Regular', sans-serif;
+	text-decoration: none;	
+	color: #0666bc;
+}
+a:visited {
+	font-family: 'Lato-Regular', sans-serif;
+	text-decoration: none;
+	color: #0666bc;
+}
+a:hover {
+	font-family: 'Lato-Regular', sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+	color: #0666bc;
+}
+
+
+
+.grid {
+    width: 100%;
+    height: 100%;
+}
+.grid:after {  /* clear fix */
+    content: '';
+    display: block;
+    clear: both;
+}
+.grid-item {
+    float: left;
+    width: 250px;
+    height: 250px;
+    background: #d3c8ae;
+    border: 6px solid #ffffff;
+}
+.grid-item--width2 {
+    width: 500px;
+}
+.grid-item--width3 {
+    width: 750px;
+}
+.grid-item--height2 {
+    height: 500px;
+}
+.grid-item:hover {
+    border-color: #d3d3d3;
+    cursor: move;
+}
+.grid-item.is-dragging .grid-item.is-positioning-post-drag {
+    background: #d3d3d3;
+    z-index: 2;
+}
+.packery-drop-placeholder {
+    outline: 3px solid #d3d3d3;
+    outline-offset: -6px;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+}
+
+
+
+.title {
+    width: 100%;
+    height: 100%;
+    background: #0666bc url('images/figs_logo01.png') no-repeat center;
+    background-size: 80% 80%;
+    margin: auto;
+    padding: 2%;
+}
+.text {
+    border-style: double;
+    text-align: justify;
+    padding-top: 0;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+.grid-item img {
+    position:absolute;
+    width: 100%;
+    height: 240px;  /*very klugy just to work when image is always one block high*/
+    -webkit-transition: opacity 0.8s ease-in-out;
+    -moz-transition: opacity 0.8s ease-in-out;
+    -o-transition: opacity 0.8s ease-in-out;
+    transition: opacity 0.8s ease-in-out;
+}
+.grid-item img.top:hover {
+    opacity: 0;
+}
+.link {
+    widows: 100%;
+    height: 100%;
+    background: url('images/figs_gallery01.jpg');
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+
+
+#gallery{
+    top: 0;
+    margin: 0;
+    z-index: 1;
+    position: fixed;
+    display: block;
+    width: 100%;
+    float: right;
+    background: rgba(0,0,0,0.6);
+}
+.column{
+    display: block;
+    width: 100%;
+    float: right;
+}
+.column img{
+    cursor: pointer;
+    width: 25%;
+    filter: grayscale(100%);
+    transition: all 0.3s ease-in-out;
+    vertical-align: bottom;
+}
+.column img:hover{
+    filter: grayscale(0%);
+}
+#popup{
+    top:0;
+    margin:0;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    display: none;
+    background: rgba(0,0,0,0.6);
+}
+#pic-container{
+    z-index: 1;
+    margin-left: 5%;
+    width: 90%;
+    overflow-y: auto;
+}
+#pic{
+    cursor: pointer;
+    width: 100%;
+    height:auto;
+}
+#left{
+    margin-left: 3%;
+    width:5%;
+}
+#right{
+    margin-left: 92%;
+    width:5%;
+}
+.direction{
+    cursor: pointer;
+    color: #303030;
+    position: fixed;
+    margin-top:46vh;
+    height:8vh;
+    transition: all 0.3s ease-in-out;
+    font-size: 90px;
+    line-height: 8vh;
+}
+.direction:hover{
+    color: white;
+}
