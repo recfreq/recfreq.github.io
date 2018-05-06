@@ -48,13 +48,13 @@ $('.draggabley').mouseup(function() {
 
 var msgIX = 0
 var msgs = new Array(
-                "installation art",
-                "neuroscience",
-                "creative technology",
-                "machine learning",
-                "narrative art",
-                "user interaction",
-                "speculative design");
+                "narrative designer",
+                "neuro designer",
+                "interaction designer",
+                "intelligence designer",
+                "speculative designer",
+                "integrative designer",
+                "creative designer");
 
 function displayMessage(milliseconds) {
     if(msgIX < msgs.length){
