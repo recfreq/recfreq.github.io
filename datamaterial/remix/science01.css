@@ -1,0 +1,76 @@
+* {
+/*	border: 1px solid rgba(0, 0, 0, 0.3);
+*/}
+body {
+	background-color: white;
+	color: black;
+	font-family: "Existence", sans-serif;
+	font-size: 1.3em;
+}
+@font-face {
+	font-family: "Quicksand";
+	src: url("Quicksand.otf") format("woff2");
+}
+@font-face {
+	font-family: "Existence";
+	src: url("Existence.otf") format("woff2");
+}
+
+
+
+#div1 {
+	position: relative;
+	left: 7%;
+	top: 17vh;
+	width: 10%;
+	transform: rotate(4deg);
+}
+#div2 {
+	position: relative;
+	left: 20%;
+	top: 3vh;
+	width: 38%;
+	transform: rotate(-11deg);
+}
+#div3 {
+	position: relative;
+	left: 50%;
+	top: 11vh;
+	width: 38%;
+	transform: rotate(8deg);
+}
+#div4 {
+	position: relative;
+	left: 30%;
+	top: 15vh;
+	width: 38%;
+	transform: rotate(21deg);
+}
+#div5 {
+	position: relative;
+	left: 5%;
+	top: 16vh;
+	width: 38%;
+	transform: rotate(4deg);
+}
+#div6 {
+	position: relative;
+	left: 20%;
+	top: 21vh;
+	width: 38%;
+	transform: rotate(-22deg);
+}
+#div7 {
+	position: relative;
+	left: 50%;
+	top: 24vh;
+	width: 38%;
+	transform: rotate(0deg);
+}
+#div8 {
+	position: relative;
+	left: 67%;
+	top: 24vh;
+	width: 5%;
+	transform: rotate(45deg);
+}

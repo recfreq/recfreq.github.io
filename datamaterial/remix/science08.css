@@ -1,0 +1,44 @@
+* {
+/*	border: 1px solid rgba(0, 0, 0, 0.3);
+*/}
+body {
+	background-color: white;
+	color: black;
+	font-family: "Existence", sans-serif;
+	font-size: 1.3em;
+}
+@font-face {
+	font-family: "Quicksand";
+	src: url("Quicksand.otf") format("woff2");
+}
+@font-face {
+	font-family: "Existence";
+	src: url("Existence.otf") format("woff2");
+}
+
+
+
+.title {
+	width: 10%;
+	height: 28vh;
+	float: left;
+	text-align:center;
+	line-height: 25vh;
+}
+.row {
+	width: 100%;
+	padding-top: 8vh;
+}
+.col {
+	display: flex;
+	width: 38%;
+	height: 28vh;
+	float: left;
+	padding-left: 5%;
+}
+.line {
+	padding-left: 1%;
+}
+.word {
+	padding-left: 1%;
+}

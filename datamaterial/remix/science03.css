@@ -1,0 +1,79 @@
+* {
+/*	border: 1px solid rgba(0, 0, 0, 0.3);
+*/}
+body {
+	background-color: white;
+	color: black;
+	font-family: "Existence", sans-serif;
+	font-size: 1.3em;
+}
+@font-face {
+	font-family: "Quicksand";
+	src: url("Quicksand.otf") format("woff2");
+}
+@font-face {
+	font-family: "Existence";
+	src: url("Existence.otf") format("woff2");
+}
+
+
+#div {
+	perspective: 20vw;
+}
+#div1 {
+	position: relative;
+	left: 7%;
+	top: 20vh;
+	width: 10%;
+	transform: rotate3d(0, -1, 0, -30deg);
+}
+#div2 {
+	position: relative;
+	left: 25%;
+	top: 10vh;
+	width: 38%;
+	transform: rotate3d(0, -1, -0.2, -24deg);
+}
+#div3 {
+	position: relative;
+	left: 64%;
+	top: 0vh;
+	width: 38%;
+	transform: rotate3d(0, 0, 1, -8deg);
+	transform: rotate3d(0, 1, 0, -30deg);
+}
+#div4 {
+	position: relative;
+	left: 35%;
+	top: 18vh;
+	width: 38%;
+	transform: rotate3d(0, -1, 1, -70deg);
+}
+#div5 {
+	position: relative;
+	left: 15%;
+	top: 8vh;
+	width: 38%;
+	transform: rotate3d(0, -1, 1, -36deg);
+}
+#div6 {
+	position: relative;
+	left: 20%;
+	top: 21vh;
+	width: 38%;
+	transform: rotate3d(0, -1, 1, -58deg);
+}
+#div7 {
+	position: relative;
+	left: 58%;
+	top: 20vh;
+	width: 38%;
+	transform: rotate3d(0, -1, 1, 70deg);
+}
+#div8 {
+	position: relative;
+	left: 72%;
+	top: 20vh;
+	width: 5%;
+	transform: rotate3d(0, 0, 1, 60deg);
+}

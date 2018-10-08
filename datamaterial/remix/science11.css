@@ -1,0 +1,106 @@
+* {
+/*	border: 1px solid rgba(0, 0, 0, 0.3);
+*/}
+body {
+	background-color: white;
+	color: black;
+	font-family: "Existence", sans-serif;
+	font-size: 1.3em;
+}
+@font-face {
+	font-family: "Quicksand";
+	src: url("Quicksand.otf") format("woff2");
+}
+@font-face {
+	font-family: "Existence";
+	src: url("Existence.otf") format("woff2");
+}
+@font-face {
+	font-family: "CircleD";
+	src: url("CircleD.otf") format("woff2");
+}
+@font-face {
+	font-family: "OratorStd";
+	src: url("OratorStd.otf") format("woff2");
+}
+@font-face {
+	font-family: "Broadway";
+	src: url("Broadway.otf") format("woff2");
+}
+@font-face {
+	font-family: "AeroliteSky";
+	src: url("AeroliteSky.otf") format("woff2");
+}
+@font-face {
+	font-family: "SansForgetica";
+	src: url("SansForgetica.otf") format("woff2");
+}
+@font-face {
+	font-family: "ForgottenFuturist";
+	src: url("ForgottenFuturist.otf") format("woff2");
+}
+@font-face {
+	font-family: "DemiLovato";
+	src: url("DemiLovato.ttf") format("woff2");
+}
+@font-face {
+	font-family: "BebasNeue01";
+	src: url("BebasNeue01.otf") format("woff2");
+}
+@font-face {
+	font-family: "BebasNeue02";
+	src: url("BebasNeue02.otf") format("woff2");
+}
+@font-face {
+	font-family: "BebasNeue03";
+	src: url("BebasNeue03.otf") format("woff2");
+}
+@font-face {
+	font-family: "BebasNeue04";
+	src: url("BebasNeue04.otf") format("woff2");
+}
+@font-face {
+	font-family: "BebasNeue05";
+	src: url("BebasNeue05.otf") format("woff2");
+}
+
+
+
+.title {
+	width: 15%;
+	height: 28vh;
+	float: left;
+	text-align:center;
+	line-height: 25vh;
+	font-family: "ForgottenFuturist";
+}
+.row {
+	width: 100%;
+	padding-top: 8vh;
+}
+.col {
+	width: 40%;
+	height: 28vh;
+	float: left;
+}
+.rep1 {
+	font-family: "CircleD";
+}
+.rep2 {
+	font-family: "Broadway";
+}
+.rep3 {
+	font-family: "AeroliteSky";
+}
+.rep4 {
+	font-family: "SansForgetica";
+}
+.rep5 {
+	font-family: "ForgottenFuturist";
+}
+.rep6 {
+	font-family: "DemiLovato";
+}
+.rep7 {
+	font-family: "OratorStd";
+}
