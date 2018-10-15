@@ -23,7 +23,7 @@ body {
 	left: 42%;
 	top: 18vh;
 	width: 20%;
-	transform: rotate(2deg);
+	transform: rotate(4deg);
 }
 #contents-1 {
 	position: relative;
@@ -35,7 +35,7 @@ body {
 #contents-2 {
 	position: relative;
 	left: 47%;
-	top: 30vh;
+	top: 25vh;
 	width:30%;
 	transform: rotate(15deg);
 }

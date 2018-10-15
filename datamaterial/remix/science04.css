@@ -8,12 +8,19 @@ body {
 	font-size: 1.3em;
 }
 @font-face {
-	font-family: "Quicksand";
-	src: url("Quicksand.otf") format("woff2");
-}
-@font-face {
 	font-family: "Existence";
 	src: url("Existence.otf") format("woff2");
+}
+a:link {
+	text-decoration: none;	
+}
+a:hover {
+	text-decoration: none;
+	font-weight: bold;
+}
+a:visited {
+	text-decoration: none;	
+	color: black;
 }
 
 
@@ -22,8 +29,11 @@ body {
 	position: relative;
 	left: 7%;
 	top: 17vh;
-	width: 10%;
-	transform: skew(0deg, 10deg);
+	width: 10%;	
+	transform: skew(0deg, 10deg);	
+}
+#div1:hover {
+	transform: skew(0deg, 0deg);	
 }
 #div2 {
 	position: relative;
@@ -32,12 +42,18 @@ body {
 	width: 38%;
 	transform: skew(0deg, -10deg);
 }
+#div2:hover {
+	transform: skew(0deg, 0deg);
+}
 #div3 {
 	position: relative;
 	left: 50%;
 	top: 11vh;
 	width: 38%;
 	transform: skew(0deg, 10deg);
+}
+#div3:hover {
+	transform: skew(0deg, 0deg);
 }
 #div4 {
 	position: relative;
@@ -46,12 +62,18 @@ body {
 	width: 38%;
 	transform: skew(0deg, 10deg);
 }
+#div4:hover {
+	transform: skew(0deg, 0deg);
+}
 #div5 {
 	position: relative;
 	left: 5%;
 	top: 16vh;
 	width: 38%;
 	transform: skew(0deg, 10deg);
+}
+#div5:hover {
+	transform: skew(0deg, 0deg);
 }
 #div6 {
 	position: relative;
@@ -60,6 +82,9 @@ body {
 	width: 38%;
 	transform: skew(0deg, -10deg);
 }
+#div6:hover {
+	transform: skew(0deg, 0deg);
+}
 #div7 {
 	position: relative;
 	left: 50%;
@@ -67,10 +92,16 @@ body {
 	width: 38%;
 	transform: skew(0deg, 10deg);
 }
+#div7:hover {
+	transform: skew(0deg, 0deg);
+}
 #div8 {
 	position: relative;
 	left: 67%;
 	top: 28vh;
 	width: 5%;
 	transform: skew(0deg, -10deg);
+}
+#div8:hover {
+	transform: skew(0deg, 0deg);
 }

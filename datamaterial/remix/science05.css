@@ -8,22 +8,31 @@ body {
 	font-size: 1.3em;
 }
 @font-face {
-	font-family: "Quicksand";
-	src: url("Quicksand.otf") format("woff2");
-}
-@font-face {
 	font-family: "Existence";
 	src: url("Existence.otf") format("woff2");
 }
+a:link {
+	text-decoration: none;	
+}
+a:hover {
+	text-decoration: none;
+	font-weight: bold;
+}
+a:visited {
+	text-decoration: none;	
+	color: black;
+}
 
 
 
-.title {
+.side {
 	width: 20%;
 	height: 28vh;
 	float: left;
 	text-align:center;
-	line-height: 25vh;
+}
+.title {
+	padding-top: 10vh;
 }
 .row {
 	width: 100%;

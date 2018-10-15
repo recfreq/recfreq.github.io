@@ -63,15 +63,28 @@ body {
 	font-family: "BebasNeue05";
 	src: url("BebasNeue01.otf") format("woff2");
 }
+a:link {
+	text-decoration: none;	
+}
+a:hover {
+	text-decoration: none;
+	font-weight: bold;
+}
+a:visited {
+	text-decoration: none;	
+	color: black;
+}
 
 
 
-.title {
+.side {
 	width: 20%;
 	height: 28vh;
 	float: left;
 	text-align:center;
-	line-height: 25vh;
+}
+.title {
+	padding-top: 10vh;
 }
 .row {
 	width: 100%;
@@ -82,8 +95,9 @@ body {
 	height: 28vh;
 	float: left;
 }
-.rep1 {
-	font-weight: bold;
+.title:hover{
+	font-weight: bold;	
 }
-.rep2 {
+.rep1:hover {
+	font-weight: bold;
 }

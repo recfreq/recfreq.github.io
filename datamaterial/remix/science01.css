@@ -8,12 +8,19 @@ body {
 	font-size: 1.3em;
 }
 @font-face {
-	font-family: "Quicksand";
-	src: url("Quicksand.otf") format("woff2");
-}
-@font-face {
 	font-family: "Existence";
 	src: url("Existence.otf") format("woff2");
+}
+a:link {
+	text-decoration: none;	
+}
+a:hover {
+	text-decoration: none;
+	font-weight: bold;
+}
+a:visited {
+	text-decoration: none;	
+	color: black;
 }
 
 
@@ -30,43 +37,73 @@ body {
 	left: 20%;
 	top: 3vh;
 	width: 38%;
-	transform: rotate(-11deg);
+	animation: rotate2 6s ease 0s infinite;
+}
+@keyframes rotate2 {
+	0%   {transform: rotate(-11deg);}
+	50%  {transform: rotate(0deg);}
+	100% {transform: rotate(-11deg);}
 }
 #div3 {
 	position: relative;
 	left: 50%;
 	top: 11vh;
 	width: 38%;
-	transform: rotate(8deg);
+	animation: rotate3 6s ease 0s infinite;
 }
+@keyframes rotate3 {
+	0%   {transform: rotate(8deg);}
+	50%  {transform: rotate(0deg);}
+	100% {transform: rotate(8deg);}
+} 
 #div4 {
 	position: relative;
 	left: 30%;
 	top: 15vh;
 	width: 38%;
-	transform: rotate(21deg);
+	animation: rotate4 6s ease 0s infinite;
 }
+@keyframes rotate4 {
+	0%   {transform: rotate(21deg);}
+	50%  {transform: rotate(0deg);}
+	100% {transform: rotate(21deg);}
+} 
 #div5 {
 	position: relative;
 	left: 5%;
 	top: 16vh;
 	width: 38%;
-	transform: rotate(4deg);
+	animation: rotate5 6s ease 0s infinite;
 }
+@keyframes rotate5 {
+	0%   {transform: rotate(6deg);}
+	50%  {transform: rotate(0deg);}
+	100% {transform: rotate(6deg);}
+} 
 #div6 {
 	position: relative;
 	left: 20%;
 	top: 21vh;
 	width: 38%;
-	transform: rotate(-22deg);
+	animation: rotate6 6s ease 0s infinite;
 }
+@keyframes rotate6 {
+	0%   {transform: rotate(-22deg);}
+	50%  {transform: rotate(0deg);}
+	100% {transform: rotate(-22deg);}
+} 
 #div7 {
 	position: relative;
 	left: 50%;
 	top: 24vh;
 	width: 38%;
-	transform: rotate(0deg);
+	animation: rotate7 6s ease 0s infinite;
 }
+@keyframes rotate7 {
+	0%   {transform: rotate(-4deg);}
+	50%  {transform: rotate(0deg);}
+	100% {transform: rotate(-4deg);}
+} 
 #div8 {
 	position: relative;
 	left: 67%;

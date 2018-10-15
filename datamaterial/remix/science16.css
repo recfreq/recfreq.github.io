@@ -1,0 +1,280 @@
+* {
+/*	border: 1px solid rgba(0, 0, 0, 0.3);
+*/}
+body {
+	background-color: white;
+	color: black;
+	font-family: "Existence", sans-serif;
+	font-size: 1.3em;
+}
+@font-face {
+	font-family: "Existence";
+	src: url("Existence.otf") format("woff2");
+}
+a:link {
+	text-decoration: none;	
+}
+a:hover {
+	text-decoration: none;
+	font-weight: bold;
+}
+a:visited {
+	text-decoration: none;	
+	color: black;
+}
+
+
+
+.side {
+	width: 20%;
+	height: 28vh;
+	float: left;
+	text-align:center;
+	padding-top: 10vh;
+}
+.title {
+	transition: opacity 3s;	
+}
+.title:hover {
+	opacity: 0;
+}
+.row {
+	width: 100%;
+	padding-top: 8vh;
+}
+.col {
+	width: 80%;
+	height: 28vh;
+	float: left;
+}
+.line1 {
+	animation: trans1 30s linear 0s infinite;
+}
+.line1:hover {
+	animation: step-end;
+}
+@keyframes trans1 {
+	0%   {opacity: 1;}
+	0%   {opacity: 1;}
+	5%   {opacity: 0;}
+	100% {opacity: 0;}
+}
+.line2 {
+	animation: trans2 30s linear 0s infinite;
+}
+.line2:hover {
+	animation: step-end;
+}
+@keyframes trans2 {
+	0%   {opacity: 1;}
+	5%   {opacity: 1;}
+	10%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+.line3 {
+	animation: trans3 30s linear 0s infinite;
+}
+.line3:hover {
+	animation: step-end;
+}
+@keyframes trans3 {
+	0%   {opacity: 1;}
+	10%  {opacity: 1;}
+	15%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+.line4 {
+	animation: trans4 30s linear 0s infinite;
+}
+.line4:hover {
+	animation: step-end;
+}
+@keyframes trans4 {
+	0%   {opacity: 1;}
+	15%  {opacity: 1;}
+	20%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+.line5 {
+	animation: trans5 30s linear 0s infinite;
+}
+.line5:hover {
+	animation: step-end;
+}
+@keyframes trans5 {
+	0%   {opacity: 1;}
+	20%  {opacity: 1;}
+	25%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+.line6 {
+	animation: trans6 30s linear 0s infinite;
+}
+.line6:hover {
+	animation: step-end;
+}
+@keyframes trans6 {
+	0%   {opacity: 1;}
+	25%  {opacity: 1;}
+	30%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+.line7 {
+	animation: trans7 30s linear 0s infinite;
+}
+.line7:hover {
+	animation: step-end;
+}
+@keyframes trans7 {
+	0%   {opacity: 1;}
+	30%  {opacity: 1;}
+	35%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+.line8 {
+	animation: trans8 30s linear 0s infinite;
+}
+.line8:hover {
+	animation: step-end;
+}
+@keyframes trans8 {
+	0%   {opacity: 1;}
+	35%  {opacity: 1;}
+	40%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+.line9 {
+	animation: trans9 30s linear 0s infinite;
+}
+.line9:hover {
+	animation: step-end;
+}
+@keyframes trans9 {
+	0%   {opacity: 1;}
+	40%  {opacity: 1;}
+	45%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+.line10 {
+	animation: trans10 30s linear 0s infinite;
+}
+.line10:hover {
+	animation: step-end;
+}
+@keyframes trans10 {
+	0%   {opacity: 1;}
+	45%  {opacity: 1;}
+	50%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+.line11 {
+	animation: trans11 30s linear 0s infinite;
+}
+.line11:hover {
+	animation: step-end;
+}
+@keyframes trans11 {
+	0%   {opacity: 1;}
+	50%  {opacity: 1;}
+	55%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+.line12 {
+	animation: trans12 30s linear 0s infinite;
+}
+.line12:hover {
+	animation: step-end;
+}
+@keyframes trans12 {
+	0%   {opacity: 1;}
+	55%  {opacity: 1;}
+	60%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+.line13 {
+	animation: trans13 30s linear 0s infinite;
+}
+.line13:hover {
+	animation: step-end;
+}
+@keyframes trans13 {
+	0%   {opacity: 1;}
+	60%  {opacity: 1;}
+	65%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+.line14 {
+	animation: trans14 30s linear 0s infinite;
+}
+.line14:hover {
+	animation: step-end;
+}
+@keyframes trans14 {
+	0%   {opacity: 1;}
+	65%  {opacity: 1;}
+	70%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+.line15 {
+	animation: trans15 30s linear 0s infinite;
+}
+.line15:hover {
+	animation: step-end;
+}
+@keyframes trans15 {
+	0%   {opacity: 1;}
+	70%  {opacity: 1;}
+	75%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+.line16 {
+	animation: trans16 30s linear 0s infinite;
+}
+.line16:hover {
+	animation: step-end;
+}
+@keyframes trans16 {
+	0%   {opacity: 1;}
+	75%  {opacity: 1;}
+	80%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+.line17 {
+	animation: trans17 30s linear 0s infinite;
+}
+.line17:hover {
+	animation: step-end;
+}
+@keyframes trans17 {
+	0%   {opacity: 1;}
+	80%  {opacity: 1;}
+	85%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+.line18 {
+	animation: trans18 30s linear 0s infinite;
+}
+.line18:hover {
+	animation: step-end;
+}
+@keyframes trans18 {
+	0%   {opacity: 1;}
+	85%  {opacity: 1;}
+	90%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+.line19 {
+	animation: trans19 30s linear 0s infinite;
+}
+.line19:hover {
+	animation: step-end;
+}
+@keyframes trans19 {
+	0%   {opacity: 1;}
+	90%  {opacity: 1;}
+	95%  {opacity: 0;}
+	100% {opacity: 0;}
+}
+.line20 {
+	animation: step-end;
+}
