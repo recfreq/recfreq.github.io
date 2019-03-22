@@ -1,0 +1,706 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0111)http://ratbert.bmrc.berkeley.edu/courseware/cs160/fall00/Projects/annotation/reports/final-prototype/index.html -->
+<HTML xmlns="http://www.w3.org/TR/REC-html40" xmlns:v = 
+"urn:schemas-microsoft-com:vml" xmlns:o = 
+"urn:schemas-microsoft-com:office:office" xmlns:w = 
+"urn:schemas-microsoft-com:office:word"><HEAD><TITLE>Final UI Design</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content=Word.Document name=ProgId>
+<META content="MSHTML 6.00.2722.900" name=GENERATOR>
+<META content="Microsoft Word 9" name=Originator><LINK 
+href="./index_files/filelist.xml" rel=File-List><LINK 
+href="./index_files/editdata.mso" rel=Edit-Time-Data><!--[if !mso]>
+<STYLE>v\:* {
+	BEHAVIOR: url(#default#VML)
+}
+o\:* {
+	BEHAVIOR: url(#default#VML)
+}
+w\:* {
+	BEHAVIOR: url(#default#VML)
+}
+.shape {
+	BEHAVIOR: url(#default#VML)
+}
+</STYLE>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>cs160-af</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>cs160-by</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>732</o:TotalTime>
+  <o:Created>1999-12-08T20:55:00Z</o:Created>
+  <o:LastSaved>1999-12-08T20:55:00Z</o:LastSaved>
+  <o:Pages>17</o:Pages>
+  <o:Words>3709</o:Words>
+  <o:Characters>21146</o:Characters>
+  <o:Company>University of California at Berkeley</o:Company>
+  <o:Lines>176</o:Lines>
+  <o:Paragraphs>42</o:Paragraphs>
+  <o:CharactersWithSpaces>25968</o:CharactersWithSpaces>
+  <o:Version>9.3821</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:ActiveWritingStyle Lang="EN-US" VendorID="64" DLLVersion="131077"
+   NLCheck="1">1</w:ActiveWritingStyle>
+ </w:WordDocument>
+</xml><![endif]-->
+<STYLE>@font-face {
+	font-family: Verdana;
+}
+@page Section1 {size: 8.5in 11.0in; margin: 1.0in 1.25in 1.0in 1.25in; mso-header-margin: .5in; mso-footer-margin: .5in; mso-paper-source: 0; }
+P.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Times New Roman"; mso-style-parent: ""; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+LI.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Times New Roman"; mso-style-parent: ""; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+DIV.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Times New Roman"; mso-style-parent: ""; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+H1 {
+	FONT-SIZE: 16pt; MARGIN: 12pt 0in 3pt; FONT-FAMILY: Arial; mso-pagination: widow-orphan; mso-style-next: Normal; mso-outline-level: 1; mso-font-kerning: 16.0pt
+}
+H2 {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-FAMILY: "Times New Roman"; mso-pagination: widow-orphan; mso-style-next: Normal; mso-outline-level: 2
+}
+H3 {
+	FONT-WEIGHT: normal; FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; FONT-STYLE: italic; FONT-FAMILY: "Times New Roman"; mso-pagination: widow-orphan; mso-style-next: Normal; mso-outline-level: 3
+}
+H4 {
+	FONT-WEIGHT: normal; FONT-SIZE: 10.5pt; MARGIN: 0in 0in 0pt; FONT-STYLE: italic; FONT-FAMILY: "Times New Roman"; mso-pagination: widow-orphan; mso-style-next: Normal; mso-outline-level: 4; mso-bidi-font-size: 12.0pt
+}
+P.MsoBodyTextIndent2 {
+	FONT-SIZE: 11pt; MARGIN: 0in 0in 0pt 0.5in; FONT-FAMILY: "Times New Roman"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt
+}
+LI.MsoBodyTextIndent2 {
+	FONT-SIZE: 11pt; MARGIN: 0in 0in 0pt 0.5in; FONT-FAMILY: "Times New Roman"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt
+}
+DIV.MsoBodyTextIndent2 {
+	FONT-SIZE: 11pt; MARGIN: 0in 0in 0pt 0.5in; FONT-FAMILY: "Times New Roman"; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"; mso-bidi-font-size: 12.0pt
+}
+DIV.Section1 {
+	page: Section1
+}
+</STYLE>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]--></HEAD>
+<BODY lang=EN-US style="tab-interval: .5in">
+<DIV class=Section1>
+<P class=MsoNormal style="TEXT-ALIGN: right" align=right>Ray Luo</P>
+<P class=MsoNormal style="TEXT-ALIGN: right" align=right>Chetan Nandakumar</P>
+<P class=MsoNormal style="TEXT-ALIGN: right" align=right>Barath Raghavan</P>
+<P class=MsoNormal style="TEXT-ALIGN: right" align=right>Eugene Ozhinsky</P>
+<H1><SPAN style="FONT-FAMILY: Verdana">Red Ink – Final 
+Prototype<o:p></o:p></SPAN></H1>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<H2><SPAN style="FONT-FAMILY: Verdana">Problem<o:p></o:p></SPAN></H2>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">Annotation and revision are 
+integral parts of the writing process. Authors of documents almost always need 
+to send drafts to others for comments, assessment, and editing. The key to 
+success in all of these tasks is collaboration. Authors need an intuitive, 
+timesaving means for annotation, revision, and collaboration on electronic 
+documents.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>The current process 
+involves authors creating documents electronically, printing them to pass on to 
+reviewers, and then receiving a jumble of marked up printouts from these 
+reviewers.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Authors then must first 
+decide which revisions to accept and then must manually fold in each change into 
+the electronic original. This process, especially when multiple reviewers are 
+involved, can quickly become tedious and error-prone.</P>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<H2><SPAN style="FONT-FAMILY: Verdana">Solution Overview<o:p></o:p></SPAN></H2>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">The Red Ink document system aims 
+to resolve the above problems by means of a unique pen-based interface. This 
+interface provides a more natural means for annotation, revision, and 
+collaboration on electronic documents.<SPAN style="mso-spacerun: yes">&nbsp; 
+</SPAN>Red Ink is designed for use by both authors and their reviewers, and 
+provides a single environment in which these users can transparently exchange 
+information.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Reviewers can provide 
+feedback directly on the electronic document using pre-defined pen 
+gestures.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Such feedback will then 
+be available to the author, who can fuse desired changes into the final document 
+using a similar set of gestures.<SPAN style="mso-spacerun: yes">&nbsp; 
+</SPAN>The entire system is implemented in Java, thereby allowing a degree of 
+portability not available with other possible underlying implementations.<SPAN 
+style="mso-spacerun: yes">&nbsp; </SPAN>Furthermore, the system is designed with 
+tablet PCs in mind, which will likely be in widespread use in coming years.</P>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<H2><SPAN style="FONT-FAMILY: Verdana">Tasks</SPAN></H2>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<H3>Easy Task</H3>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">To utilize Red Ink, users must 
+choose a document for others to revise. This process involves logging into the 
+system, creating a new account if necessary, going to the proper tab, importing 
+a document to be revised, and adding reviewers to receive the document.</P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">The easy task was chosen to ensure 
+that users are comfortable with basic file management UIs. During user testing 
+and heuristic evaluation, the easy task was a pre-requisite for the more 
+advanced features. It also demonstrated the basic idea of our application: to 
+allow authors and reviewers to transparently exchange information.</P>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<H3>Moderate Task</H3>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">As a reviewer, users can revise 
+and annotate documents by using appropriate gestures. This process involves 
+opening up a document in the proper tab, reading it carefully, editing it using 
+the “insert”, “strikeout”, “select”, and other gestures, commenting on it using 
+the comment gesture, and typing in the insertions or comments.</P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">The moderate task was an 
+introduction to the gesture-based interface system. It demonstrated the 
+feasibility pen-based input for emulating the experience of editing documents 
+naturally. More importantly, it showed us, for the first time, whether users 
+could understand how gesture-based interaction works. This task demonstrates the 
+recognition-based engine driving the interface.</P>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<H3>Difficult Task</H3>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">As the author, the user can 
+incorporate changes made by other reviewers. This process involves opening a 
+document in the proper tab, accepting or rejecting changes made by reviewers 
+using gestures, and adding any additional annotations.</P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">The difficult task was designed to 
+test the user's ability to use advanced gestures that were designed to interact 
+with other pre-made annotations as opposed to the text itself. This task is 
+difficult because users are asked to understand the way the “accept” and 
+“reject” gestures work in their relationship to the seemingly unrelated set of 
+annotations seen on the screen. Thus, the difficult task tests whether our 
+interface is as intuitive as paper and pencil.</P>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<H2><SPAN style="FONT-FAMILY: Verdana">Design Evolution<o:p></o:p></SPAN></H2>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">As expected, the design of the Red 
+Ink system has changed several times through the course of the semester.<SPAN 
+style="mso-spacerun: yes">&nbsp; </SPAN>The main interface originally was a 
+completely encompassing interface including document and reviewer management, 
+network components such as publishing, and gesture-based document 
+annotation.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Although the structure 
+of gesture recognition has largely remained the same through the semester, there 
+are several elements of the interface that have changed.</P>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=MsoNormal><I>Changes between contextual inquiry and low-fi 
+prototype</I><SPAN style="mso-bidi-font-style: italic"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">Originally, our interface was 
+designed with one main pane containing all aspects of “collaborative 
+annotation”. </P>
+<P class=MsoNormal><!--[if gte vml 1]><v:shapetype id=_x0000_t75 coordsize = 
+"21600,21600" o:preferrelative = "t" o:spt = "75" filled = "f" stroked = "f" 
+path = " m@4@5 l@4@11@9@11@9@5 xe"><v:stroke joinstyle = 
+"miter"></v:stroke><v:formulas><v:f eqn = 
+"if lineDrawn pixelLineWidth 0 "></v:f><v:f eqn = "sum @0 1 0 "></v:f><v:f eqn = 
+"sum 0 0 @1 "></v:f><v:f eqn = "prod @2 1 2 "></v:f><v:f eqn = 
+"prod @3 21600 pixelWidth "></v:f><v:f eqn = 
+"prod @3 21600 pixelHeight "></v:f><v:f eqn = "sum @0 0 1 "></v:f><v:f eqn = 
+"prod @6 1 2 "></v:f><v:f eqn = "prod @7 21600 pixelWidth "></v:f><v:f eqn = 
+"sum @8 21600 0 "></v:f><v:f eqn = "prod @7 21600 pixelHeight "></v:f><v:f eqn = 
+"sum @10 21600 0 "></v:f></v:formulas><v:path o:extrusionok = "f" 
+gradientshapeok = "t" o:connecttype = "rect"></v:path><o:lock aspectratio="t" 
+v:ext="edit"></o:lock></v:shapetype><v:shape id=_x0000_i1025 
+style="WIDTH: 274.5pt; HEIGHT: 306pt" type = "#_x0000_t75" coordsize = 
+"21600,21600"><v:imagedata o:title="image002" src = 
+"./index_files/image001.png"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=366 height=408
+src="./index_files/image002.gif" v:shapes="_x0000_i1025"><![endif]></P>
+<P class=MsoNormal><SPAN style="mso-spacerun: yes">&nbsp;</SPAN>This monolithic 
+interface allowed annotation of other users’ documents, sending out documents to 
+be revised, and editing documents in general.<SPAN 
+style="mso-spacerun: yes">&nbsp; </SPAN>Furthermore, this interface never 
+clarified whether annotations would be collaborative in the “real-time” 
+sense.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>We decided against a 
+real-time system since revision is not currently a real time process and also 
+because real time interaction did not grant anything significant to the 
+task.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>In addition, we realized that 
+a more conventional document management interface was necessary since allowing 
+document management within the context of a pen based interface is somewhat 
+confusing.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Lastly, we also had not 
+decided whether the interface would be a stand-alone application or part of a 
+Web application.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Upon design of our 
+low-fi prototype, we realized that the interface needed to be a stand-alone 
+application, since web applications are quite limited in their 
+functionality.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">These design decisions required us 
+to break up the application into 2 primary sections: the document management 
+section and the gesture based annotation section. A login screen leads the user 
+into the document management window.<!--[if gte vml 1]> <v:shape id=_x0000_i1026 
+style="WIDTH: 210.75pt; HEIGHT: 127.5pt" type = "#_x0000_t75" coordsize = 
+"21600,21600"><v:imagedata o:title="image001" src = 
+"./index_files/image003.jpg"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=281 height=170
+src="./index_files/image004.jpg" v:shapes="_x0000_i1026"><![endif]></P>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=MsoNormal><SPAN style="mso-spacerun: yes">&nbsp;</SPAN><!--[if gte vml 1]><v:shape 
+id=_x0000_i1027 style="WIDTH: 312pt; HEIGHT: 156.75pt" type = "#_x0000_t75" 
+coordsize = "21600,21600"> <v:imagedata o:title="image006" src = 
+"./index_files/image005.jpg"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=416 height=209
+src="./index_files/image006.jpg" v:shapes="_x0000_i1027"><![endif]><SPAN 
+style="mso-spacerun: yes">&nbsp;</SPAN></P>
+<P class=MsoNormal>Here the user can view the properties of the different 
+documents, send them to revisers, and other such tasks. The user can also view a 
+document a document, and it will then be loaded in the annotation pane using 
+gesture-based interaction. </P>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=MsoNormal><I>Changes between low-fi prototype and interactive prototype 
+#1</I><SPAN style="mso-bidi-font-style: italic"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">We found two primary difficulties 
+during the low-fi testing. The first was not related to the design of the 
+interface, but rather it was the lack of feedback of a paper prototype; the 
+second was the unfamiliarity users had with using a gesture-based 
+interface.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Although the low-fi 
+interface presented the user with an experience similar to the process of 
+revising a document on paper, using a pen to make gestures on top of a 
+transparency remained very unnatural.<SPAN style="mso-spacerun: yes">&nbsp; 
+</SPAN>Due to the lack of useful feedback during the user testing, the gestures 
+and annotation pane interface remained largely unchanged between the low-fi and 
+interactive prototypes.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Since the 
+interactive prototype was stand-alone, we employed Wizard of Oz techniques to 
+fake the behavior of the gesture recognition.</P>
+<P class=MsoNormal><!--[if gte vml 1]><v:shape id=_x0000_i1028 
+style="WIDTH: 290.25pt; HEIGHT: 309.75pt" type = "#_x0000_t75" coordsize = 
+"21600,21600"><v:imagedata o:title="image025" src = 
+"./index_files/image007.png"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=387 height=413
+src="./index_files/image008.gif" v:shapes="_x0000_i1028"><![endif]></P>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=MsoNormal>We did gain some very useful information regarding the 
+document management interface. This interface contained a large number of 
+buttons, and through this phase of user testing, we found that the large volume 
+of buttons confused the user. To rectify this problem, we provided a much 
+simpler alternative in the first interactive prototype.</P>
+<P class=MsoNormal><!--[if gte vml 1]><v:shape id=_x0000_i1029 
+style="WIDTH: 301.5pt; HEIGHT: 171pt" type = "#_x0000_t75" coordsize = 
+"21600,21600"><v:imagedata o:title="image003" src = 
+"./index_files/image009.png"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=402 height=228
+src="./index_files/image010.gif" v:shapes="_x0000_i1029"><![endif]></P>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=MsoNormal><I>Changes between interactive prototype #1 and interactive 
+prototype #2</I><SPAN style="mso-bidi-font-style: italic"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">After receiving feedback from our 
+peers on our first interactive prototype, we made several changes to the 
+design.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Lack of system status and 
+error recovery were two of the primary heuristics that our interface 
+violated.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>We added dialogs that 
+allow the user to cancel, and in addition, we added document removal 
+confirmation.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN></P>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=MsoNormal><!--[if gte vml 1]><v:shape id=_x0000_i1030 
+style="WIDTH: 291.75pt; HEIGHT: 162pt" type = "#_x0000_t75" coordsize = 
+"21600,21600"><v:imagedata o:title="image002" src = 
+"./index_files/image011.jpg"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=389 height=216
+src="./index_files/image012.jpg" v:shapes="_x0000_i1030"><![endif]></P>
+<P class=MsoNormal>In our interactive prototype #1, it was unclear what the 
+document list box was actually displaying.<SPAN style="mso-spacerun: yes">&nbsp; 
+</SPAN>In this new interactive prototype, we include information about the 
+number of reviewers per document, and the number of new revisions, if any.<SPAN 
+style="mso-spacerun: yes">&nbsp; </SPAN>This additional information makes it 
+clear to the user that this document is available to be revised or has been sent 
+to them to be revised.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>The most 
+significant implementation difference between interactive prototype #1 and 
+interactive prototype #2 was that no Wizard of Oz techniques were used at 
+all.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Despite all the feedback we 
+received, most of the changes were rather minor.</P>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=MsoNormal><I>Changes between interactive prototype #2 and interactive 
+prototype #3</I><SPAN style="mso-bidi-font-style: italic"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">Between these two prototypes, we 
+conducted a pilot usability test to find any other design problems with the Red 
+Ink system. This test was a bit premature since we had not completely fleshed 
+out the interface, but it still provided us with some good feedback. We found 
+that the users still had a bit of difficulty switching into the paper-based user 
+model using gestures for interaction instead of toolbars. To ease the user into 
+the interface, we included a tutorial when she signed up as a new user and also 
+implemented the help feature in the annotation pane.</P>
+<P class=MsoNormal><!--[if gte vml 1]><v:shape id=_x0000_i1031 
+style="WIDTH: 235.5pt; HEIGHT: 199.5pt" type = "#_x0000_t75" coordsize = 
+"21600,21600"><v:imagedata o:title="Picture4" src = 
+"./index_files/image013.png"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=314 height=266
+src="./index_files/image014.jpg" v:shapes="_x0000_i1031"><![endif]></P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">We also found that the user did 
+not always perform the gestures properly and was confused since not all of the 
+gestures on the left pane were implemented. To clear the confusion, we grayed 
+out the gestures not implemented and placed thick dots at the critical points in 
+the gesture. We found that the user easily got frustrated when she was trying to 
+do something that she thought was correct but the machine was misunderstanding. 
+To solve this problem, we added a status window displaying the interpretations 
+of the machine. This window also allowed us to display the content of comments 
+and insertions. </P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in"><!--[if gte vml 1]><v:shape 
+id=_x0000_i1032 style="WIDTH: 324pt; HEIGHT: 291.75pt" type = "#_x0000_t75" 
+coordsize = "21600,21600"><v:imagedata o:title="Picture6" src = 
+"./index_files/image015.jpg"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=432 height=389
+src="./index_files/image016.jpg" v:shapes="_x0000_i1032"><![endif]></P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">In addition, we cleaned up the 
+gesture recognition so that tapping is now ignored and included features that we 
+did not have the time to implement before such as the multi-level undo, the 
+button bar at the bottom, and buttons for future features in the comment window 
+(ie. audio annotation). Lastly, we cleaned up some of the document management 
+panes by re-labeling the “Edit Reviewers” button as “Send to Reviewers”, making 
+the corresponding pane more intuitive, converting the add document dialog into a 
+more standard form, and making the button arrangement more aesthetic.</P>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=MsoNormal><I>Overall design changes</I><SPAN 
+style="mso-bidi-font-style: italic"><o:p></o:p></SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">On the surface, it may be 
+surprising to note that the design ideas have not changed drastically since the 
+initial sketches.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>The primary 
+annotation interface, which allows gesture based document editing, still relies 
+upon almost the same gestures as we originally envisioned.<SPAN 
+style="mso-spacerun: yes">&nbsp; </SPAN>Although some gestures have had to been 
+changed due to technology limitations, most gestures look almost the same as 
+they did in the original hand sketches. The interface now contains the document 
+management system, which allows the user to view and select documents following 
+the usual graphical user interface paradigm.<SPAN 
+style="mso-spacerun: yes">&nbsp; </SPAN></P>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<H2><SPAN style="FONT-FAMILY: Verdana">Scenarios<o:p></o:p></SPAN></H2>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<H4>Easy Scenario</H4>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">Alice, a young film critic at the 
+Los Angeles Times, has received an invitation from her long time friend Ray to 
+edit his one page final paper on Spinoza's theory of the nature of the mind and 
+its implications for contemporary film-making. She has edited numerous papers 
+for Ray and has a good knowledge of the common mistakes of Ray's writing. Alice 
+will perform these tasks using a pen on a tablet PC. She logs into the red ink 
+system: </P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in"><!--[if gte vml 1]><v:shape 
+id=_x0000_i1033 style="WIDTH: 180pt; HEIGHT: 117pt" type = "#_x0000_t75" 
+coordsize = "21600,21600"><v:imagedata o:title="image007" src = 
+"./index_files/image017.png"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=240 height=156
+src="./index_files/image018.jpg" v:shapes="_x0000_i1033"><![endif]></P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">From the main menu, she chooses 
+Ray's document from the list of documents to review. </P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in"><!--[if gte vml 1]><v:shape 
+id=_x0000_i1034 style="WIDTH: 306pt; HEIGHT: 165pt" type = "#_x0000_t75" 
+coordsize = "21600,21600"><v:imagedata o:title="Picture10" src = 
+"./index_files/image019.jpg"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=408 height=220
+src="./index_files/image020.jpg" v:shapes="_x0000_i1034"><![endif]></P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">This action brings up an editing 
+panel consisting of the document and various controls and displays. </P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in"><!--[if gte vml 1]><v:shape 
+id=_x0000_i1035 style="WIDTH: 270pt; HEIGHT: 243pt" type = "#_x0000_t75" 
+coordsize = "21600,21600"><v:imagedata o:title="Picture6" src = 
+"./index_files/image015.jpg"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=360 height=324
+src="./index_files/image021.jpg" v:shapes="_x0000_i1035"><![endif]></P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">Knowing Ray's tendency to switch 
+the first and last paragraphs around, Alice checks the last sentence on the 
+essay and moves it to the front. Next, she goes through Ray's paper, deleting 
+his excessive uses of academic lingo. Specifically, she will delete words such 
+as "sophisticated," "unmitigated," and "repugnance." Given Ray's tendency to mix 
+up his words, Alice will also make sure that the ordering of phrases are 
+correct, for example "very well be made". She will also read over the document a 
+few times, making general comments on Ray's writing, warning him, for example, 
+against the use of too many exclamation marks She will also italicize book and 
+film titles in the essay appropriately on the document. Finally, she will click 
+on "done", which hides the file and notifies Ray the next time he logs on that 
+she has finished editing the document.</P>
+<P class=MsoNormal style="MARGIN-LEFT: 0.5in"><SPAN 
+style="FONT-SIZE: 10.5pt; mso-bidi-font-size: 12.0pt">&nbsp;<o:p></o:p></SPAN></P>
+<H3>Moderate Scenario</H3>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">Ray, a philosophy major at UC 
+Berkeley, has just finished his one page summary-critique of Spinoza's theory of 
+the human mind and its relations to modern cinematic thoery. He is uncertain 
+about his short paper, which accounts for 50% of his Film 101 course. He decides 
+to upload his document to the Red Ink System to be reviewed by his old high 
+school friend Alice, who happens to be a film critic. After getting into the 
+system, Ray opens the existing document to be uploaded. </P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in"><!--[if gte vml 1]><v:shape 
+id=_x0000_i1036 style="WIDTH: 4in; HEIGHT: 153.75pt" type = "#_x0000_t75" 
+coordsize = "21600,21600"><v:imagedata o:title="Picture8" src = 
+"./index_files/image022.jpg"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=384 height=205
+src="./index_files/image023.jpg" v:shapes="_x0000_i1036"><![endif]></P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">To make sure Alice catches all the 
+mistakes for him, Ray opens up the annotation pane to make authoring comments on 
+the document. </P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in"><!--[if gte vml 1]><v:shape 
+id=_x0000_i1037 style="WIDTH: 279pt; HEIGHT: 253.5pt" type = "#_x0000_t75" 
+coordsize = "21600,21600"><v:imagedata o:title="Picture14" src = 
+"./index_files/image024.png"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=372 height=338
+src="./index_files/image025.jpg" v:shapes="_x0000_i1037"><![endif]></P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">He circles the words "substance" 
+and "attribute" and asks, in a comment, if their definitions were easy to 
+understand.</P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in"><!--[if gte vml 1]><v:shape 
+id=_x0000_i1038 style="WIDTH: 257.25pt; HEIGHT: 138.75pt" type = "#_x0000_t75" 
+coordsize = "21600,21600"><v:imagedata o:title="Picture16" src = 
+"./index_files/image026.jpg"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=343 height=185
+src="./index_files/image026.jpg" v:shapes="_x0000_i1038"><![endif]></P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">He asks the entire quotation from 
+Wild Strawberry and asks whether the material contributes to a general 
+understanding of the essay He also makes other general comments dealing with the 
+structure of the essay and diction. Finally, he exits the program and awaits the 
+response of Alice in a future session.</P>
+<P class=MsoNormal style="MARGIN-LEFT: 0.5in"><SPAN 
+style="FONT-SIZE: 10.5pt; mso-bidi-font-size: 12.0pt">&nbsp;<o:p></o:p></SPAN></P>
+<H3>Difficult Scenario</H3>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">Fred has been notified that Alice 
+has finished editing his essay. He retrieves the revised document and begins 
+filtering through the comments and revisions. </P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in"><!--[if gte vml 1]><v:shape 
+id=_x0000_i1039 style="WIDTH: 243pt; HEIGHT: 221.25pt" type = "#_x0000_t75" 
+coordsize = "21600,21600"><v:imagedata o:title="Picture14" src = 
+"./index_files/image024.png"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=324 height=295
+src="./index_files/image027.jpg" v:shapes="_x0000_i1039"><![endif]></P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">Fred then decides to walk through 
+the comments one by one, judging for their significance. For example, he accepts 
+Alice's comment on the use of excessive exclamation marks in "No way!!!!". But 
+he rejects Alice's italicized version of "Wild Strawberries" because he thinks 
+that film titles should be in quotes, not italicized. </P>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<H2><SPAN style="FONT-FAMILY: Verdana">Final UI Design<o:p></o:p></SPAN></H2>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=MsoNormal>Our final UI design consists of 2 distinct sections. The 
+first is the Document Management Pane and the second is the Annotation pane 
+using gesture-based interaction.</P>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<H3>Document Management Pane</H3>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">The Document Management Pane is 
+designed to organize and manage all of the documents important to the user in an 
+easy and intuitive way. The documents are divided into two categories – 
+“Document You’ve Written” and “Documents to Revise”, and these two categories 
+are visually separated using a tabbed interface. </P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in"><!--[if gte vml 1]><v:shape 
+id=_x0000_i1040 style="WIDTH: 4in; HEIGHT: 153.75pt" type = "#_x0000_t75" 
+coordsize = "21600,21600"><v:imagedata o:title="Picture8" src = 
+"./index_files/image022.jpg"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=384 height=205
+src="./index_files/image028.jpg" v:shapes="_x0000_i1040"><![endif]></P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in"><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">The look and feel is designed to 
+be familiar to the user by utilizing well-known paradigms in window-based 
+interaction. </P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">The “Documents You’ve Written” 
+section treats the user as the author of documents that she wants feedback on. 
+So there are lists of documents that have been imported by the author herself, 
+and for each document listed, there are a few important properties of the 
+document visible such as the number of reviewers and if there are any new 
+revisions. </P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">This interaction scheme requires 
+that the user first select a document and then use the buttons on the left to 
+act on it. In addition to these buttons acting on the documents in the list, 
+there are others below that are independent of the selection. To delineate the 
+two groups of buttons to the user, we have boxed one group as acting on the 
+selected document and located the other group of buttons underneath.</P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">The user can modify the list of 
+documents by removing selected items, editing the reviewers of a selected item, 
+and adding in a new document. Most importantly, once a reviewer has made 
+revisions, the author can click on the “View/Annotate” button after selecting a 
+document and visually view the annotations made. There are also a few other 
+tools such as a search, help, and exit. </P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">The “Documents To Revise” section 
+treats the user as a reviser; in other words, other people have authored 
+documents and want this user’s feedback on them. </P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in"><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in"><!--[if gte vml 1]><v:shape 
+id=_x0000_i1041 style="WIDTH: 306pt; HEIGHT: 165pt" type = "#_x0000_t75" 
+coordsize = "21600,21600"><v:imagedata o:title="Picture10" src = 
+"./index_files/image019.jpg"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=408 height=220
+src="./index_files/image029.jpg" v:shapes="_x0000_i1041"><![endif]></P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">This pane is quite analogous to 
+the “Documents You’ve Written” Pane. It contains a list of documents sent to the 
+user from different authors along with buttons laid on the side. In the document 
+list, the important fields of each document are its author and the date 
+received. The user can remove a selected document as well as annotate it. There 
+are also the search and help buttons as on the other tabbed pane. </P>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<H3>Annotation Pane</H3>
+<P class=MsoNormal><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>Pressing the View/Annotate button from either one of the tabbed panes 
+brings the user to the annotation pane. This pane is the centerpiece of the 
+interface and quite different from traditional computer-based UI’s as it relies 
+heavily on gesture-based interaction.</P>
+<P class=MsoNormal><!--[if gte vml 1]><v:shape id=_x0000_i1042 
+style="WIDTH: 324pt; HEIGHT: 291.75pt" type = "#_x0000_t75" coordsize = 
+"21600,21600"><v:imagedata o:title="Picture6" src = 
+"./index_files/image015.jpg"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=432 height=389
+src="./index_files/image030.jpg" v:shapes="_x0000_i1042"><![endif]></P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">If the View/Annotate button is 
+pressed from the “Documents To Revise” Pane, the reviser’s version of the 
+annotation pane is seen. Here, the essay to be revised occupies the center of 
+the screen, a help pane describing the possible gestures occupies the left and 
+the button bar and status window occupy up the bottom of the screen. The 
+interaction scheme aims to be more natural than current solutions, and so the 
+interface is directly modeled after paper-based revising. The user is expected 
+to treat the window as a piece of paper, and so she makes gestures on the 
+document itself.</P>
+<P class=MsoNormal><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>These gestures are all interpreted by the computer and feedback on the 
+interpretation of the gesture is immediately returned when the computer redraws 
+the stroke. The user uses the left help pane as a guide to what gestures are 
+recognized by the system, and how to properly draw them; the thick dots on each 
+gesture are designed to give the user a guide as to what critical points the 
+gesture interpreter is looking for. All of the implemented gestures are 
+highlighted in blue and the unimplemented ones are grayed out. </P>
+<P class=MsoNormal><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>In brief, the reviser sees that someone has sent her a document when it 
+is listed in the document to revise pane. The user selects the document, clicks 
+on view/annotate and the annotation pane pops up; then the user revises the 
+document in a similar fashion as she would with paper. She makes gestures on the 
+document itself using the help pane on the left as a guide to the gestures, and 
+once she is finished, she clicks on done. </P>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<H3>Error Handling</H3>
+<P class=MsoNormal><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>However, gesture recognition is not always perfect and errors do occur on 
+part of the computer and the human. To account for this possibility, we have 
+implemented a “multiple event undo” button on the button bar. This will grant 
+the user the flexibility to remove an annotation or string of annotations 
+previously made. In addition, we have included a status window at the bottom of 
+the screen to give the user a glimpse into the interpretations of the 
+computer.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>This feature is necessary 
+so that the behavior of the computer does not seem as mystical and the user has 
+more input as to why an error occurred. We hope that this window will ease user 
+frustration if the system does not operate optimally. </P>
+<P class=MsoNormal><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>Lastly, if the user is still confused or might be having trouble with our 
+interface, we have implemented a help feature accessible from the button 
+bar.</P>
+<P class=MsoNormal><!--[if gte vml 1]><v:shape id=_x0000_i1043 
+style="WIDTH: 297pt; HEIGHT: 249pt" type = "#_x0000_t75" coordsize = 
+"21600,21600"><v:imagedata o:title="Picture12" src = 
+"./index_files/image031.jpg"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=396 height=332
+src="./index_files/image032.jpg" v:shapes="_x0000_i1043"><![endif]></P>
+<P class=MsoNormal><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN></P>
+<H3>Gestures</H3>
+<P class=MsoNormal><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>The gestures we are using are modeled after the gestures we saw being 
+used in the contextual inquiry stage. We wanted to make the gestures in our 
+system similar so that they would be intuitive to the user. However, due to the 
+limitations of the gesture recognition technology, we could not implement the 
+gestures exactly. The technology required all of the gestures to be single 
+strokes as opposed to multiple strokes, and it also required that the gestures 
+be quite distinct from one another. </P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">It is important to note that the 
+insert and comment gestures are a little different than the other gestures. 
+These two gestures require a pop-up window in addition to the gesture itself. So 
+upon insert, for instance, one must place a carrot where an insertion is desired 
+and then a window will pop-up asking for input of the content to be inserted. 
+Right now, text input is all that is implemented, although we have provided the 
+buttons for other desired features such as audio annotation and free hand text. 
+Once this is complete, the user can tap on the insertion icon and the content of 
+the insertion will be displayed in the status window.</P>
+<P class=MsoNormal><!--[if gte vml 1]><v:shape id=_x0000_i1044 
+style="WIDTH: 257.25pt; HEIGHT: 138.75pt" type = "#_x0000_t75" coordsize = 
+"21600,21600"><v:imagedata o:title="Picture16" src = 
+"./index_files/image026.jpg"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=343 height=185
+src="./index_files/image026.jpg" v:shapes="_x0000_i1044"><![endif]></P>
+<H3>Authoring View</H3>
+<P class=MsoNormal><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>If the view/annotate button is pressed from the “Documents You’ve 
+Written” Pane, the authoring view of the annotation pane is viewed. This view is 
+almost identical to the reviewer’s view; the main difference is in the task 
+being carried out. In the reviewer’s view, the task is to revise the document, 
+whereas in this screen, the task is to accept or reject changes made by other 
+reviewers.</P>
+<P class=MsoNormal><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>The author sees all revisions made by reviewers in blue, and each 
+revision is contained in a gray box. The author can place a check or an x 
+centered in the box to respectively accept or reject a given revision. If the 
+revision is accepted, than it is automatically folded in, ie. If the user 
+accepts a strikeout then that piece of text is deleted. If the revision is 
+rejected, then the revision mark is erased from the document.</P>
+<P class=MsoNormal><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>Another feature unique to the authoring view is the reviewer’s button in 
+the button bar. This feature is designed to manage revisions made by multiple 
+reviewers on the same document. The author can select which reviewers she wants 
+to see revisions from. This feature is currently unimplemented.</P>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<P class=MsoNormal><!--[if gte vml 1]><v:shape id=_x0000_i1045 
+style="WIDTH: 279pt; HEIGHT: 253.5pt" type = "#_x0000_t75" coordsize = 
+"21600,21600"><v:imagedata o:title="Picture14" src = 
+"./index_files/image024.png"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=372 height=338
+src="./index_files/image033.jpg" v:shapes="_x0000_i1045"><![endif]></P>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<H3>Other Features </H3>
+<P class=MsoNormal><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</SPAN>In addition, we have a few other features that we thought would be 
+useful. One is a save feature so that changes are not lost if the computer 
+crashes in the middle of the task. Another is the search feature that helps the 
+user manage longer documents. </P>
+<H2><SPAN 
+style="FONT-FAMILY: Verdana"><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></H2>
+<H2><SPAN style="FONT-FAMILY: Verdana">Features Not Implemented 
+<o:p></o:p></SPAN></H2>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">Several of our initial design 
+plans were left off of our final prototype due to time and technology 
+constraints.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>In our initial design, 
+we had focused our attention upon the actual content annotation, such as being 
+able to mark up images, video, as well as regular text in a rather sophisticated 
+manner.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>Firstly, we realized that 
+this would be overwhelming to use for users; secondly, implementing such 
+features would not truly address usability issues, but rather mere 
+time-consuming technology ones.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>For 
+this reason, features such as audio annotations, while convenient for the user, 
+are not fundamental in our interface design and thus have been omitted.</P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">Other features we planned have 
+been omitted because they would only serve to confuse the user unless completely 
+implemented.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>For example, all of 
+our prototypes, both lo-fi and hi-fi have included a document view slider.<SPAN 
+style="mso-spacerun: yes">&nbsp; </SPAN>This slider was made to allow switching 
+between summary view and document view.<SPAN style="mso-spacerun: yes">&nbsp; 
+</SPAN>The intent was that the user could view a summary of all the annotations 
+and revisions made to a document at a glance without going through the document 
+to find all the individual marks made.<SPAN style="mso-spacerun: yes">&nbsp; 
+</SPAN>However, since in all of our prototypes, the features has been 
+unimplemented, users have had no idea what it does, and for some reason were 
+always compelled to attempt to use it in vain. Furthermore, we found that a 
+slider would not be the right widget for this purpose, since a slider usually 
+implies the use of multiple intermediate modes, whereas our summary/document 
+view is more bi-modal.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN></P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">One feature that we have not 
+implemented is managing the revisions of multiple reviewers. Although this 
+feature is quite important to the task and we did demonstrate it in the first 
+interactive prototype, we did not have the time to implement it.</P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">Other superfluous features such as 
+signature recognition for login have been left off since they do not 
+significantly affect the user experience in either a positive or negative way. 
+Also, since we are focusing in on the interactions, we displayed the save button 
+but did not choose to implement it.</P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">Finally, as expected, the system 
+does not implement backend network connectivity and a user database.<SPAN 
+style="mso-spacerun: yes">&nbsp; </SPAN>This does not affect the interface, but 
+it causes the search and save features to be non-functional, and in addition, 
+the “Documents You’ve Written” tab and “Documents To Revise” tab do not 
+accurately reflect documents as if they had been written by the user or sent to 
+them by a peer.</P>
+<P class=MsoNormal><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></P>
+<H2><SPAN style="FONT-FAMILY: Verdana">Tools </SPAN></H2>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">We used Java 2 Version 1.3 and the 
+Swing Toolkit to implement our interface. The Java programming language is easy 
+to use and fairly productive. The Swing documentation was comprehensive and 
+mostly comprehensible. We used the Forte for Java CE 1.0 development environment 
+to manage our projects. It was easy to learn but difficult to customize. Satin 
+Version 2.2 and Quill were used to make our gesture sets and interpret gestures 
+based on the set we made. Quill had a easy to use and efficient interface. We 
+used Satin only for one specific task of providing us with a ranking of possible 
+gestures. We chose Swing, Satin, and Quill because they allowed us to move from 
+basic gesture sets to a full-fledged interface without having to learn another 
+programming language. Java was the programming language of choice because of its 
+simplicity and universality.</P>
+<P class=MsoNormal style="TEXT-INDENT: 0.5in">The Swing package is enormous. It 
+is difficult for the ordinary programmer to keep track of its entire set of 
+relevant interface components. Hence we relied on Forte for much of the GUI 
+level development. Unfortunately, Forte is tedious for managing multiple 
+projects. It is also difficult to customize and has a steep learning curve. For 
+example, Forte does not allow us to delete certain code. If we delete code using 
+another application, Forte regenerates it unless we delete the form as well. It 
+also took a long time to simply set up our programming environments because of 
+the rigidity of Forte. Forte has poorly designed efficiency features such as a 
+limited set of customizable short cuts. Satin is large and complicated. Hence we 
+only used what was absolutely necessary to our GUI: Sheet and RubineInterpreter. 
+Some of the arguments to functions in Satin are not very intuitive. Quill was a 
+bit too simple - we had hoped to create multiple-stroke gestures, but quill will 
+not work optimally if we had.</P></DIV></BODY></HTML>

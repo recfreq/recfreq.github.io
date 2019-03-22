@@ -1,0 +1,803 @@
+<html>
+<head>
+<title>ray luo</title>
+</head>
+
+<body link=#000000 vlink=#000000 alink=#000000>
+<table width=640 cellpadding=0 cellspacing=0 align=center>
+<tr><td bgcolor=#ffffff><br></td></tr></table>
+
+<!-- Begin. -->
+
+<table width=640 cellpadding=0 cellspacing=0 align=center>
+<tr><td bgcolor=#555555 align=right>
+<font face="courier new" size=2 color=#dddddd>
+<a href="../../index.html"><font color=#dddddd>home</a> |
+<a href="../../projects/index.html"><font color=#dddddd>projects</a> |
+<a href="../../opinions/index.html"><font color=#dddddd>opinions</a> |
+<a href="../../contact/index.html"><font color=#dddddd>contact</a> &nbsp
+</td></tr></table>
+
+<table width=640 cellpadding=0 cellspacing=0 align=center>
+<tr><td bgcolor=#dddddd align=left>
+<font face="courier new" size=2 color=#555555>
+<b>&nbsp ray luo : projects : emlit</b>
+</td></tr></table>
+
+<table width=640 cellpadding=0 cellspacing=0 align=center>
+<tr><td bgcolor=#ffffff><br></td></tr></table>
+
+<!-- Content. -->
+
+<table width=640 cellpadding=10 cellspacing=0 align=center>
+<tr><td align=left>
+<font face="courier new" size=2 color=#000000>
+
+
+
+  <P><HR WIDTH = "60%" ALIGN = CENTER></P>
+
+  <H1 ALIGN = CENTER>
+   <A NAME = "TITLE">UC Riverside Reinforcement Robotic Interface Description</A>
+  </H1>
+
+
+
+  <P><HR WIDTH = "60%" ALIGN = CENTER></P>
+
+  <H3 ALIGN = CENTER>
+   <A NAME = "CONTENTS">Table of Contents</A>
+  </H3>
+
+  <P><UL>
+      <LI><A HREF = "#CURR">Current Status</A></LI>
+      <LI><A HREF = "#RUN">Running the Interface Program</A></LI>
+      <LI><A HREF = "#TASK">Robot Learning Task</A></LI>
+      <LI><A HREF = "#ALGO">Learning Algorithm</A></LI>
+      <LI><A HREF = "#IO">Input / Output Interface</A></LI>
+      <LI><A HREF = "#PROG">Program Structure / Architecture</A></LI>
+      <LI><A HREF = "#REF">References</A></LI>
+      <LI><A HREF = "#DOC">Documentation</A></LI>
+     </UL></P>
+
+
+
+  <P><HR WIDTH = "60%" ALIGN = CENTER></P>
+
+  <H3 ALIGN = CENTER>
+   <A NAME = "CURR">Current Status</A>
+  </H3>
+
+  <P>October 2
+   <UL>
+    <LI>Noted some objectives for present and future development 
+        (eg. December / January).</LI>
+    <LI>Objective 1: Separate the low level robotic control from the
+	basic GUI and simulation framework, so that others can use the 
+	code for their own robot platforms.  That is, abstract the
+	notion of physical robotic experimentation into a separate 
+	component in the code (or control in the GUI).</LI>
+    <LI>Objective 2: Write some fast C code (openGL) for the graphics
+        portion of the MazeFrame so we can show more than a two
+	dimensional overview of the robot.  Envision using 3D graphics 
+	to represent the robot and maze during simulation.  May also 
+	make this the primary frame, ie flatten the GUI so that we 
+	are keeping track of statistics and camera movement in 
+	secondary windows.</LI>
+    <LI>Objective 3: Do some user task analysis for the interface,
+	including, but not limited to, task scenarios and evaluation
+	using heuristics.</LI>
+    <LI>Objective 4: Most importantly, get the simulation working, at
+        least at a crude level.  Compare the algorithms and do some 
+	algorithmic analysis before incorporating machine learning.
+	Thus another reason to modulized the robot/GUI code better.</LI>
+   </UL></P>
+
+  <P>August 21
+   <UL>
+    <LI>All documentation have been converted to html format.</LI>
+    <LI>Need a simple, possibly non-GUI application that uses and tests
+	only the QLearning* classes (~ 2 days).</LI>
+    <LI>JNI code needs to be changed for the PC platform (~ 3 - 4 days).</LI>
+   </UL></P>
+
+  <P>August 11
+   <UL>
+    <LI>ExplorerFrame and MazeFrame are basically complete.</LI>
+    <LI>StatusFrame is not complete, but the source of the data 
+        has already been incorporated, so the fix should not be too
+	time-consuming (~ 3 - 5 hrs).</LI>
+    <LI>Four neighbor drawing code has been fixed; works fine now
+        for LineRobot.  However, CamRobot drawing code is buggy
+	for eight neighbors (~ 2 hrs). </LI>
+    <LI>Readme dialog won't link hyperlinks correctly (~ 3 hrs).</LI>
+    <LI>About dialog is empty, but is very simple to implement
+	(~ 20 minutes).</LI>
+    <LI>Communication in the InterfaceFrame is not finished; in
+        particular, we need an ExperimentManager that tells the 
+	QLearningExperiment to do things and communicates the info
+	to the frames (~ 3 days). </LI>
+    <LI>Open and save utilities not implemented; need a file format
+        and some file stream code in the listener for the open
+	and save buttons (~ 4 - 5 days). </LI>
+    <LI>Camera.c won't compile, due to Java glue and IMA (~
+        forever).</LI>
+   </UL></P>
+
+
+
+  <P><HR WIDTH = "60%" ALIGN = CENTER></P>
+
+  <H3 ALIGN = CENTER>
+   <A NAME = "RUN">Running the Interface Program</A>
+  </H3>
+
+  <P>Native code is implemented for the Unix system at the 
+     <A HREF = "http://vislab.ucr.edu">UCR Visualization and Intelligent
+     Systems Laboratory</A>.  Namely, CamRobot.c, LineRobot.c, Camera.c, and
+     HandyBoard.c are for use specifically with the IMA imaging system and the MIT
+     <A HREF = "http://el.www.media.mit.edu/groups/el/projects/handy-board">
+     Handy Board</A>.  To use the code for a different platform, simply change
+     the specific references to these classes in the Status, Explorer, and 
+     Maze frames, or add your implementation as an option.  See 
+     <A HREF = "#PROG">Program Structure</A> for details.</P>
+
+  <P>All files are in the ucr_reu directory (corresponding to the
+     ucr_reu package).  The java-specific paths must be set as follows:
+     CLASSPATH set to the directory containing ucr_reu, LD_LIBRARY_PATH
+     set to ucr_reu itself.</P>
+
+  <P>To recompile the project, do the following:
+     <OL>
+      <LI>Make sure the CamRobot.java file static block loads the "CamRobot"
+          library.</LI>
+      <LI>Compile the java files using <CODE>javac *.java</CODE>, with 
+	  the -classpath option set to the directory containing ucr_reu.</LI>
+      <LI>Create a header file for CamRobot.java using <CODE>javah -jni
+	  CamRobot</CODE>.
+	  You must also reset the CLASSPATH (or use the -classpath option)
+	  to ucr_reu so that javah can find CamRobot.java.</LI>
+      <LI>Make sure your C implementation file meets the requirements of 
+          the header file (same function declarations).</LI>
+      <LI>Invoke the C compiler, creating the shared library in the process
+          using <CODE>cc -G -I/usr/java/include -I/usr/java/include/solaris 
+ 	  CamRobot.c -o libCamRobot.so</CODE>, assuming your java directory is
+	  located in usr (as in sevenup).  For shasta, use: <CODE>cc -G 
+	  -I/usr/local/inst/jdk1.2.2/include
+	  -I/usr/local/inst/jdk1.2.2/include/solaris CamRobot.c -o 
+	  libCamRobot.so
+	  </CODE></LI>
+      <LI>Repeat procedure for LineRobot and Camera classes.</LI>
+     </OL></P>
+
+  <P>To run the program, use <CODE>java ucr_reu/InterfaceFrame</CODE>, 
+     with -classpath set to the directory containing ucr_reu; or simply
+     <CODE>java InterfaceFrame</CODE> (unset your CLASSPATH).</P>
+
+
+
+  <P><HR WIDTH = "60%" ALIGN = CENTER></P>
+
+  <H3 ALIGN = CENTER>
+   <A NAME = "TASK">Robot Learning Task</A>
+  </H3>
+
+  <P>Given starting coordinates and a starting orientation, the task 
+     of the robot is to search for the goal coordinate of an arbitrary
+     maze possibly filled with obstacles.  When the goal is found,
+     the robot is replaced at the starting coordinates and the next
+     trial (or episode) of the search takes place.  The robot and the
+     corresponding search algorithm has no knowledge of the goal
+     coordinates in all trials.  They also have initial knowledge of the
+     environment.  As the number of episodes increases, the
+     performance of the robot, as measured by total number of moves 
+     taken to reach the goal, should improve.</P>
+
+  <P>Although mazes and algorithms of various shapes and types can be
+     used for this experiment, we chose to implement only 4 and 8
+     neighbor q learning on a rectangular maze.  The interface is
+     flexible enough, however to allow for mazes of different types
+     (one only has to implement a specific maze class that extends the
+     abstract Maze class).  Similarly, different types of algorithms
+     can be created (one needs to make small changes to
+     NewExperimentDialog, implement an option panel for the new
+     algorithm specifying the user input parameters, a custum Maze or
+     RectMaze class that keeps track of state information, and an
+     Experiment class which takes a subclass of Robot and a subclass
+     of Maze among its arguments and generates specific actions by
+     calling the robot and updating the maze).</P>
+
+  <P>An algorithmic implementation necessitates an implementation of
+     the abstract Robot class.  Currently, the two direct subclasses
+     of Robot are LineRobot and CamRobot.  LineRobot controls the line-
+     sensing robot from the 1999 NSF UCR REU robotics project.  See
+     <A HREF = "http://vislab.ucr.edu/~pat">last year's
+     documentation</A> for more details.  CamRobot controls the
+     NSF UCR REU robot.  It has a mounted camera, four proximity
+     sensors, stepper motors, servo motors for rotating and tilting
+     the camera, encoders for fine position control, and bump sensors.
+     When a new robot is built, we need to construct a new subclass
+     of Robot.  We also need to add a specific case for the code in
+     the ExplorerFrame and possibly the initialization dialogs.</P>
+
+  <P>This year's focuses on the use of a mounted camera to detect and
+     avoid obstacles.  To improve performance, the camera communicates
+     directly with the computer, which sends signals to the Handy Board
+     on the robot, telling it to check sensors, move forward, rotate,
+     etc.  The robot also has error checking capabilities associated
+     with movement (encoders) and emergencies (bump sensors).  We
+     hope to demonstrate improved performance, as measured by the 
+     number of actions taken to reach the goal state in a maze, in a
+     real-time robotic system.</P>
+
+
+
+  <P><HR WIDTH = "60%" ALIGN = CENTER></P>
+
+  <H3 ALIGN = CENTER>
+   <A NAME = "ALGO">Learning Algorithm</A>
+  </H3>
+
+  <P>The only algorithms implemented so far are 4 and 8 neighbor q
+     learning.  
+
+
+
+  <P><HR WIDTH = "60%" ALIGN = CENTER></P>
+
+  <H3 ALIGN = CENTER>
+   <A NAME = "IO">Input / Output Interface</A>
+  </H3>
+  
+  <P ALIGN = "CENTER"><IMG SRC = "images/FrameDemoImage.jpg" 
+			   WIDTH = "600"
+			   HEIGHT = "400"
+			   ALT = "Sample InterfaceFrame image"></P>
+
+
+
+  <P><HR WIDTH = "60%" ALIGN = CENTER></P>
+
+  <H3 ALIGN = CENTER>
+   <A NAME = "PROG">Program Structure / Architecture</A>
+  </H3>
+
+  <P>The following is a list of classes for the project, along with
+     specifications, their super class, and links to their present
+     source code.  (You can freely access the html source and compile 
+     the classes directly after removing the first and last lines of 
+     the file.  Note that package statements have been omitted from
+     the source to allow easy access.).
+
+  <P>In addition to these classes, the project contains the interface 
+     <A HREF = "source_html/InterfaceConstants.java.html">InterfaceConstants</A>, 
+     for the Reinforcement Learning Robotic Interface package.  
+     It contains all the programmer-specified constants for the 
+     package, including 
+     <OL>
+      <LI>interface modes</LI>
+      <LI>required bounds (in pixels) of frames and graphic components</LI>
+      <LI>colors, borders and other GUI specifications</LI>
+      <LI>default start-up values for robots and mazes</LI>
+      <LI>strings for image files and hyperlinks</LI>  
+     </OL>
+     Every concrete class in the package implements InterfaceConstants.
+     The three abstract classes: Robot, Experiment, and Maze can be used in
+     other projects, perhaps as extensions.  They are the core classes to extend
+     for expanding the capabilities of the Reinforcement Robotic Interface.</P>
+
+  <P>Note that some classes are implemented by native code in conjunction with
+     the <A HREF = "http://java.sun.com/products//jdk/1.2/docs/guide/jni/index.html">
+     Java Native Interface</A>.</P>
+
+  <P>All robot code is written in Interactive C, for the MIT Handy Board.
+     <A HREF = "source_html/HandyBoard.c.html">HandyBoard.c</A> is the implementation
+     of receiver/transmitter communication from the Handy Board's side.
+     Note that motor and sensor code have not been added.  A possible way to 
+     control the stepper motor using software is presented in 
+     <A HREF = "source_html/StepperMotor.c.html">StepperMotor.c</A>, which was found
+     in Peter Harrison's 
+     <A HREF = "http://www.cctc.demon.co.uk/stepper.htm">web site</A>.
+     The computer/board communication has been tested; optimizations for speed, 
+     however, have not yet been made.  We hope to increase the baud rate for 
+     the communication for CamRobot and decrease the delay time on the computer's
+     side.  A version of the code for the LineRobot is working.  Specifically, we
+     can command the old line robot directly and show its status and position
+     in the Interface Frame.</P>
+
+  <P><TABLE BORDER = 1
+	    CELLPADDING = 5
+	    ALIGN = CENTER
+	    SUMMARY = "First column: Class; Second column: Description;
+		       Third column: Super class">
+      <TR>
+       <TH>Class</TH>
+       <TH>Description</TH>
+       <TH>Extends</TH>
+      </TR>
+      <TR>
+       <TD><A HREF = "source_html/AboutDialog.java.html">
+            AboutDialog
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           A modal dialog that provides product information about the 
+           reinforcement learning robotic interface package.  It also 
+           contains links to documentation on Java and the interface 
+           package on the web.</TD>
+       <TD>javax.<BR>swing.<BR>JDialog</TD>
+      </TR>
+      <TR>
+       <TD><A HREF = "source_html/AlgorithmOptionPane.java.html">
+            AlgorithmOptionPane
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           An opaque panel that obtains the name of the preferred algorithm
+           from the user via a set of radio buttons.  At present, only
+           q learning is supported, but extensions for new algorithms 
+           have been made.</TD>
+       <TD>javax.<BR>swing.<BR>JPanel</TD>
+      </TR>
+      <TR>
+       <TD><A HREF = "source_html/CamRobot.java.html">
+            CamRobot
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           An implementation of Robot capable of moving an arbitrary number
+           of steps and rotating an arbitary number of degrees.  It
+           has a camera mounted on the robot and four proximity
+           sensors that return an integer describing the distance of
+           the nearest obstacle in four different directions. 
+           Implementation in native code is found in
+	   <A HREF = "source_html/CamRobot.c.html">CamRobot.c</A> and
+	   <A HREF = "source_html/CamRobot.h.html">CamRobot.h</A>.</TD>
+       <TD>Robot</TD>
+      </TR>
+      <TR>
+       <TD><A HREF = "source_html/Camera.java.html">
+            Camera
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           An Object that can grab image from the Imaging Modular Vision 
+           system.  It can also describe obstacles detected by the 
+           camera.  Implementation in native code is found in
+           <A HREF = "source_html/Camera.c.html">Camera.c</A> and
+           <A HREF = "source_html/Camera.h.html">Camera.h</A>.</TD>
+       <TD>java.<BR>lang.<BR>Object</TD>
+      </TR>
+      <TR>
+       <TD><A HREF = "source_html/CommandModeDialog.java.html">
+            CommandModeDialog
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           A modal dialog containing setup preferrences for a robot command
+           mode session.  It allows robot type selection and maze 
+           characterization (width, height, start and goal
+           coordinates), but not obstacle initialization.</TD>
+       <TD>TabbedDialog</TD>
+      </TR>
+      <TR>
+       <TD><A HREF = "source_html/DirectionVector.java.html">
+            DirectionVector
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           An eight dimensional vector containing double values for the eight
+           directions in the order (North, Northeast, East, Southeast, South, 
+           Southwest, West, Northwest).  The structure can also give
+           the maximum of the direction values without sorting by keeping 
+           track of a max value variable.</TD>
+       <TD>java.<BR>lang.<BR>Object</TD>
+      </TR>
+      <TR>
+       <TD>abstract <A HREF = "source_html/Experiment.java.html">
+                     Experiment
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           An abstract class for running robotic experiments.  It holds an 
+           instance of Robot and specifies methods that control the
+           flow of the experiment by calling the robot (experimental 
+           initiation should take place in the subclass's constructor).</TD>
+       <TD>java.<BR>lang.<BR>Object</TD>
+      </TR>
+      <TR>
+       <TD><A HREF = "source_html/ExperimentFileChooser.java.html">
+            ExperimentFileChooser
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           A modal file chooser for opening and saving robotic 
+           experiment files.  At present the only active file filter 
+           implemented are for ".qre" files which record experiment 
+           statistics for continuing q learning robotic experiments.</TD>
+       <TD>javax.<BR>swing.<BR>JFileChooser</TD>
+      </TR>
+      <TR>
+       <TD><A HREF = "source_html/ExplorerFrame.java.html">
+            ExplorerFrame
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           A resizable and movable internal frame that captures the 
+           live view of the maze from the robot's perspective.  For a 
+           CamRobot, this is implemented by the camera mounted
+           directly on the robot.  The frame also contains tool bars 
+           for commanding the robot during a command mode session.</TD>
+       <TD>javax.<BR>swing.<BR>JInternalFrame</TD>
+      </TR>
+      <TR>
+       <TD><A HREF = "source_html/HistoryTableModel.java.html">
+            HistoryTableModel
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           A data model for the status frame that displays robot status 
+           and experiment progress statistics.  It can be modified to 
+           display different types of information for different 
+           interface modes.</TD>
+       <TD>javax.<BR>swing.<BR>table.<BR>AbstractTableModel</TD>
+      </TR>
+      <TR>
+       <TD><A HREF = "source_html/InterfaceFrame.java.html">
+            InterfaceFrame
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           The main frame for the Reinforcement Learning Robotic Interface 
+           package.  It has a menu bar for selecting new experiments, 
+           command mode sessions, or simulations, for saving
+           experiments, and for displaying help information.  It 
+           contains a back ground image and three internal frames: 
+           explorer frame, status frame, and maze frame.  It also 
+           contains references to Robot, RectMaze, and Experiment
+           objects, which are passed between the internal frames, the 
+           initialization dialogs, and the interface frame itself.</TD>
+       <TD>javax.<BR>swing.<BR>JFrame</TD>
+      </TR>
+      <TR>
+       <TD><A HREF = "source_html/LineRobot.java.html">
+            LineRobot
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           An implementation of Robot capable of moving in a grid by
+           using line sensors to detect gird lines on a rectangular maze.
+           It can be monitored via an overhead camera.  Implementation in
+           native code is found in 
+           <A HREF = "source_html/LineRobot.c.html">LineRobot.c</A> and
+           <A HREF = "source_html/LineRobot.h.html">LineRobot.h</A>.</TD>
+       <TD>Robot</TD>
+      </TR>
+      <TR>
+       <TD>abstract <A HREF = "source_html/Maze.java.html">
+                     Maze
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           An abstract class that encapsulates the notion of a 
+           2-dimensional space with specific goal coordinates.  It keeps 
+           track of the start and goal coordinates for a search through 
+           the abstract maze space and specifies methods for placing 
+           and displacing obstacles.</TD>
+       <TD>java.<BR>lang.<BR>Object</TD>
+      </TR>
+      <TR>
+       <TD><A HREF = "source_html/MazeFrame.java.html">
+            MazeFrame
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           A resizable and movable internal frame that provides a 
+           real-time, live view of the maze from an overhead
+           perspective.  The robot, maze, start and goal coordinates, 
+           obstacles, and search path are illustrated as the experiment 
+           or command mode session takes place in real time.</TD>
+       <TD>javax.<BR>swing.<BR>JInternalFrame</TD>
+      </TR>
+      <TR>
+       <TD><A HREF = "source_html/MazeOptionPane.java.html">
+            MazeOptionPane
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           An opaque panel that obtains the maze size, start coordinates, 
+           and goal coordinates from the user via a set of text fields.  
+           It modifies the RectMaze passed in through the constructor 
+           directly and provides action-based error checking.</TD>
+       <TD>javax.<BR>swing.<BR>JPanel</TD>
+      </TR>
+      <TR>
+       <TD><A HREF = "source_html/MazePane.java.html">
+            MazePane
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           A graphic component that illustrates the progress of the robot
+           in real time.  In a simulation session, the obstacles are 
+           pre-drawn on the maze; otherwise, obstacles are drawn as 
+           they are discovered.</TD>
+       <TD>javax.<BR>swing.<BR>JPanel</TD>
+      </TR>
+      <TR>
+       <TD><A HREF = "source_html/NewExperimentDialog.java.html">
+            NewExperimentDialog
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           A modal dialog containing setup preferrences for a new robotic
+           experiment.  It allows robot type selection, maze 
+           characterization (width, height, start and goal coordiantes), 
+           algorithm selection, algorithm specification, but not 
+           obstacle initialization.</TD>
+       <TD>TabbedDialog</TD>
+      </TR>
+      <TR>
+       <TD><A HREF = "source_html/ObstacleOptionPane.java.html">
+            ObstacleOptionPane
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           An opaque panel that obtains the obstacle coordinates from 
+           the user during simulation session initialization.  It 
+           contains a graphic panel which recieves input from the user
+           in the form of mouse clicks and displays the current
+           selection in a label.</TD>
+       <TD>javax.<BR>swing.<BR>JPanel</TD>
+      </TR>
+      <TR>
+       <TD><A HREF = "source_html/ObstacleSelectionPane.java.html">
+            ObstacleSelectionPane
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           A graphic component that illustrates the placement and 
+           displacement of obstacles in a simulation session initialization.  
+           It draws obstacles as the user clicks on a grid, checking for 
+           errors dynamically as they occurr.</TD>
+       <TD>javax.<BR>swing.<BR>JPanel</TD>
+      </TR>
+      <TR>
+       <TD><A HREF = "source_html/QLearningExperiment.java.html">
+            QLearningExperiment
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           An implementation of Experiment for used in a 4 or 8 neighbor 
+           Q Learning reinforcement experiment or simulation.  It 
+           controls the flow of the experiment by calling its Robot 
+           object to perform actions and updating the q values via 
+           its QLearningRectMaze object.  Specifically, the action 
+           taken during each robot state is randomly selected with
+           respect to the q values for each possible action:
+	   <P>
+           P(ai | s) = (k ^ Q(s, ai)) / (sum over j (k ^ Q(s, aj)))
+	   </P>
+           where the probability of taking the action ai at state s 
+           is calculated from the user-specified exploitation factor k 
+           greater than 0, and the q values for each action at state s. 
+           As k increases, the equation favors actions with high q 
+           values more and more.  Note that when k = 1 or when 
+           Q(s, ai) = 0 for all ai, the calculated probability for 
+           taking any available action ai are the same.</TD>
+       <TD>Experiment</TD>
+      </TR>
+      <TR>
+       <TD><A HREF = "source_html/QLearningOptionPane.java.html">
+            QLearningOptionPane
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           An opaque panel that obtains data from the user specifying the 
+           q learning experiment parameters: number of neighbors,
+           number of trials, goal reinforcement, discount factor, 
+           exploitation factor, etc.  It performs action-based error 
+           checking on the user input.</TD>
+       <TD>javax.<BR>swing.<BR>JPanel</TD>
+      </TR>
+      <TR>
+       <TD><A HREF = "source_html/QLearningRectMaze.java.html">
+            QLearningRectMaze
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           A subclass of RectMaze that supports q learning experiments.  
+           It keeps track of q values for all possible state actions,
+           previous headings and coordinates, and the number of times 
+           a state action has occurred.  It can updates its state
+           action table and q value table.  Q values are updated by 
+           treating the experiment as a nondeterministic Markov
+           Decision Process, with the update rule:
+	   <P>
+           Qn(s, a) = (1 - X) * Qn-1(s, a) + X(r + d * max (Qn-1(s', a')))
+	   </P>
+           where the Q value at state s while taking the action a is 
+           computed from X (the learning rate, which depends on the
+           number of times the specific state action has occurred), r 
+           (the reinforcement value associated with the state), Qn-1 
+           (the previos q value at s), d (discount factor between 0
+           and 1), and the maximum of the q values at the the new
+           state s'.</TD>
+       <TD>RectMaze</TD>
+      </TR>
+      <TR>
+       <TD><A HREF = "source_html/ReadmeDialog.java.html">
+            ReadmeDialog
+           </A></TD>
+       <TD><FONT SIZE = 2>
+           A modal dialog that brins the interface readme into the program
+           by accessing its URL.  It also allows the user to browse 
+	     through the javadoc documentation.</TD>
+       <TD>javax.<BR>swing.<BR>JDialog</TD>
+      </TR>
+      <TR>
+       <TD><A HREF = "source_html/RectMaze.java.html">
+            RectMaze
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           An implementation of Maze that represents a rectangular
+           maze with square cells that are either obstacles or free
+           cells.  It also keeps track of the current position of the 
+           target within the grid and performs error checking on
+           attempts to modify the maze.</TD>
+       <TD>Maze</TD>
+      </TR>
+      <TR>
+       <TD>abstract <A HREF = "source_html/Robot.java.html">
+		     Robot
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           An abstract class that encapsulates the basic
+           functionalities of a movable machine that accepts commands 
+           from the user.  It keeps track of the current heading of
+           the robot as it traverses through a maze.</TD>
+       <TD>java.<BR>lang.<BR>Object</TD>
+      </TR>
+      <TR>
+       <TD><A HREF = "source_html/RobotOptionPane.java.html">
+            RobotOptionPane
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           An opaque panel that obtains the type of robot to be used
+           for the experiment from the user.  At present only line 
+           robot and camera robot are supported, both of which are 
+           quite specific in their functionality, and both are 
+           implemented via a subclass of Robot.  A better
+           implementation would involve identifying the components of 
+           the robot and specifying their attributes during experiment 
+           initialization.</TD>
+       <TD>javax.<BR>swing.<BR>JPanel</TD>
+      </TR>
+      <TR>
+       <TD><A HREF = "source_html/StatusFrame.java.html">
+            StatusFrame
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           A resizable and movable internal frame that keeps track of the 
+           status of the robot and maze characteristics in a history table.
+           It displays different types of information for different 
+           interface modes (simulation, experiment, command).</TD>
+       <TD>javax.<BR>swing.<BR>JInternalFrame</TD>
+      </TR>
+      <TR>
+       <TD><A HREF = "source_html/TabbedDialog.java.html">
+            TabbedDialog
+	   </A></TD>
+       <TD><FONT SIZE = 2>
+           A general purpose dialog window with finite number of tabs and 
+           two buttons (ok and cancel).  Its subclasses are used to obtain
+           user input during experiment, simulation, and command mode 
+           initialization.</TD>
+       <TD>javax.<BR>swing.<BR>JDialog</TD>
+      </TR>
+     </TABLE></P>
+
+
+
+  <P><HR WIDTH = "60%" ALIGN = CENTER></P>
+
+  <H3 ALIGN = CENTER>
+   <A NAME = "REF">References</A>
+  </H3>
+
+  <P><UL>
+      <LI>Mitchell, Tom.  
+          <A HREF = "http://www.cs.cmu.edu/~tom/mlbook.html">Machine Learning</A>.  
+          McGraw-Hill, 1997.  Ch 13.<BR>
+          Introduces QLearning theory and heuristics such as probability algorithms
+	  for selection of the next action and simple algorithms for balancing
+	  exploitation and exploration in a real experiment.</LI>
+      <LI>Jain, Ramesh.  And Rangachar Kasturi, Brian G. Schunck.
+          <A HREF = "http://www.computer.org/cspress/CATALOG/rs00060.htm">Machine Vision</A>.
+          McGraw-Hill, 1995.  Ch 3.<BR>
+          Overview of simple thresholding algorithms for detecting obstacles in 
+	  different situations; for example, when the maze grid size is fixed.</LI>
+      <LI>Jones, Joseph L.  And Bruce A. Seiger, Anita M. Flynn.
+          <A HREF = http://www.acroname.com/robotics/parts/R18-BOOK-1.html">Mobile Robots: Inspiration to Implementation</A>.
+	  2nd Ed.  AK Peters, 1999.  Robot Programming Chapter.<BR>
+          Teaches the art of programming for a mobile robot using a real robot 
+	  example.  Uses and teaches the Interactive C paradigm.</LI>
+      <LI>Martin, Fred.  
+          <A HREF = "http://el.www.media.mit.edu/groups/el/projects/handy-board/techdocs/index.html">The Handy Board Technical Reference</A>.
+          Availabe Online.<BR>
+	  Details on Handy Board library functions, usage of Interactive C programming
+	  language, components of the Handy Board, etc.</LI>
+      <LI>Motorola.
+	  <A HREF = "http://www.mot-sps.com/lit/html/mc68hc11a8rgad.html">Motorola 68HC11 Porgramming Reference Guide</A>.
+	  Available Online.<BR>
+	  Handy reference for the motorola chip used in the Handy Board, including
+	  address locations of control bits and other assembly programming necessities.</LI>
+      <LI>Kernighan, Brian.  And Dennis Ritchie.
+          <A HREF = "http://cm.bell-labs.com/cm/cs/cbook">The C Programming Language</A>.
+          Prentice Hall, 1988.  Ch 7, 8.<BR>
+	  Describes the Unix system interface and the use of C to read and write
+	  to the serial port on an Unix machine.  Also describes files, file pointers,
+	  and related technology for using data files to debug code.</LI>
+      <LI>Campione, Mary.  And Kathy Walrath.
+	  <A HREF = "http://java.sun.com/docs/books/tutorial/index.html">The Java Tutorial</A>.
+	  2nd Ed. Addison-Wesley, 1998.  GUI section.<BR>
+	  Gives the details of Swing/JFC GUI programming.  Look specifically at the 
+	  Java2D API for drawing the robot image, JNI for native interface implementatins,
+	  and Essential Java Classes for discussion of file streams and strings.</LI>
+      <LI>Austin, Calvin.  And Monica Pawlan.
+          <A HREF = "http://developer.java.sun.com/developer/onlineTraining/Programming/JDCBook/index.html">Advanced Programming for the Java 2 Platform</A>.
+          Available Online.  Ch 5 - 6.<BR>
+	  An overview of various Java essentials for advanced GUI building, Java Native
+	  Interface, and performance issues.</LI>
+     </UL></P>
+
+
+
+  <P><HR WIDTH = "60%" ALIGN = CENTER></P>
+
+  <H3 ALIGN = CENTER>
+   <A NAME = "DOC">Documentation</A>
+  </H3>
+
+  <P>The Java2 API is available 
+     <A HREF = "http://java.sun.com/products/jdk/1.2/docs/api/index.html">
+      here
+     </A>.<BR> 
+     The documentation API for the Reinforcement Learning Robotic 
+     interface package is 
+     <A HREF = "api/index.html">
+      also available
+     </A>.<BR>
+     An overview of the inheritance hierarchy for the project is
+     <A HREF = "api/overview-tree.html">
+      here
+     </A>.</P>
+
+  <P><ADDRESS>
+      For more information, please contact:<BR>
+
+      <A HREF = "mailto:pleang@vislab.ucr.edu">
+       Pat Leang
+      </A>
+      , for questions regarding the transmitter / receiver, 
+      motor, sensor, encoder and handy board-related code<BR>
+
+      <A HREF = "mailto:rluo@boxfrog.com">
+       Ray Luo
+      </A>
+      , for questions regarding the interface GUI, and communication 
+      between robot, computer, and camera<BR>
+   
+      <A HREF = "mailto:tdinh@vislab.ucr.edu">
+       Thuan Dinh
+      </A>
+      , for questions regarding the camera and the vision 
+      processing algorithm<BR>
+   
+      <A HREF = "mailto:swong@vislab.ucr.edu">
+       Steve Wong
+      </A>
+      , for questions regarding the testing code<BR>
+     </ADDRESS></P>
+
+
+
+  <P><HR WIDTH = "60%" ALIGN = CENTER></P>
+
+  <P>Created by Ray Luo</P>
+
+
+
+</td></tr></table>
+
+<!-- End. -->
+
+<table width=640 cellpadding=0 cellspacing=0 align=center>
+<tr><td bgcolor=#ffffff><br></td></tr></table>
+
+<table width=640 cellpadding=0 cellspacing=0 align=center>
+<tr><td bgcolor=#555555 align=right>
+<font face="courier new" size=2 color=#dddddd>
+<a href="../index.html"><font color=#dddddd>up</a> |
+<a href="#top"><font color=#dddddd>top</a> &nbsp
+</td></tr></table>
+
+</body>
+</html>

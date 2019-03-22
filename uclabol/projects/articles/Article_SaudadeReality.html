@@ -1,0 +1,331 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+    
+    
+    <title>The Daily Bruin - A bittersweet combination of techniques </title>
+    
+    
+    <link type="text/css" media="screen" rel="stylesheet" href="http://media.dailybruin.com/dailybruin/css/global.css" />
+    <link rel="stylesheet" href="http://media.dailybruin.com/dailybruin/css/story.css" type="text/css" media="screen" />
+    
+    
+    <!-- Tabbed interface -->
+    <script type="text/javascript" src="http://media.dailybruin.com/dailybruin/js/base.js"></script>
+    <script type="text/javascript" src="http://img.video.ap.org/p/j/apovn.js "></script>
+    <script type="text/javascript">
+        function vAlign(elements){
+            height = elements[0].getCoordinates().height;
+            for (i=1; i < elements.length; i++) {
+                if (elements[i].getCoordinates().height > height)
+                    height = elements[i].getCoordinates().height;
+            }
+            for (i=0; i < elements.length; i++) {
+                elements[i].setStyle('height', height+'px');
+            }
+        };
+        window.addEvent('domready', function(){            
+            info_tabs = new tabSwapper({
+                selectedClass: 'active',
+                deselectedClass: '',
+                tabSelector: '#info_tabs li',
+                clickSelector: '#info_tabs li a',
+                sectionSelector: '#info_tabs div',
+                /*remember what the last tab the user clicked was*/
+                cookieName: 'DailyBruinTabbedBox',
+                /*use transitions to fade across*/
+                smooth: false
+            });
+            info_tabs.swap(0);
+            
+            classified_tabs = new tabSwapper({
+                selectedClass: 'active',
+                deselectedClass: '',
+                tabSelector: '#classifieds_tabs li',
+                clickSelector: '#classifieds_tabs li a',
+                sectionSelector: '#classifieds_tabs div',
+                cookieName: 'DailyBruinTabbedBox',
+                smooth: false
+            });
+            classified_tabs.swap(0);
+        });
+    </script>
+    <script type="text/javascript" src="http://media.dailybruin.com/dailybruin/js/tsr.js"></script>
+    <!-- Navigation -->
+    <script type="text/javascript" src="http://media.dailybruin.com/dailybruin/js/navigation.js"></script>
+    
+    
+    
+</head>
+<body>
+<a name="top"></a>
+<div id="page"><!-- http://media.dailybruin.com/dailybruin/ -->
+<div id="header">
+    <span style="float: right;">
+<script type='text/javascript'><!--//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://ads.studentmedia.ucla.edu/www/delivery/ajs.php':'http://ads.studentmedia.ucla.edu/www/delivery/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=1");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><noscript><a href='http://ads.studentmedia.ucla.edu/www/delivery/ck.php?n=a7cee6a5&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://ads.studentmedia.ucla.edu/www/delivery/avw.php?zoneid=1&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a7cee6a5' border='0' alt='' /></a></noscript>
+    </span>
+    <div id="navi_top" style="clear: both;">
+        <div id="navi_top_left"></div>
+        <div id="navi_top_right">
+        <!--<a href="/accounts/login/">Login</a> | <a href="/accounts/register/">Register</a>-->
+        
+        </div>
+    </div>
+    <div id="logo"><a href="/"><img src="http://media.dailybruin.com/dailybruin/img/logo5.gif" id="banner" width="500px" height="64px" alt="Daily Bruin" /></a></div>
+</div><!-- END header -->
+
+<ul id="dbnav">
+    
+    
+    
+        <li id="dbnav_news"><a href="/news/">News</a></li>
+    
+        <li id="dbnav_sports"><a href="/news/sports/">Sports</a></li>
+    
+        <li id="dbnav_ae"><a href="/news/ae/">A&amp;E</a></li>
+    
+        <li id="dbnav_viewpoint"><a href="/news/viewpoint/">Viewpoint</a></li>
+    
+        <li id="dbnav_blogs"><a href="/blogs/">Blogs</a></li>
+    
+        <li id="dbnav_archives"><a href="/archives/">Archives</a></li>
+    
+    <!--
+    <li id="dbnav_news"><a href="/news/">News</a>
+        <ul>
+        </ul>
+    </li>
+    <li id="dbnav_sports"><a href="/news/">Sports</a>
+        <ul>
+        </ul>
+    </li>
+    <li id="dbnav_ae"><a href="/news/">A&#38;E</a>
+        <ul>
+        </ul>
+    </li>
+    <li id="dbnav_viewpoint"><a href="/news/">Viewpoint</a>
+        <ul>
+        </ul>
+    </li>
+    <li id="dbnav_blogs"><a href="/blogs/">Blogs</a></li>
+    
+    -->
+    <li id="dbnav_classifieds" title="link to classifieds"><a href="/advertising/classifieds/">Classifieds</a>
+        <ul>
+            <li><a href="http://ucla.personforce.com">Job Board</a></li>
+            <li><a href="/advertising/classifieds/order/">Place a classified ad</a></li>
+        </ul>
+    </li>
+    <li id="dbnav_dbtv" title="link to DB TV"><a href="/dbtv/">DBTV</a>
+        <ul>
+            <li><a href="/dbtv/news/">news</a></li>
+            <li><a href="/dbtv/sports/">sports</a></li>
+            <li><a href="/dbtv/ae/">arts &#38; entertainment</a></li>
+            <li><a href="/dbtv/viewpoint/">viewpoint</a></li>
+        </ul>
+    </li>
+    <li id="dbnav_bruinwalk" title="external link to bruinwalk"><a href="http://www.bruinwalk.com">Bruinwalk</a></li>
+    <li id="dbnav_about" title="about us"><a href="/about/">About Us</a>
+        <ul>
+            <li><a href="/contact/">Contact Us</a></li>
+            <li><a href="/stafflist/">The Staff</a></li>
+            <li><a href="/corrections/">Corrections</a></li>
+            <li><a href="/apply/">Apply to the Daily Bruin</a></li>
+        </ul>
+    </li>
+</ul><!-- END menu -->
+
+<div id="topSpan">
+    <p id="date_today">Thursday, April 2nd, 2009</p>
+    <!--<p style="float: right;">The Daily Bruin has just gone through an exstensive overhaul, please bear with us as we continue improving the site!</p>-->
+</div>
+    
+<div id="content">
+
+
+<div id="columnLeft">
+    <div id="storyDetail">
+        
+
+        <h1>A bittersweet combination of techniques </h1>
+        <h3>David Rousseve’s ‘Saudade’ merges genres and cultures to explore the meaning of life through stories of the history of the South</h3>
+        
+        <ul class="byline">
+          
+          
+          <li>By 
+              <a href="/staff/ray-luo/">Ray Luo</a>
+              
+          </li>
+          
+          
+          
+          <li class="updated_date">Updated: Monday, March 30, 2009 at 8:46 p.m.</li>
+          <li class="date">Published: Monday, March 30, 2009</li>
+        </ul>
+        <div id="storyText">
+            <div id="storyTools">
+                <ul>
+                    <li id="print"><a href="/stories/2009/mar/30/bittersweet-combination-techniques/print/" target="_blank">printer friendly</a></li>
+                    <li id="email"><a href="" target="_blank">mail this article</a></li>
+                    <li id="ipod"><a href="/stories/2009/mar/30/bittersweet-combination-techniques/ipod/" target="_blank">iPod format</a></li>
+                    <li id="digg"><a href="http://digg.com/submit?phase=2&url=http://www.dailybruin.com/stories/2009/mar/30/bittersweet-combination-techniques/&title=A%20bittersweet%20combination%20of%20techniques%20&bodytext=David%20Rousseve%E2%80%99s%20%E2%80%98Saudade%E2%80%99%20merges%20genres%20and%20cultures%20to%20explore%20the%20meaning%20of%20life%20through%20stories%20of%20the%20history%20of%20the%20South" class="digg">digg</a></li>
+                </ul>
+                <!--<div class="inline">--><!--Inlines!--><!--</div>-->
+            </div>
+            
+
+
+
+<div class="inline image" style="width: 550px;">
+    <a href="http://media.dailybruin.com/dailybruin/img/2009/mar/31/web.ae.3.30.rousseve.picA.jpg" target="_blank"><img src="http://media.dailybruin.com/dailybruin/img/2009/Mar/31/web.ae.3.30.rousseve.picA_jpg_550x346_autocrop_q100.jpg" /></a>
+    
+    <p class="caption">UCLA Live will showcase David Rousseve and his REALITY dance troupe in a performance titled “Saudade” through next Sunday. Rousseve brings several cultures and genres of dance together in the piece.</p>
+    
+</div><p >Dance maker David Rousseve was inspired for his piece �Saudade� after attending his father�s funeral in his native Louisiana.</p><p >�At the funeral, everybody was genuinely ecstatic that (my father) crossed over to a better place, and also really in grief that he had died,� said Rousseve, a world arts and cultures professor. �I thought that that duality says something interesting about life, and certainly life as I learned as a Southern African American.�</p><p >He communicates this universal feeling of bittersweetness through a combination of dance, text, video, narrative and raw emotion in �Saudade,� a performance led by his multidisciplinary and multicultural group, REALITY, and running at the Freud Playhouse from April 1 to April 5 through UCLA Live.</p><p >Rousseve brings expertise from different genres and cultures of dance together to create an innovative yet accessible work that probes the meaning of life by telling the stories of African Americans in the history of the South.</p><p >To show such a dichotomy in experience, Rousseve employs an interdisciplinary design that blends video projection, Portuguese Fado music, and stories of six characters from diverse backgrounds in what he calls a soup for conversation bittersweetness.</p><p >The collection of stories include one about a slave from the South who pays a huge price to learn how to write. Another is about a man who gets his comfort in the harsh world from petting his cat. Yet another tale is about a woman who survives Hurricane Katrina in a time when all those around her are dying.</p><p >“The narrative is not linear,” said Sri Susilowati, a 2003 UCLA MFA graduate and a performer in “Saudade.” “At the end you’ll understand the whole thing. ... It’s not just cutting and pasting different techniques, but incorporating techniques into what the dance is about.”</p><p >As an example, Susilowati gives a sequence in “Saudade” in which each character is dancing faster and faster as they scream at each other to continue. Susilowati, who has a background in Indonesian dance and her own dance company called Sri Dance Company, creates a Balinese dance phrase, which is sculpted and re-envisioned by Rousseve.</p><p >“All the dancers in this piece are graduates of WAC at UCLA, and they’re all interested in issues like the intersection between world cultures and post-modern dance,” Rousseve said. “The most important thing is that they’re all choreographers in their right, so they all know what it’s like to take risks and create really original material.”</p><p >Another dancer who created her own original material for “Saudade” is Nehara Kalev, a 2005 UCLA MFA graduate who forms the center of the fast-paced group routine described earlier. She has a background in gymnastics and acrobatics, which Rousseve utilizes to full effect by challenging her to give an extremely fast-paced rendition of her own original creation.</p><p >“Dancing is associated with being fully alive,” Kalev said. “What we’re exploring here is what happens when you dance so much and so fast (that) you’re dancing yourself to death.”</p><p >Kalev brings her own unique brand of aerial dance and improvisation to a group performance that she feels is best captured by the idea of layering. Literal text is layered upon an abstraction of cultural histories, and when they are combined with Fado music and the unique use of technology, the result is a work that may be difficult to understand at times.</p><p >However, Rousseve is here to make sure the audience doesn’t get lost. One way he does this is by appearing periodically onstage as a storyteller whose engaging and funny monologues relate to the different stories. Thus he serves as a guide to the journey that the audience experiences in bittersweetness. <br ></br>“I like to give people stepping stones that are very clear, but once they’re engaged, push them to view the world in a different way,” Rousseve said.</p><p > “People who see the piece have been taking the text to be the spine of the piece, but the dance audience have been responding more to the movement, so we’re hoping that there’re enough ways to find your way to the piece (to make it engaging).”</p><p >The diversity of influences and perspectives in “Saudade” is reflective of the World Arts and Cultures program at UCLA, which attracts students by being one of the only programs in America to offer such a unique interdisciplinary approach to dance.</p><p >“When I moved to the U.S. to continue my training, I found it hard for non-Western dancers to get a choreography degree in America without changing their technique into Western dance like modern dance and ballet,” Susilowati said.</p><p >Yet, in order to be interdisciplinary, Rousseve thinks that one must give something up, be it a style, technique or a way of thinking.</p><p >For Susilowati and Kalev, the thing to give up is not their original training in Indian cultural dance and physical acrobatics, but the classical Western elements that can make all dances rather uniform. It is this combination of influences that Rousseve thinks is the future of dance, and which the WAC program at UCLA hopes to achieve.</p><p >Rousseve hopes that we take away from the work not just an appreciation of the diversity of cultural influences that goes into dance and performance, but also questions about our own lives: why we’re on the planet and what may be the meaning of life.</p><p >“The structure of the piece is a metaphor for life,” Rousseve said. “I talk to the audience downstage at the beginning of the show. ... Then I spend an hour and a half speaking as different (person), never as myself, moving closer and closer to the audience, until at the end of the piece, I once again become vulnerable enough to once again speak to them as myself.”</p>
+        </div>
+        
+    </div>
+</div><!-- END columnLeft -->
+
+<!-- Contains: DBTV Video Box, Recent Box, Text Ads and Coupons -->
+
+<div id="columnRight">
+    <div id="searchBox" class=rod><form action="/search/" method="get"><input type="text" name="q" size="30" value="search daily bruin"   onfocus="if(this.value==this.defaultValue) this.value='';"></form></div>
+        
+    <div id="info_tabs" class="domtab hBorderTop">
+        <ul class="domtabs recent">
+            <li><a>Most viewed</a></li>
+            <li><a>Most e-mailed</a></li>
+            <li><a>Recently blogged</a></li>
+        </ul>
+        <div class="reg_tab">
+            <a name="t1" id="t1"></a>
+            <dl class="most_viewed">
+            
+            <dt><a href="/stories/2009/apr/2/emrejected-applicants-appeal-decisionsem/"><em>Rejected applicants appeal decisions</em></a></dt>
+            <dt><a href="/stories/2009/apr/2/dining-halls-begin-go-beef-less-thursdays/">Dining halls begin to go beef-less on Thursdays</a></dt>
+            <dt><a href="/stories/2009/apr/2/jazzed-about-ellingtons-legacy/">Jazzed about Ellington’s legacy</a></dt>
+            <dt><a href="/stories/2009/apr/2/students-push-ethnic-recognition/">Students push for ethnic recognition</a></dt>
+            <dt><a href="/stories/2009/apr/1/priority-enrollment-numbers-drop/">Priority enrollment numbers to drop</a></dt>
+    
+</dl>
+        </div>
+        <div class="reg_tab" style="display: none">
+            <a name="t2" id="t2"></a>
+            
+        </div>
+        <div class="reg_tab" style="display: none">
+            <a name="t3" id="t3"></a>
+            <dl class="recent_blogged">
+                
+                <dt class="item1">Sophie He</dt>
+                <dd><a href="/blogs/crimewatch-blog/2009/apr/2/crimewatch-april-2-2009/">Crimewatch - April 2, ...</a></dd>
+                <dt class="item2">Sarah Jo</dt>
+                <dd><a href="/blogs/heres-looking-at-usac/2008/apr/29/ballot-approved-osac-discussion-tabled/">Ballot approved, OSAC discussion ...</a></dd>
+                <dt class="item3">Kimberly Young</dt>
+                <dd><a href="/blogs/heres-looking-at-usac/2007/feb/7/usac-identifies-key-issues/">USAC identifies key issues</a></dd>
+                <dt class="item4">Sam Allen</dt>
+                <dd><a href="/blogs/ball-quarter/2008/oct/11/on-the-road-eugene-oregon/">On the Road- Eugene, ...</a></dd>
+            </dl>
+       </div>
+    </div>
+
+    <div class="vText">
+        <div class="TextAdCoupon"><a target="_blank" href="http://www.healthinsuranceapplication.com/california-health-insurance/">California Health Insurance</a><br /></div>
+        <div class="TextAdCoupon"><a target="_blank" href="http://www.creditscorecowboy.com/">Free Credit Report</a><br /></div>
+        <div class="TextAdCoupon"><a target="_blank" href="http://www.globalcomsatphone.com/hughesnet/">Satellite Internet</a><br /></div>
+        <div class="TextAdCoupon"><a target="_blank" href="http://www.condomman.com">Condoms</a><br /></div>
+        <div class="TextAdCoupon"><a target="_blank" href="http://www.web-host-coupons.com/lunarpages-coupon.php">Lunarpages Coupon</a><br /></div>
+        <div class="TextAdCoupon"><a target="_blank" href="http://www.freedomdebtrelief.com">Debt Relief Options</a><br /></div>
+        <div class="TextAdCoupon"><a target="_blank" href="http://www.cheapflights.com/">airline tickets</a><br /></div>
+        <div class="TextAdCoupon"><a target="_blank" href="http://www.healthplanone.com/healthinsurancecarriers/tonik/">Tonik Student Health Insurance</a><br /></div>
+        <div class="TextAdCoupon"><a target="_blank" href="http://hotels.vibeagent.com">Hotels</a><br /></div>
+        <div class="TextAdCoupon"><a target="_blank" href="http://la.americangolf.com/">Los Angeles Golf Courses</a><br /></div>
+        <div class="TextAdCoupon"><a target="_blank" href="http://www.inkhead.com">Promotional Products</a><br /></div>
+        <div class="TextAdCoupon"><a target="_blank" href="http://www.myspacemaster.net">myspace layouts</a><br /></div>
+        <div class="TextAdCoupon"><a target="_blank" href="http://www.travelersthoughts.com">Travel Thoughts</a><br /></div>
+        <div class="TextAdCoupon"><a target="_blank" href="http://www.goldpaq.com">Sell  Gold</a><br /></div>
+        <div class="TextAdCoupon"><a target="_blank" href="http://mortgagesmodification.com">California Debt Settlement & Foreclosure Help</a><br /></div>
+        
+    <span style="padding-top: 10px; padding-bottom: 5px;"><a href="http://www.playhpc.com/ads/ucla-jacket.html"><img src="http://128.97.251.217:8080/img/ads/graphic/2009/03/11/hpc_side-button.jpg" width="212" height="150" alt="HPC Winter 09 Button" /></a></span>
+    <span style="padding-top: 5px; padding-bottom: 5px;"><!-- No ad was found with that ID --></span>
+    <span style="padding-top: 5px; padding-bottom: 5px;"><!-- No ad was found with that ID --></span>
+    <span style="padding-top: 5px; padding-bottom: 10px;"><!-- No ad was found with that ID --></span>
+
+        <script type="text/javascript"><!--
+        google_ad_client = "pub-9018387847278529";
+        google_ad_width = 160;
+        google_ad_height = 600;
+        google_ad_format = "160x600_as";
+        google_ad_type = "text";
+        //2006-11-10: DailyBruin:General
+        google_ad_channel = "6267586096";
+        google_color_border = "FFFFFF";
+        google_color_bg = "FFFFFF";
+        google_color_link = "FFFFFF";
+        google_color_text = "444444";
+        google_color_url = "325397";
+        //--></script>
+        <script type="text/javascript"
+          src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+        </script>
+        
+        <div id="advertising_links" class="hidden">
+            <div id="advertising_links" class="hBorderBottom">
+                <h3>Advertising Links</h3>
+            </div>
+
+            <p><a href="/advertising/classifieds/list/">See All Classifieds</a></p>
+            <p><a href="/advertising/coupons/">See All Coupons</a></p>
+            <p><a href="/advertising/graphicads/">See All Graphic Ads</a></p>
+            <p><a href="/advertising/textads/">See All Text Ads</a></p>
+        </div>
+    </div><!--END vText-->
+</div><!--END columnRight -->
+
+
+</div><!-- END content -->
+
+<div id="footer">
+    <div id="footer_logo">
+        <a href="http://www.studentmedia.ucla.edu/"><img src="http://media.dailybruin.com/dailybruin/img/icons/student_media_logo.gif" alt="footer" /></a>
+    </div>
+    <div id="footer_links">
+        <a href="/advertising/"><img src="http://media.dailybruin.com/dailybruin/img/icons/famfamfam_onBlack/information.gif" alt="advertise" width="16px" height="16px" />&#32;advertise</a><br />
+        <a href="/contact/"><img src="http://media.dailybruin.com/dailybruin/img/icons/famfamfam_onBlack/comments.gif" alt="contact" width="16px" height="16px" />&#32;contact us</a><br />
+        <a href="#top"><img src="http://media.dailybruin.com/dailybruin/img/icons/famfamfam_onBlack/arrow_up.gif" alt="top of page" width="16px" height="16px" />&#32;top of page</a><br />
+    </div>
+    <div id="footer_content">
+        <p>© 2007 <a href="http://www.studentmedia.ucla.edu/">ASUCLA Student Media</a></p>
+    </div>
+</div><!-- END footer -->
+
+</div><!-- END page -->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-948905-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+</body>
+</html>
