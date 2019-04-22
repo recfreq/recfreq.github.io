@@ -1,0 +1,86 @@
+* {
+/*	border: 1px solid rgba(0, 0, 0, 0.3);
+*/}
+body {
+    background-image: url("images/background01.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+	background-color: black;
+	font-family: "Fantasy", sans-serif;
+	font-size: 100%;
+    color: white;
+}
+@font-face {
+	font-family: "Fantasy";
+	src: url("lib/Final-Fantasy.ttf") format('truetype');
+}
+a:link {
+	font-family: 'Fantasy', sans-serif;
+	text-decoration: none;	
+	color: white;
+}
+a:visited {
+	font-family: 'Fantasy', sans-serif;
+	text-decoration: none;	
+	color: white;
+}
+a:hover {
+	font-family: 'Fantasy', sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+}
+
+
+
+.drag {
+    border: 3px solid white;
+    border-radius: 4%;
+    background-color: #000063;
+    position: absolute;
+    color: white;
+}
+.ban {
+    display: flex;
+}
+.ico {
+    width: 110px; height: same-as-width;
+}
+.ico img {
+    border-radius: 4%;
+    width: 100%;
+}
+.tit {
+    width: 60%; height: same-as-width;
+    padding-left: 3%;
+}
+.con {
+    width: 100%; height: same-as-width;
+}
+
+
+
+#bootcamp {
+    left: 1%; top: 2vh;
+    width: 32%; padding: 0.5em;
+}
+#workshops {
+    left: 30%; top: 10vh;
+    width: 26%; padding: 0.5em;
+}
+#wasedaipsebio {
+    right: 3%; top: 7vh;
+    width: 32%; padding: 0.5em;    
+}
+#wasedasils {
+    right: 19%; top: 50vh;
+    width: 31%; padding: 0.5em;
+}
+#dance {
+    right: 3%; top: 43.5vh;
+    width: 19%; padding: 0.5em;
+}
+#lectures {
+    left: 1%; top: 56vh;
+    width: 32%; padding: 0.5em;
+}
