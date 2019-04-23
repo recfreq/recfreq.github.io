@@ -2,9 +2,9 @@
 /*	border: 1px solid rgba(0, 0, 0, 0.3);
 */}
 body {
-    background-image: url("images/background01.jpg");
+    /*background-image: url("images/background01.jpg");
     background-repeat: no-repeat;
-    background-size: 100vw 100vh;
+    background-size: 100vw 100vh;*/
 	background-color: black;
 	font-family: "Fantasy", sans-serif;
 	font-size: 100%;
@@ -35,14 +35,14 @@ a:hover {
 
 .drag {
     border: 3px solid white;
-    border-radius: 4%;
+    border-radius: 10PX;
     background-color: #000063;
     position: absolute;
     color: white;
 }
 .ban {
     display: flex;
-}
+}   
 .ico {
     width: 110px; height: same-as-width;
 }
@@ -73,7 +73,7 @@ a:hover {
     width: 32%; padding: 0.5em;    
 }
 #wasedasils {
-    right: 19%; top: 50vh;
+    right: 19%; top: 60vh;
     width: 31%; padding: 0.5em;
 }
 #dance {
