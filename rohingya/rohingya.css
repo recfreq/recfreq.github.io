@@ -1,6 +1,6 @@
 * {
-/*	border: 1px solid rgba(0, 0, 0, 0.3);
-*/}
+/*	border: 1px solid rgba(0, 0, 0, 0.3);*/
+}
 body {
 	background-color: white;
 	color: black;
@@ -11,11 +11,11 @@ body {
 }
 h1 {
     font-family: "Dylovastuff", sans-serif;
-    font-size: 300%;    
+    font-size: 300%;
 }
 h3 {
     font-family: "OratorStd", sans-serif;
-    font-size: 150%;    
+    font-size: 150%;
 }
 @font-face {
 	font-family: "Dylovastuff";
@@ -36,20 +36,18 @@ h3 {
 a:link {
 	font-family: 'HindStd', sans-serif;
     font-size: 100%;
-	text-decoration: none;	
+    text-decoration: underline;
 	color: black;
 }
 a:visited {
 	font-family: 'HindStd', sans-serif;
     font-size: 100%;
-	text-decoration: none;	
+    text-decoration: underline;
 	color: black;
 }
 a:hover {
 	font-family: 'HindBold', sans-serif;
     font-size: 100%;
-	text-decoration: none;
-	font-weight: bold;
 	color: black;
 }
 
@@ -117,8 +115,22 @@ a:hover {
   -o-background-size: cover;
   background-size: cover;
 }
-#information .panel {
-  opacity: 0.85;
+#information .panel .panel-body {
+  background: rgba(255, 255, 255, 0.5)!important;
+}
+#information2 {
+  background: url(images/parsonsrohingyaVR-03.jpg) no-repeat center center fixed;
+  display: table;
+  height: 550px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#information2 .panel .panel-body {
+  background: rgba(255, 255, 255, 0.5)!important;
 }
 .footer hr {
   border: 2px solid #eeeeee;
