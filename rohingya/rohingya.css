@@ -150,6 +150,24 @@ a:hover {
 #information3 .panel .panel-body {
   background: rgba(255, 255, 255, 0.5)!important;
 }
+#information4 {
+  background: url(images/parsonsrohingyaLahore-01.jpg) no-repeat center center fixed;
+  display: table;
+  height: 200px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#information4 img {
+  transition: all 0.2s ease-in-out;
+  opacity: 0.2;
+}
+#information4 img:hover {
+  opacity: 1.0;
+}
 .footer hr {
   border: 2px solid #eeeeee;
 }
