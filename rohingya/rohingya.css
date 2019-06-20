@@ -34,27 +34,31 @@ h3 {
     src: url("lib/Hind-Bold.ttf") format("woff2");
 }
 a:link {
-	font-family: 'HindStd', sans-serif;
+	font-family: 'HindBold', sans-serif;
     font-size: 100%;
-    text-decoration: underline;
+    text-decoration: none;
 	color: black;
 }
 a:visited {
-	font-family: 'HindStd', sans-serif;
+	font-family: 'HindBold', sans-serif;
     font-size: 100%;
-    text-decoration: underline;
+    text-decoration: none;
 	color: black;
 }
 a:hover {
 	font-family: 'HindBold', sans-serif;
     font-size: 100%;
+    text-decoration: underline;
 	color: black;
 }
 
 
 
 .jumbotron {
-  background-color: #eaefe5;
+  /*background-color: #eaefe5;*/
+  background-color: white;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 /* padded section */
 .pad-section {
@@ -121,7 +125,7 @@ a:hover {
 #information2 {
   background: url(images/parsonsrohingyaVR-03.jpg) no-repeat center center fixed;
   display: table;
-  height: 550px;
+  height: 600px;
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
@@ -130,6 +134,20 @@ a:hover {
   background-size: cover;
 }
 #information2 .panel .panel-body {
+  background: rgba(255, 255, 255, 0.5)!important;
+}
+#information3 {
+  background: url(images/parsonsrohingyaVR-13.jpg) no-repeat center center fixed;
+  display: table;
+  height: 600px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#information3 .panel .panel-body {
   background: rgba(255, 255, 255, 0.5)!important;
 }
 .footer hr {
