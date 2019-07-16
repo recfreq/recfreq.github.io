@@ -76,21 +76,35 @@ a:hover {
 #ico {
     width: 15%; height: same-as-width;
 }
-#ico img {
+#ico2 {
+    width: 55%;
+}
+#ico img, #ico2 img {
     width: 100%;
 }
 #tit {
     text-align: center;
     vertical-align: top;
-    width: 55%; height: 50%;
+    width: 60%; height: 50%;
+}
+#tit2 {
+    text-align: center;
+    vertical-align: top;
+    width: 60%; height: 15%;
 }
 #sub {
     text-align: center;
-    width: 55%; height: 30%;
+    width: 60%; height: 30%;
 }
 #title {
     left: 66%; top: 22vh;
     width: 30%; height: 72vh;
     padding: 0.5em;
     opacity: 50%
+}
+#talk {
+    left: 2.5%; top: 5vh;
+    width: 20%; height: 35vh;
+    padding: 0.5em;
+    opacity: 50%    
 }
