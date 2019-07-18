@@ -1,0 +1,14 @@
+{
+"companyName": "Cornell Tech",
+"productName": "Robot Control",
+"dataUrl": "ChairbotsSim01Build.data.unityweb",
+"asmCodeUrl": "ChairbotsSim01Build.asm.code.unityweb",
+"asmMemoryUrl": "ChairbotsSim01Build.asm.memory.unityweb",
+"asmFrameworkUrl": "ChairbotsSim01Build.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"}
+}
