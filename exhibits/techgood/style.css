@@ -62,13 +62,13 @@ a:hover {
     border-radius: 10PX;
     background-color: #feffed;
     position: absolute;
-    opacity: 0.5;
     transition: opacity .25s ease-in-out;
     z-index: 3;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 0.5
 }
 .drag:hover {
     opacity: 1.0;
@@ -100,11 +100,18 @@ a:hover {
     left: 66%; top: 22vh;
     width: 30%; height: 72vh;
     padding: 0.5em;
-    opacity: 50%
 }
 #talk {
     left: 2.5%; top: 5vh;
     width: 20%; height: 35vh;
     padding: 0.5em;
-    opacity: 50%    
+}
+#label {
+    right: 3%;
+    top: 3.5vh;
+    opacity: 1;
+    background: rgb(0, 0, 0, 0);
+}
+#strike {
+    text-decoration: line-through;
 }
