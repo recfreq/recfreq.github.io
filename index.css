@@ -54,6 +54,7 @@ a:hover {
 .draggablex img.rollover {
 	position: absolute;
 	left: 0%;
+	top: 0%;
 	z-index: 2;
 	opacity: 0;
 }
@@ -84,6 +85,7 @@ a:hover {
 .draggabley img.rollover {
 	position: absolute;
 	left: 0%;
+	top: 0%;
 	z-index: 2;
 	opacity: 0;
 }
