@@ -140,7 +140,7 @@ a:hover {
   background-size: cover;
 }
 #information .panel .panel-body {
-  background: rgba(255, 255, 255, 0.45)!important;
+  background: rgba(255, 255, 255, 0.6)!important;
 }
 #information2 {
   background: url(images/parsonsmachinegaze-19.jpg) no-repeat center center fixed;
@@ -154,7 +154,7 @@ a:hover {
   background-size: cover;
 }
 #information2 .panel .panel-body {
-  background: rgba(255, 255, 255, 0.45)!important;
+  background: rgba(255, 255, 255, 0.6)!important;
 }
 #information3 {
   background: url(images/parsonsmachinegaze-31.jpg) no-repeat center center fixed;
@@ -168,7 +168,7 @@ a:hover {
   background-size: cover;
 }
 #information3 .panel .panel-body {
-  background: rgba(255, 255, 255, 0.45)!important;
+  background: rgba(255, 255, 255, 0.6)!important;
 }
 #information4 {
   background: url(images/Ray_ProjectionMachineGazeGIF12WorkshopWide.gif) no-repeat center center fixed;
@@ -180,6 +180,9 @@ a:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+#information4 .panel .panel-body {
+  background: rgba(255, 255, 255, 0.6)!important;
 }
 .footer hr {
   border: 2px solid #eeeeee;
