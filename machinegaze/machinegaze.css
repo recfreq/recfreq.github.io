@@ -20,16 +20,19 @@ h3 {
 h3 a:link {
     font-family: "OratorStd", sans-serif;
     font-size: 100%;
+    font-weight: bold;
     color: white;
 }
 h3 a:visited {
     font-family: "OratorStd", sans-serif;
     font-size: 100%;
+    font-weight: bold;
     color: white;
 }
 h3 a:hover {
     font-family: 'OratorStd', sans-serif;
     font-size: 100%;
+    font-weight: bold;
     color: white;
     text-decoration: underline;
 }
