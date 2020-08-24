@@ -2,7 +2,7 @@ body {
     margin:0; 
     padding:0; 
     font-family: "HindStd", sans-serif;
-    font-size: 110%;
+    font-size: 120%;
 }
 h3 {
     font-family: "OratorStd", sans-serif;
@@ -53,7 +53,7 @@ a:hover {
 /*    margin: 3vh auto;
     width: 90vw;
     padding: 2vh;*/
-    height: 68vh;
+    height: 69vh;
     text-align: left;
     background-image: url("./images/fabeha00.jpg");
     background-size: cover;
