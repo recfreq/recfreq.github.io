@@ -106,7 +106,7 @@ a:hover {
 #home {
   background: url(images/Ray_ProjectionMachineGazeGIF02CameraWide.gif) no-repeat center center fixed;
   display: table;
-  height: 65vh;
+  height: 70vh;
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
@@ -148,7 +148,7 @@ a:hover {
 #information2 {
   background: url(images/parsonsmachinegaze-19.jpg) no-repeat center center fixed;
   display: table;
-  height: 80vh;
+  height: 85vh;
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
@@ -162,7 +162,7 @@ a:hover {
 #information3 {
   background: url(images/parsonsmachinegaze-31.jpg) no-repeat center center fixed;
   display: table;
-  height: 55vh;
+  height: 85vh;
   position: relative;
   width: 100%;
   -webkit-background-size: cover;
