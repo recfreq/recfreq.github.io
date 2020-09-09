@@ -30,41 +30,66 @@ a:hover {
 
 
 
-.draggable {
-	position: relative;
-	float: left;
+.draggablex {
+	display: inline-block;
 	border-radius: 50%;
 	width: 19.5%;
-	height: 0;
-	padding-bottom: 19.5%; /*to get h equal to w*/
+	height: 19.5%;
 }
-.draggable > * {
-  margin: 0;
-  padding: 0;
-}
-.draggable:hover {
+.draggablex:hover {
 	cursor: pointer;
 }
-.draggable img {
+.draggablex img {
 	width: 100%;
-	top: 0%;
+	top: 0;
 	-webkit-transition: opacity 0.6s ease-in-out;
 	-moz-transition: opacity 0.6s ease-in-out;
 	-o-transition: opacity 0.6s ease-in-out;
 	transition: opacity 0.6s ease-in-out;
 }
-.draggable img.static {
-	position: absolute;
+.draggablex img.static {
+	position: relative;
 	z-index: 1;
 }
-.draggable img.rollover {
+.draggablex img.rollover {
 	position: absolute;
 	left: 0%;
 	top: 0%;
 	z-index: 2;
 	opacity: 0;
 }
-.draggable img.rollover:hover {
+.draggablex img.rollover:hover {
+	opacity: 1;
+}
+.draggabley {
+	display: inline-block;
+	border-radius: 50%;
+	width: 19.5%;
+	height: 19.5%;
+}
+.draggabley:hover {
+	cursor: pointer;
+}
+.draggabley img{
+	width: 100%;
+	top: 0;
+	-webkit-transition: opacity 0.6s ease-in-out;
+	-moz-transition: opacity 0.6s ease-in-out;
+	-o-transition: opacity 0.6s ease-in-out;
+	transition: opacity 0.6s ease-in-out;
+}
+.draggabley img.static {
+	position: relative;
+	z-index: 1;
+}
+.draggabley img.rollover {
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	z-index: 2;
+	opacity: 0;
+}
+.draggabley img.rollover:hover {
 	opacity: 1;
 }
 #banner {
@@ -75,20 +100,15 @@ a:hover {
 	left: 0;
 	right: 0;
 	z-index: 10;
-	-webkit-transition: opacity 0.6s ease-in-out;
-	-moz-transition: opacity 0.6s ease-in-out;
-	-o-transition: opacity 0.6s ease-in-out;
-	transition: opacity 0.6s ease-in-out;
-	opacity: 0;
-}
-#banner:hover {
-	opacity: 1;
 }
 
 
 
 @media only screen and (max-width : 500px) {
-	.draggable {
+	.draggablex {
+		width: 49%;
+	}
+	.draggabley {
 		width: 49%;
 	}
 }
