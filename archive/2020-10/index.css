@@ -1,0 +1,113 @@
+* {
+/*	border: 1px solid rgba(0, 0, 0, 0.3);*/
+}
+body {
+	background-color: white;
+	color: black;
+	font-family: 'Quicksand', sans-serif;
+	text-decoration: none;
+}
+@font-face {
+	font-family: 'Quicksand';
+	src: url('lib/Quicksand.otf') format('woff2');
+}
+a:link {
+	font-family: 'Quicksand', sans-serif;
+	text-decoration: none;	
+	color: black;
+}
+a:visited {
+	font-family: 'Quicksand', sans-serif;
+	text-decoration: none;	
+	color: black;
+}
+a:hover {
+	font-family: 'Quicksand', sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+select {
+	font-family: 'Quicksand', sans-serif;
+}
+
+
+
+.draggable {
+	position: relative;
+	float: left;
+	border-radius: 50%;
+	width: 19.5%;
+	height: 0;
+	padding-bottom: 19.5%; /*to get h equal to w*/
+}
+.draggable > * {
+  margin: 0;
+  padding: 0;
+}
+.draggable:hover {
+	cursor: pointer;
+}
+.draggable img {
+	width: 100%;
+	top: 0%;
+	-webkit-transition: opacity 0.6s ease-in-out;
+	-moz-transition: opacity 0.6s ease-in-out;
+	-o-transition: opacity 0.6s ease-in-out;
+	transition: opacity 0.6s ease-in-out;
+}
+.draggable img.static {
+	position: absolute;
+	z-index: 1;
+}
+.draggable img.rollover {
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	z-index: 2;
+	opacity: 0;
+}
+.draggable img.rollover:hover {
+	opacity: 1;
+}
+.draggable:active {  /*for long touch on mobile*/
+	opacity: 1;
+}
+#banner {
+	position: absolute;
+	padding-top: 65%;
+	font-size: 1.5em;
+	text-align: center;	
+	left: 0;
+	right: 0;
+	z-index: 10;
+	-webkit-transition: opacity 0.6s ease-in-out;
+	-moz-transition: opacity 0.6s ease-in-out;
+	-o-transition: opacity 0.6s ease-in-out;
+	transition: opacity 0.6s ease-in-out;
+	opacity: 0;
+}
+#banner:hover {
+	opacity: 1;
+}
+#header {
+	font-size: 0.8em;
+	width: 33%;
+	padding: 1%;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+#header:active {
+	font-weight: bold;
+}
+
+
+
+@media only screen and (max-width : 500px) {
+	body {
+		overflow-y: auto;
+	}
+	.draggable {
+		width: 42.5%;
+		padding-bottom: 42.5%;
+	}
+}

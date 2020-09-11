@@ -27,6 +27,9 @@ a:hover {
 	font-weight: bold;
 	color: black;
 }
+select {
+	font-family: 'Quicksand', sans-serif;
+}
 
 
 
@@ -67,6 +70,9 @@ a:hover {
 .draggable img.rollover:hover {
 	opacity: 1;
 }
+.draggable:active {  /*for long touch on mobile*/
+	opacity: 1;
+}
 #banner {
 	position: absolute;
 	padding-top: 65%;
@@ -84,11 +90,24 @@ a:hover {
 #banner:hover {
 	opacity: 1;
 }
+#header {
+	font-size: 0.8em;
+	width: 33%;
+	padding: 1%;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+#header:active {
+	font-weight: bold;
+}
 
 
 
 @media only screen and (max-width : 500px) {
+	body {
+		overflow-y: auto;
+	}
 	.draggable {
-		width: 49%;
+		width: 42.5%;
+		padding-bottom: 42.5%;
 	}
 }
