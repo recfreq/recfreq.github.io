@@ -92,9 +92,6 @@ select {
 }
 #header {
 	font-size: 0.8em;
-	width: 33%;
-	padding: 1%;
-	border: 1px solid rgba(0, 0, 0, 0.3);
 }
 #header:active {
 	font-weight: bold;
@@ -107,7 +104,12 @@ select {
 		overflow-y: auto;
 	}
 	.draggable {
-		width: 42.5%;
-		padding-bottom: 42.5%;
+		width: 48%;
+		padding-bottom: 48%;
 	}
+}
+element:hover, element:active {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-user-select: none;
+	-webkit-touch-callout: none /*only to disable context menu on long press*/
 }
