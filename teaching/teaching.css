@@ -1,90 +1,144 @@
 * {
-/*	border: 1px solid rgba(0, 0, 0, 0.3);
-*/}
+/*border: 1px solid rgba(0, 0, 0, 0.3);*/
+}
 body {
     /*background-image: url("images/background01.jpg");
     background-repeat: no-repeat;
     background-size: 100vw 100vh;*/
 	background-color: black;
-	font-family: "Fantasy", sans-serif;
+	font-family: "Accidental", sans-serif;
 	font-size: 100%;
     color: white;
 }
 @font-face {
-	font-family: "Fantasy";
-	src: url("lib/Final-Fantasy.ttf") format('truetype');
+    font-family: "Fantasy";
+    src: url("lib/FinalFantasy.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Accidental";
+    src: url("lib/AccidentalPresidency.ttf") format('truetype');
 }
 a:link {
-	font-family: 'Fantasy', sans-serif;
+	font-family: 'Accidental', sans-serif;
 	text-decoration: none;	
 	color: white;
 }
 a:visited {
-	font-family: 'Fantasy', sans-serif;
+	font-family: 'Accidental', sans-serif;
 	text-decoration: none;	
 	color: white;
 }
 a:hover {
-	font-family: 'Fantasy', sans-serif;
+	font-family: 'Accidental', sans-serif;
 	text-decoration: underline;
 	font-weight: bold;
 	color: white;
 }
 
 
-
 .drag {
     border: 3px solid white;
-    border-radius: 10PX;
+    border-radius: 10px;
     background-color: #000063;
     position: absolute;
     color: white;
 }
 .ban {
     display: flex;
+    align-items: center; /*to align the title text vertically*/
 }   
 .ico {
-    width: 110px; height: same-as-width;
+    width: 25%;
+    height: same-as-width;
 }
 .ico img {
-    border-radius: 4%;
+    border-radius: 5%;
     width: 100%;
 }
 .tit {
-    width: 60%; height: same-as-width;
+    font-family: 'Fantasy', sans-serif;
+    color: white;
+    font-size: 80%;
+    width: 72%;
     padding-left: 3%;
+    text-align: center; /*to align the title text horizontally*/
 }
 .con {
-    width: 100%; height: same-as-width;
+    width: 100%;
 }
-
 
 
 #bootcamp {
     left: 1%; top: 2vh;
-    width: 32%; padding: 0.5em;
-}
-#workshops {
-    left: 30%; top: 10vh;
-    width: 29%; padding: 0.5em;
+    width: 20%; padding: 0.5em;
 }
 #wasedaipsebio {
-    right: 2%; top: 4vh;
-    width: 32%; padding: 0.5em;    
-}
-#wasedasils {
-    right: 21%; top: 60vh;
-    width: 26.5%; padding: 0.5em;
+    right: 6%; top: 4vh;
+    width: 20%; padding: 0.5em;
 }
 #dance {
-    right: 1%; top: 72vh;
-    width: 18.5%; padding: 0.5em;
+    right: 2%; top: 73vh;
+    width: 20%; padding: 0.5em;
+}
+#wasedasils {
+    right: 24%; top: 60vh;
+    width: 20%; padding: 0.5em;
 }
 #lectures {
-    left: 1%; top: 56vh;
-    width: 32%; padding: 0.5em;
+    left: 3%; top: 56vh;
+    width: 20%; padding: 0.5em;
+}
+#talks {
+    left: 21%; top: 9vh;
+    width: 20%; padding: 0.5em;
 }
 #northeastern {
-    right: 2%; top: 40.5vh;
-    width: 25%; padding: 0.5em;
+    right: 1%; top: 34vh;
+    width: 20%; padding: 0.5em;
 }
+
+
+@media only screen and (orientation:portrait) {
+    .ico {
+        width: 7%;
+    }
+    .tit {
+        width: 90%;
+        padding-left: 3%;
+    }
+    #bootcamp {
+        left: 2%; top: 1vh;
+        width: 90%; padding: 0.5em;
+    }
+    #wasedaipsebio {
+        right: 2%; top: 21vh;
+        width: 90%; padding: 0.5em;
+    }
+    #dance {
+        right: 2%; top: 41vh;
+        width: 90%; padding: 0.5em;
+    }
+    #wasedasils {
+        right: 2%; top: 51vh;
+        width: 90%; padding: 0.5em;
+    }
+    #lectures {
+        left: 2%; top: 71vh;
+        width: 90%; padding: 0.5em;
+    }
+    #talks {
+        left: 2%; top: 91vh;
+        width: 90%; padding: 0.5em;
+    }    
+    #northeastern {
+        right: 2%; top: 111vh;
+        width: 90%; padding: 0.5em;
+    }
+}
+/*rotate screen if on phone.*/
+/*@media only screen and (orientation:portrait) {
+  body {
+    height: 100vw;
+    transform: rotate(90deg);
+  }
+}*/
