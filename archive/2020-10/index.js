@@ -38,7 +38,11 @@ $grid.isotope({ filter: ".featured" });  //initial filter.
 function updateForMobile(x) {
   if (x.matches) { // If media query matches
     $grid.isotope({ filter: ".installation" });  //To get even number.
-    document.getElementById("header").innerHTML = "hold touch to hover"
+    var header = document.getElementById("header");
+    header.style.padding = "1%";
+    header.style.width = "32.5%";
+    header.style.border = "1px solid rgba(0, 0, 0, 0.3)"; 
+    header.innerHTML = "hold touch to hover";
   }
 }
 var x = window.matchMedia("(max-width: 500px)")
