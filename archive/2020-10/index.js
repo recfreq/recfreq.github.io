@@ -43,6 +43,7 @@ function updateForMobile(x) {
     header.style.width = "32.5%";
     header.style.border = "1px solid rgba(0, 0, 0, 0.3)"; 
     header.innerHTML = "hold touch to hover";
+    document.body.style.overflow = "visible";
   }
 }
 var x = window.matchMedia("(max-width: 500px)")
