@@ -1,0 +1,55 @@
+* {
+/*	border: 1px solid rgba(0, 0, 0, 0.3);
+*/}
+body {
+	background-color: white;
+	color: black;
+	font-family: "Existence", sans-serif;
+	font-size: 1.3em;
+	margin: 0;
+}
+@font-face {
+	font-family: "Existence";
+	src: url("media/Existence.otf") format("woff2");
+}
+.jap {
+	font-size: 0.8em;
+}
+
+
+
+#graphic {
+	right: 0%;
+	top: 0vh;
+	width: 960px;
+	height: 526px;
+	float: right;
+}
+#title-1 {
+	position: absolute;
+	left: 37%;
+	top: 14vh;
+	width: 20%;
+	transform: rotate(6deg);
+}
+#title-2 {
+	position: absolute;
+	left: 12%;
+	top: 14vh;
+	width: 18%;
+	transform: rotate(6deg);
+}
+#contents-1 {
+	position: relative;
+	left: 9%;
+	top: 32vh;
+	width:40%;
+	transform: rotate(-3deg);
+}
+#contents-2 {
+	position: relative;
+	left: 37%;
+	top: 7vh;
+	width:36%;
+	transform: rotate(6deg);
+}
