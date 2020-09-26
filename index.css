@@ -6,6 +6,7 @@ body {
 	color: black;
 	font-family: 'Quicksand', sans-serif;
 	text-decoration: none;
+	font-size: 0.95em;
 }
 @font-face {
 	font-family: 'Quicksand';
@@ -14,21 +15,22 @@ body {
 a:link {
 	font-family: 'Quicksand', sans-serif;
 	text-decoration: none;	
-	color: black;
 }
 a:visited {
 	font-family: 'Quicksand', sans-serif;
 	text-decoration: none;	
-	color: black;
 }
 a:hover {
 	font-family: 'Quicksand', sans-serif;
 	text-decoration: none;
-	font-weight: bold;
-	color: black;
+}
+.ui-tooltip {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 0.95em;
 }
 select {
 	font-family: 'Quicksand', sans-serif;
+	font-size: 0.95em;
 }
 
 
@@ -76,7 +78,7 @@ select {
 	opacity: 1;
 	border-radius: 50%;
 }
-#banner {
+/* #banner {
 	position: absolute;
 	padding-top: 65%;
 	font-size: 1.5em;
@@ -92,9 +94,9 @@ select {
 }
 #banner:hover {
 	opacity: 1;
-}
+} */
 #header {
-	font-size: 0.8em;
+	font-size: 0.95em;
 }
 #header:active {
 	font-weight: bold;
