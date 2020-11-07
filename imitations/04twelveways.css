@@ -1,0 +1,138 @@
+#M1:hover {
+	animation: M1 1s linear infinite;
+}
+@keyframes M1 {
+	0%, 100% {font-weight: 400;}
+	50% {font-weight: 900;}
+}
+
+#M2:hover {
+	font-weight: bold;
+	color: green;
+}
+
+#M3:hover {
+	position: absolute;
+	animation: M3 2s linear infinite;
+}
+@keyframes M3 {
+	0% {transform: translate(0,0)}
+	20% {transform: translate(0,0.5em)}
+	40% {transform: translate(0,0)}
+}
+
+/* for doing typewriter effect entirely in CSS.
+#M4 {
+	display: inline-block;
+	overflow: hidden;
+	border-right: 2px solid lightgray;
+	white-space: nowrap;
+	margin: 0 auto;
+	animation: typewriter 4s steps(10) 1s 1 normal both,
+				cursor 500ms steps(10) infinite normal;
+}
+@keyframes typewriter{
+	from{width: 0;}
+	to{width: 7em;}
+}
+@keyframes cursor{
+	from{border-right-color: lightgray;}
+	to{border-right-color: transparent;}
+}*/
+			  
+#M5:hover {
+	animation: M5 3s linear infinite;
+}
+@keyframes M5 {
+	0% {opacity: 1;}
+	100% {opacity: 0.1;}
+}
+
+#M6:hover {
+	text-transform: uppercase;
+}
+
+#M7:hover {
+	position: absolute;
+	transform: rotate(-4deg);
+}
+
+#M8:hover {
+	animation: M8 1s linear infinite;
+}
+@keyframes M8 {
+	0% {border: 1px solid #F0FFF0;
+		outline: 5px dotted #5F9EA0;}
+	100% {border: 1px dotted #5F9EA0;
+		  outline: 5px solid #F0FFF0;}
+}
+
+#M9:hover {
+	text-decoration: line-through;
+}
+
+#M10:hover {
+	animation: M10 3s linear infinite;
+}
+@keyframes M10 {
+	0% {padding: 0;}
+	60% {padding: 3px;}
+	80% {padding: 8px;}
+	100% {padding: 9px;}
+}
+
+#M11:before, #M11:after {
+	display: block;
+	content: "Are light split between you and I and Maria";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+}
+#M11:after {
+	color: #f0f;
+	z-index: -2;
+}
+#M11:before {
+	color: #0ff;
+	z-index: -1;
+}
+#M11:hover {
+	position: absolute;
+}
+#M11:hover::before {
+	opacity: 0.5;
+	animation: M11 2s cubic-bezier(.25, .46, .45, .94) both 5;
+}
+#M11:hover::after {
+	opacity: 0.5;
+	animation: M11 2s cubic-bezier(.25, .46, .45, .94) reverse both 5;
+}
+@keyframes M11 {
+	0% {transform: translate(0)}
+	20% {transform: translate(-3px, 3px)}
+	40% {transform: translate(-3px, -3px)}
+	60% {transform: translate(3px, 3px)}
+	80% {transform: translate(3px, -3px)}
+	to {transform: translate(0)}
+}
+
+#M12 {
+	-webkit-transition: all 0.7s ease-in-out;
+	-moz-transition: all 0.7s ease-in-out;
+	-o-transition: all 0.7s ease-in-out;
+	transition: all 0.7s ease-in-out;
+}
+#M12:hover {
+	color: white;
+	font-weight: 900;
+	text-shadow: .2px .2px 0 #ccc, .2px .4px 0 #ccc, 
+	.4px .6px 0 #ccc, .4px .8px 0 #ccc, 
+	.6px 1.0px 0 #ccc, .6px 1.2px 0 #ccc, 
+	.8px 1.4px 0 #ccc, .8px 1.6px 0 #ccc, 
+	1.0px 1.8px 0 #ccc, 1.0px 2.0px 0 #ccc, 
+	1.2px 2.2px 0 #ccc, 1.2px 2.4px 0 #ccc, 
+	0 5px 10px rgba(0, 0, 0, 0.5);
+}
