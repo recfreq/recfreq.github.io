@@ -69,31 +69,35 @@ a:hover {
 
 
 #bootcamp {
-    left: 1%; top: 2vh;
+    left: 2%; top: 3vh;
     width: 20%; padding: 0.5em;
 }
 #wasedaipsebio {
-    right: 6%; top: 4vh;
+    right: 6%; top: 5vh;
     width: 20%; padding: 0.5em;
 }
 #dance {
-    right: 2%; top: 73vh;
+    right: 1%; top: 75vh;
     width: 20%; padding: 0.5em;
 }
 #wasedasils {
-    right: 24%; top: 60vh;
+    right: 20%; top: 62vh;
     width: 20%; padding: 0.5em;
 }
 #lectures {
-    left: 3%; top: 56vh;
+    left: 0.5%; top: 56vh;
     width: 20%; padding: 0.5em;
 }
 #talks {
-    left: 21%; top: 9vh;
+    left: 20%; top: 16vh;
     width: 20%; padding: 0.5em;
 }
 #northeastern {
-    right: 1%; top: 34vh;
+    right: 0.5%; top: 35vh;
+    width: 20%; padding: 0.5em;
+}
+#cityu {
+    left: 20%; top: 58vh;
     width: 20%; padding: 0.5em;
 }
 
@@ -114,12 +118,12 @@ a:hover {
         right: 2%; top: 21vh;
         width: 90%; padding: 0.5em;
     }
-    #dance {
+    #wasedasils {
         right: 2%; top: 41vh;
         width: 90%; padding: 0.5em;
     }
-    #wasedasils {
-        right: 2%; top: 51vh;
+    #dance {
+        right: 2%; top: 59vh;
         width: 90%; padding: 0.5em;
     }
     #lectures {
@@ -131,7 +135,11 @@ a:hover {
         width: 90%; padding: 0.5em;
     }    
     #northeastern {
-        right: 2%; top: 111vh;
+        right: 2%; top: 116vh;
+        width: 90%; padding: 0.5em;
+    }
+    #cityu {
+        left: 2%; top: 134vh;
         width: 90%; padding: 0.5em;
     }
 }
