@@ -26,5 +26,5 @@ $("body").vegas({
         { src: "images/background11.jpg", transition: 'flash' },
         { src: "images/background12.jpg", transition: 'flash' }
     ],
-    overlay: 'lib/vegas/dist/overlays/04.png'
+    overlay: 'lib/vegas/overlays/04.png'
 });
