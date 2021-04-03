@@ -39,7 +39,7 @@ a:hover {
 #gallery{
      display: flex;
      margin-left: 10%;
-     width:80%;
+     width:100%;
      margin-top: 0.8vh;
 }
 
@@ -54,7 +54,7 @@ a:hover {
     display: inline-block;
     margin-left:0.5%;
     right:0.5%;
-    width:33%;
+    width:50%;
 }
 
 .column img{
