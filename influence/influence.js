@@ -1,9 +1,9 @@
-var images = ["Slide1.jpg",
-"Slide4.jpg",
-"Slide5.jpg",
-"Slide7.jpg",
-"Slide8.jpg",
-"Slide10.jpg"];
+var images = ["Slide1.JPG",
+"Slide4.JPG",
+"Slide5.JPG",
+"Slide7.JPG",
+"Slide8.JPG",
+"Slide10.JPG"];
 
 document.addEventListener("DOMContentLoaded", function (event) {
     loadImages();
