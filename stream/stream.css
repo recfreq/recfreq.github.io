@@ -47,26 +47,26 @@ a:hover {
 #title-txt {
 	position: absolute;
 	left: 61%;
-	top: 22vh;
+	top: 5vh;
 	width: 20%;
 	transform: rotate(2deg);
 }
 #div1 {
 	position: relative;
-	left: 9%;
-	top: 20vh;
+	left: 5%;
+	top: 0vh;
 	width:10%;
 	transform: rotate(4deg);
 }
 #div1 img {
-	width: 100%;
+	width: 90%;
 }
 #div2 {
 	position: relative;
-	left: 20%;
-	top: 0;
-	width:30%;
-	transform: rotate(-12deg);
+	left: 15%;
+	top: 0%;
+	width:32%;
+	transform: rotate(-10deg);
 }
 #div3 {
 	position: relative;
@@ -80,8 +80,8 @@ a:hover {
 }
 #div4 {
 	position: absolute;
-	left: 63%;
-	top: 100vh;
+	right: 1%;
+	top: 120vh;
 	width: 25%;
 }
 #div4 img {
@@ -89,7 +89,7 @@ a:hover {
 }
 #video {
 	position: absolute;
-	top: 130vh;
+	top: 150vh;
 	width: 60%;
 	margin-top: 0;
 	border: 0;
@@ -103,8 +103,8 @@ a:hover {
  }
 #video-img {
 	position: absolute;
-	top: 130vh;
-	left: 58%;
+	top: 150vh;
+	right: 1%;
 	width: 39%;
 	height: 20vh;
 	margin-top: 0;
