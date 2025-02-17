@@ -1,0 +1,454 @@
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+/*	border: 1px solid rgba(0, 0, 0, 0.3);
+*/}
+
+@font-face {
+	font-family: 'Existence';
+	src: url('../lib/Existence.otf') format('woff2');
+}
+
+#panorama {
+	position: absolute;
+    width: 100%;
+    height: 99vh;
+    z-index: -1;
+}
+
+#popup {
+	font-family: 'Existence', sans-serif; 
+	font-size: 4em;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	z-index: 12;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#popup2 {
+	font-family: 'Existence', sans-serif; 
+	font-size: 2	em;
+	font-weight: bold;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 35%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	z-index: 11;
+    background: rgba(255, 255, 255, 0);
+}
+
+#logo {
+	position: absolute;
+	top: 75%;
+	left: 2%;
+    z-index: 10;
+}
+
+#logo img{
+	width:25%;
+    height:25%;
+}
+
+#aud-frame {
+	position:absolute;
+	top: 75%;
+	right: 2%;
+	z-index:15;
+}
+
+#gallery {
+	position: relative;
+	top:75%;
+	left:30%;
+	z-index: 12;
+}
+
+#gallery img{
+	width: 40%;
+}
+
+.custom-hotspot10 {
+	position: absolute;
+	height: 65px;
+	width: 100px;
+	background-image: url("images/figs_panoC-10.jpg");
+	background-size: cover;
+	border: 2px solid rgba(126, 126, 126, 0.5);
+}
+
+.custom-hotspot11 {
+	position: absolute;
+	height: 65px;
+	width: 100px;
+	background-image: url("images/figs_panoC-11.jpg");
+	background-size: cover;
+	border: 2px solid rgba(126, 126, 126, 0.5);
+}
+
+.custom-hotspot12 {
+	position: absolute;
+	height: 65px;
+	width: 100px;
+	background-image: url("images/figs_panoC-12.jpg");
+	background-size: cover;
+	border: 2px solid rgba(126, 126, 126, 0.5);
+}
+
+.custom-hotspot13 {
+	position: absolute;
+	height: 65px;
+	width: 100px;
+	background-image: url("images/figs_panoC-13.jpg");
+	background-size: cover;
+	border: 2px solid rgba(126, 126, 126, 0.5);
+}
+
+.custom-hotspot14 {
+	position: absolute;
+	height: 65px;
+	width: 100px;
+	background-image: url("images/figs_panoC-14.jpg");
+	background-size: cover;
+	border: 2px solid rgba(126, 126, 126, 0.5);
+}
+
+.custom-hotspot15 {
+	position: absolute;
+	height: 65px;
+	width: 100px;
+	background-image: url("images/figs_panoC-15.jpg");
+	background-size: cover;
+	border: 2px solid rgba(126, 126, 126, 0.5);
+}
+
+.custom-hotspot16 {
+	position: absolute;
+	height: 65px;
+	width: 100px;
+	background-image: url("images/figs_panoC-16.jpg");
+	background-size: cover;
+	border: 2px solid rgba(126, 126, 126, 0.5);
+}
+
+.custom-hotspot17 {
+	position: absolute;
+	height: 65px;
+	width: 100px;
+	background-image: url("images/figs_panoC-17.jpg");
+	background-size: cover;
+	border: 2px solid rgba(126, 126, 126, 0.5);
+}
+
+.custom-hotspot18 {
+	position: absolute;
+	height: 65px;
+	width: 100px;
+	background-image: url("images/figs_panoC-18.jpg");
+	background-size: cover;
+	border: 2px solid rgba(126, 126, 126, 0.5);
+}
+
+.custom-hotspot19 {
+	position: absolute;
+	height: 65px;
+	width: 100px;
+	background-image: url("images/figs_panoC-19.jpg");
+	background-size: cover;
+	border: 2px solid rgba(126, 126, 126, 0.5);
+}
+
+.custom-hotspot20 {
+	position: absolute;
+	height: 65px;
+	width: 100px;
+	background-image: url("images/figs_panoC-20.jpg");
+	background-size: cover;
+	border: 2px solid rgba(126, 126, 126, 0.5);
+}
+
+.custom-hotspot21 {
+	position: absolute;
+	height: 65px;
+	width: 100px;
+	background-image: url("images/figs_panoC-21.jpg");
+	background-size: cover;
+	border: 2px solid rgba(126, 126, 126, 0.5);
+}
+
+.custom-hotspot22 {
+	position: absolute;
+	height: 65px;
+	width: 100px;
+	background-image: url("images/figs_panoC-22.jpg");
+	background-size: cover;
+	border: 2px solid rgba(126, 126, 126, 0.5);
+}
+
+.custom-hotspot23 {
+	position: absolute;
+	height: 65px;
+	width: 100px;
+	background-image: url("images/figs_panoC-23.jpg");
+	background-size: cover;
+	border: 2px solid rgba(126, 126, 126, 0.5);
+}
+
+.custom-hotspot24 {
+	position: absolute;
+	height: 65px;
+	width: 100px;
+	background-image: url("images/figs_panoC-24.jpg");
+	background-size: cover;
+	border: 2px solid rgba(126, 126, 126, 0.5);
+}
+
+/*ping pong*/
+.custom-hotspotD10 {
+	position: absolute;
+	height: 200px;
+	width: 300px;
+	background-image: url("images/figs_panoD-10.jpg");
+	background-size: cover;
+	border: 1px solid rgba(126, 126, 126, 0.5);
+}
+
+/*piano*/
+.custom-hotspotD11 {
+	position: absolute;
+	height: 300px;
+	width: 450px;
+	background-image: url("images/figs_panoD-11.jpg");
+	background-size: cover;
+	border: 1px solid rgba(126, 126, 126, 0.5);
+}
+
+/*vending machine*/
+.custom-hotspotD12 {
+	position: absolute;
+	height: 133px;
+	width: 200px;
+	background-image: url("images/figs_panoD-12.jpg");
+	background-size: cover;
+	border: 1px solid rgba(126, 126, 126, 0.5);
+}
+
+/*body*/
+.custom-hotspotD13 {
+	position: absolute;
+	height: 150px;
+	width: 100px;
+	background-image: url("images/figs_panoD-13.jpg");
+	background-size: cover;
+	border: 1px solid rgba(126, 126, 126, 0.5);
+}
+
+/*recycle*/
+.custom-hotspotD14 {
+	position: absolute;
+	height: 150px;
+	width: 100px;
+	background-image: url("images/figs_panoD-14.jpg");
+	background-size: cover;
+	border: 1px solid rgba(126, 126, 126, 0.5);
+}
+
+/*power cord*/
+.custom-hotspotD15 {
+	position: absolute;
+	height: 75px;
+	width: 50px;
+	background-image: url("images/figs_panoD-15.jpg");
+	background-size: cover;
+	border: 1px solid rgba(126, 126, 126, 0.5);
+}
+
+/*street*/
+.custom-hotspotD16 {
+	position: absolute;
+	height: 200px;
+	width: 300px;
+	background-image: url("images/figs_panoD-16.jpg");
+	background-size: cover;
+	border: 1px solid rgba(126, 126, 126, 0.5);
+}
+
+/*body*/
+.custom-hotspotD17 {
+	position: absolute;
+	height: 100px;
+	width: 150px;
+	background-image: url("images/figs_panoD-17.jpg");
+	background-size: cover;
+	border: 1px solid rgba(126, 126, 126, 0.5);
+}
+
+/*petlab*/
+.custom-hotspotD18 {
+	position: absolute;
+	height: 200px;
+	width: 300px;
+	background-image: url("images/figs_panoD-18.jpg");
+	background-size: cover;
+	border: 1px solid rgba(126, 126, 126, 0.5);
+}
+
+/*restroom*/
+.custom-hotspotD19 {
+	position: absolute;
+	height: 100px;
+	width: 150px;
+	background-image: url("images/figs_panoD-19.jpg");
+	background-size: cover;
+	border: 1px solid rgba(126, 126, 126, 0.5);
+}
+
+/*coffee machine*/
+.custom-hotspotD20 {
+	position: absolute;
+	height: 100px;
+	width: 150px;
+	background-image: url("images/figs_panoD-20.jpg");
+	background-size: cover;
+	border: 1px solid rgba(126, 126, 126, 0.5);
+}
+
+/*quiet sign*/
+.custom-hotspotD21 {
+	position: absolute;
+	height: 150px;
+	width: 100px;
+	background-image: url("images/figs_panoD-21.jpg");
+	background-size: cover;
+	border: 1px solid rgba(126, 126, 126, 0.5);
+}
+
+/*table top*/
+.custom-hotspotD23 {
+	position: absolute;
+	height: 100px;
+	width: 150px;
+	background-image: url("images/figs_panoD-23.jpg");
+	background-size: cover;
+	border: 1px solid rgba(126, 126, 126, 0.5);
+}
+
+/*ventilation*/
+.custom-hotspotD24 {
+	position: absolute;
+	height: 67px;
+	width: 100px;
+	background-image: url("images/figs_panoD-24.jpg");
+	background-size: cover;
+	border: 1px solid rgba(126, 126, 126, 0.5);
+}
+
+/*phone booth*/
+.custom-hotspotD25 {
+	position: absolute;
+	height: 150px;
+	width: 100px;
+	background-image: url("images/figs_panoD-25.jpg");
+	background-size: cover;
+	border: 1px solid rgba(126, 126, 126, 0.5);
+}
+
+/*figurine*/
+.custom-hotspotD26 {
+	position: absolute;
+	height: 150px;
+	width: 100px;
+	background-image: url("images/figs_panoD-26.jpg");
+	background-size: cover;
+	border: 1px solid rgba(126, 126, 126, 0.5);
+}
+
+/*tv*/
+.custom-hotspotD27 {
+	position: absolute;
+	height: 100px;
+	width: 150px;
+	background-image: url("images/figs_panoD-27.jpg");
+	background-size: cover;
+	border: 1px solid rgba(126, 126, 126, 0.5);
+}
+
+/*attention*/
+.custom-hotspotD28 {
+	position: absolute;
+	height: 200px;
+	width: 300px;
+	background-image: url("images/figs_panoD-28.jpg");
+	background-size: cover;
+	border: 1px solid rgba(126, 126, 126, 0.5);
+}
+
+/*lock*/
+.custom-hotspotD30 {
+	position: absolute;
+	height: 150px;
+	width: 100px;
+	background-image: url("images/figs_panoD-30.jpg");
+	background-size: cover;
+	border: 1px solid rgba(126, 126, 126, 0.5);
+}
+
+/*mannequin*/
+.custom-hotspotD31 {
+	position: absolute;
+	height: 150px;
+	width: 100px;
+	background-image: url("images/figs_panoD-31.jpg");
+	background-size: cover;
+	border: 1px solid rgba(126, 126, 126, 0.5);
+}
+
+/*sven*/
+.custom-hotspotD32 {
+	position: absolute;
+	height: 150px;
+	width: 150px;
+	background-image: url("images/figs_panoD-32.jpg");
+	background-size: cover;
+	border: 1px solid rgba(126, 126, 126, 0.5);
+}
+
+.custom-tooltip span {
+    visibility: hidden;
+    position: absolute;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    max-width: 200px;
+    padding: 5px 10px;
+    margin-left: -220px;
+    cursor: default;
+}
+
+.custom-tooltip:hover span{
+    visibility: visible;
+}
+
+.custom-tooltip:hover span:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    bottom: -20px;
+    left: -10px;
+    margin: 0 50%;
+}

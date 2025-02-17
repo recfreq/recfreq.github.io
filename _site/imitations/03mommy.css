@@ -1,0 +1,39 @@
+#light1:hover {
+	animation: light1 1s linear infinite;
+}
+@keyframes light1 {
+	0% {border: 1px solid #00FFFF;
+		outline: 5px dotted #FF00FF;}
+	100% {border: 1px dotted #FF00FF;
+		  outline: 5px solid #00FFFF;}
+}
+
+#light2:hover {
+	animation: light2 1s linear infinite;
+}
+@keyframes light2 {
+	0% {border: 1px solid #FF0000;
+		outline: 5px dotted #FFFF00;}
+	100% {border: 1px dotted #FFFF00;
+		  outline: 5px solid #FF0000;}
+}
+
+#light3:hover {
+	animation: light3 1s linear infinite;
+}
+@keyframes light3 {
+	0% {border: 1px solid #FDF5E6;
+		outline: 5px dotted #D3D3D3;}
+	100% {border: 1px dotted #D3D3D3;
+		  outline: 5px solid #FDF5E6;}
+}
+
+@keyframes light4 {
+	0% {border: 1px solid #B0C4DE;
+		outline: 5px dotted #778899;}
+	100% {border: 1px dotted #778899;
+		  outline: 5px solid #B0C4DE;}
+}
+@keyframes idle {
+	100% {}
+}

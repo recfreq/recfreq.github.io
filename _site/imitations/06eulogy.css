@@ -1,0 +1,23 @@
+.ref {
+	position: absolute;
+	font-weight: 600;
+	opacity: 0;
+}
+
+.orig {
+	position: absolute;
+}
+
+.fader:hover {
+  background: linear-gradient(90deg, black, white);
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 50%;
+  animation: fade 6s linear infinite;
+}
+@keyframes fade {
+	0% {background-position: 0 0;}
+	100% {background-position: 150% 0;}
+}

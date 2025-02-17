@@ -1,0 +1,103 @@
+* {
+/*	border: 1px solid rgba(0, 0, 0, 0.3);
+*/}
+body {
+	background-color: white;
+	color: black;
+	font-family: "Existence", sans-serif;
+	font-size: 1.3em;
+}
+@font-face {
+	font-family: "Existence";
+	src: url("Existence.otf") format("woff2");
+}
+a:link {
+	text-decoration: none;	
+}
+a:hover {
+	text-decoration: none;
+	font-weight: bold;
+}
+a:visited {
+	text-decoration: none;	
+	color: black;
+}
+
+
+
+.side {
+	width: 20%;
+	height: 28vh;
+	float: left;
+	text-align:center;
+	padding-top: 10vh;
+}
+.title {
+	transition: font-size 0s;
+}
+.title:hover {
+	font-size: 1.3em;
+}
+.row {
+	width: 100%;
+	padding-top: 8vh;
+}
+.col {
+	width: 80%;
+	height: 28vh;
+	float: left;
+}
+.line1 {
+	transition: font-size 0s;
+}
+.line1:hover {
+	font-size: 1.05em;
+}
+.line2 {
+	transition: font-size 0s;
+}
+.line2:hover {
+	font-size: 1.1em;
+}
+.line3 {
+	transition: font-size 0s;
+}
+.line3:hover {
+	font-size: 1.15em;
+}
+.line4 {
+	transition: font-size 0s;
+}
+.line4:hover {
+	font-size: 1.2em;
+}
+.line5 {
+	transition: font-size 0s;
+}
+.line5:hover {
+	font-size: 1em;
+}
+.line6 {
+	transition: font-size 0s;
+}
+.line6:hover {
+	font-size: 1.2em;
+}
+.line7 {
+	transition: font-size 0s;
+}
+.line7:hover {
+	font-size: 1.15em;
+}
+.line8 {
+	transition: font-size 0s;
+}
+.line8:hover {
+	font-size: 1.1em;
+}
+.line9 {
+	transition: font-size 0s;
+}
+.line9:hover {
+	font-size: 1.05em;
+}

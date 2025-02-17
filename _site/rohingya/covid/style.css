@@ -1,0 +1,134 @@
+body {
+    margin:0; 
+    padding:0; 
+    font-family: "HindStd", sans-serif;
+    font-size: 120%;
+}
+h3 {
+    font-family: "OratorStd", sans-serif;
+    font-size: 110%;
+}
+@font-face {
+    font-family: "OratorStd";
+    src: url("lib/OratorStd.otf") format("woff2");
+}
+@font-face {
+    font-family: "HindStd";
+    src: url("lib/Hind-Regular.ttf") format("woff2");
+}
+@font-face {
+    font-family: "HindBold";
+    src: url("lib/Hind-Bold.ttf") format("woff2");
+}
+a:link {
+    font-family: 'HindBold', sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    color: black;
+}
+a:visited {
+    font-family: 'HindBold', sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    color: black;
+}
+a:hover {
+    font-family: 'HindBold', sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+}
+#map {
+    top:0; 
+    height: 100vh;
+    width:100vw;
+    position: fixed;
+    z-index: -5;
+}
+#header {
+    margin: 0;
+    width: 100vw;
+    padding: 3vh;
+/*    margin: 3vh auto;
+    width: 90vw;
+    padding: 2vh;*/
+    height: 69vh;
+    text-align: left;
+    background-image: url("./images/fabeha00.jpg");
+    background-size: cover;
+    color: white;
+    box-shadow: none;
+}
+#footer {
+    width: 100%;
+    min-height: 5vh;
+    padding: 3vh;
+    line-height: 25px;
+    text-align: left;
+    background-image: url("./images/fabeha00.jpg");
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+    box-shadow: none;
+}
+#features {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    z-index: 100;
+}
+.centered {
+    width: 50vw;
+    margin: 0 auto;
+}
+.lefty {
+    /* controls the story panel div */
+    width: 28vw;
+    /* width: 33vw; */
+    margin-left: 5vw;
+}
+.righty {
+    width: 33vw;
+    margin-left: 62vw;
+}
+.light {
+    color: #444;
+    background-color: #fafafa;
+    font-size: 100%;
+    box-shadow: 0 3px 14px 0 rgba(0, 0, 0, .14), 0 5px 5.5px 0 rgba(0, 0, 0, .12);
+}
+.dark {
+    color: #fafafa;
+    background-color: #444;
+    font-size: 100%;
+    box-shadow: 0 3px 14px 0 rgba(0, 0, 0, .14), 0 5px 5.5px 0 rgba(0, 0, 0, .12);
+}
+.step {
+    padding-bottom: 50vh;
+    /* margin-bottom: 10vh; */
+    opacity: 0.25;
+}
+.step.active {
+    opacity: 0.9;
+}
+.step div {
+    padding:  25px 50px;
+    line-height: 25px;
+    font-size: 100%;
+    /* added for rounded corners. */
+    border-radius: 10px;
+}
+.step img {
+    width: 100%;
+}
+@media (max-width: 750px) {
+    #features {
+        width: 90vw;
+        margin: 0 auto;
+    }
+}
+/* Fix issue on mobile browser where scroll breaks  */
+.mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan, 
+.mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan .mapboxgl-canvas {
+    touch-action: unset;
+}

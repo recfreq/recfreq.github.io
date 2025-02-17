@@ -1,0 +1,114 @@
+* {
+/*	border: 1px solid rgba(0, 0, 0, 0.3);
+*/}
+body {
+	background-color: white;
+	color: black;
+	font-family: "BebasNeue01", sans-serif;
+	font-size: 1.3em;
+}
+@font-face {
+	font-family: "Quicksand";
+	src: url("Quicksand.otf") format("woff2");
+}
+@font-face {
+	font-family: "Existence";
+	src: url("Existence.otf") format("woff2");
+}
+@font-face {
+	font-family: "CircleD";
+	src: url("CircleD.otf") format("woff2");
+}
+@font-face {
+	font-family: "OratorStd";
+	src: url("OratorStd.otf") format("woff2");
+}
+@font-face {
+	font-family: "Broadway";
+	src: url("Broadway.otf") format("woff2");
+}
+@font-face {
+	font-family: "AeroliteSky";
+	src: url("AeroliteSky.otf") format("woff2");
+}
+@font-face {
+	font-family: "SansForgetica";
+	src: url("SansForgetica.otf") format("woff2");
+}
+@font-face {
+	font-family: "ForgottenFuturist";
+	src: url("ForgottenFuturist.otf") format("woff2");
+}
+@font-face {
+	font-family: "DemiLovato";
+	src: url("DemiLovato.ttf") format("woff2");
+}
+@font-face {
+	font-family: "BebasNeue01";
+	src: url("BebasNeue01.otf") format("woff2");
+}
+@font-face {
+	font-family: "BebasNeue02";
+	src: url("BebasNeue02.otf") format("woff2");
+}
+@font-face {
+	font-family: "BebasNeue03";
+	src: url("BebasNeue03.otf") format("woff2");
+}
+@font-face {
+	font-family: "BebasNeue04";
+	src: url("BebasNeue04.otf") format("woff2");
+}
+@font-face {
+	font-family: "BebasNeue05";
+	src: url("BebasNeue05.otf") format("woff2");
+}
+a:link {
+	text-decoration: none;	
+}
+a:hover {
+	text-decoration: none;
+	font-weight: bold;
+}
+a:visited {
+	text-decoration: none;	
+	color: black;
+}
+
+
+
+.side {
+	width: 20%;
+	height: 28vh;
+	float: left;
+	text-align:center;
+	font-family: "Existence";
+}
+.title {
+	padding-top: 10vh;
+	font-family: "BebasNeue04";
+}
+.row {
+	width: 100%;
+	padding-top: 8vh;
+}
+.col {
+	width: 35%;
+	height: 28vh;
+	float: left;
+}
+.rep1 {
+	font-family: "BebasNeue01";
+}
+.rep2 {
+	font-family: "BebasNeue02";
+}
+.rep3 {
+	font-family: "BebasNeue03";
+}
+.rep4 {
+	font-family: "BebasNeue04";
+}
+.rep5 {
+	font-family: "BebasNeue05";
+}

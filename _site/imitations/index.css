@@ -1,0 +1,111 @@
+* {
+/*	border: 1px solid rgba(0, 0, 0, 0.3);
+*/}
+body {
+	background-color: white;
+	color: black;
+	font-family: "Existence", sans-serif;
+	font-size: 1.3em;
+	margin: 0;
+}
+@font-face {
+	font-family: "Existence";
+	src: url("media/Existence.otf") format("woff2");
+}
+.jap {
+	font-size: 0.8em;
+}
+.nowrap {
+	white-space: nowrap;
+}
+.nouline a:link {
+	text-decoration: none;
+}
+
+#graphic {
+	right: 0%;
+	top: 0vh;
+	width: 960px;
+	height: 526px;
+	float: right;
+}
+#title-1 {  /*for Imitations of Immortality*/
+	position: absolute;
+	left: 37%;
+	top: 13vh;
+	width: 20%;
+	transform: rotate(6deg);
+}
+#title-2 {  /*for left side title on RAY poems*/
+	position: absolute;
+	left: 12%;
+	top: 14vh;
+	width: 18%;
+	transform: rotate(6deg);
+}
+#title-3 {  /*for gpt2 pages only*/
+	position: absolute;
+	left: 12%;
+	top: 14vh;
+	width: 18%;
+	transform: rotate(-3deg);
+}
+#contents-1 {  /*for index page left side*/
+	position: relative;
+	left: 5%;
+	top: 34vh;
+	width: 40%;
+	transform: rotate(-3deg);
+}
+#contents-2 {  /*for RAY poems right side + index page right side*/
+	position: relative;
+	left: 37%;
+	top: 5vh;
+	width: 45%;
+	transform: rotate(6deg);
+}
+#contents-3 {  /*for gpt2 pages only*/
+	position: relative;
+	left: 37%;
+	top: 5vh;
+	width:50%;
+	transform: rotate(-3deg);
+}
+#orig {
+	position: absolute;
+	opacity: 1;	
+	z-index: 1;
+	-webkit-transition: opacity 0.6s ease-in-out;
+	-moz-transition: opacity 0.6s ease-in-out;
+	-o-transition: opacity 0.6s ease-in-out;
+	transition: opacity 0.6s ease-in-out;
+}
+#gpt2 {
+	position: absolute;
+	opacity: 0;
+	z-index: 2;
+	-webkit-transition: opacity 0.6s ease-in-out;
+	-moz-transition: opacity 0.6s ease-in-out;
+	-o-transition: opacity 0.6s ease-in-out;
+	transition: opacity 0.6s ease-in-out;
+}
+#orig:hover {
+	opacity: 0;
+}
+#gpt2:hover {
+	opacity: 1;
+}
+#orig-tit {
+	font-weight: bold;
+	-webkit-transition: all 0.6s ease-in-out;
+	-moz-transition: all 0.6s ease-in-out;
+	-o-transition: all 0.6s ease-in-out;
+	transition: all 0.6s ease-in-out;
+}
+#gpt2-tit {
+	font-weight: normal;
+	-webkit-transition: all 0.6s ease-in-out;
+	-moz-transition: all 0.6s ease-in-out;
+	-o-transition: all 0.6s ease-in-out;
+	transition: all 0.6s ease-in-out;
+}

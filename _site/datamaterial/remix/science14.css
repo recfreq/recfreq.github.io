@@ -1,0 +1,148 @@
+* {
+/*	border: 1px solid rgba(0, 0, 0, 0.3);
+*/}
+body {
+	background-color: white;
+	color: black;
+	font-family: "Existence", sans-serif;
+	font-size: 1.3em;
+}
+@font-face {
+	font-family: "Existence";
+	src: url("Existence.otf") format("woff2");
+}
+a:link {
+	text-decoration: none;	
+}
+a:hover {
+	text-decoration: none;
+	font-weight: bold;
+}
+a:visited {
+	text-decoration: none;	
+	color: black;
+}
+
+
+
+.side {
+	width: 20%;
+	height: 28vh;
+	float: left;
+	text-align:center;
+	padding-top: 10vh;
+}
+.title {
+	transition: transform 1s;
+}
+.title:hover {
+	transform: translate(-20px);
+}
+.row {
+	width: 100%;
+	padding-top: 8vh;
+}
+.col {
+	width: 80%;
+	height: 28vh;
+	float: left;
+}
+.line1 {
+	animation: trans1 2s ease 0s infinite;
+}
+.line1:hover {
+	animation-play-state: paused;
+}
+@keyframes trans1 {
+	0%   {transform: translate(0px);}
+	50%  {transform: translate(10px);}
+	100% {transform: translate(0px);}
+}
+.line2 {
+	animation: trans2 3s ease 0s infinite;
+}
+.line2:hover {
+	animation-play-state: paused;
+}
+@keyframes trans2 {
+	0%   {transform: translate(0px);}
+	50%  {transform: translate(-20px);}
+	100% {transform: translate(0px);}
+}
+.line3 {
+	animation: trans3 4s ease 0s infinite;
+}
+.line3:hover {
+	animation-play-state: paused;
+}
+@keyframes trans3 {
+	0%   {transform: translate(0px);}
+	50%  {transform: translate(30px);}
+	100% {transform: translate(0px);}
+}
+.line4 {
+	animation: trans4 5s ease 0s infinite;
+}
+.line4:hover {
+	animation-play-state: paused;
+}
+@keyframes trans4 {
+	0%   {transform: translate(0px);}
+	50%  {transform: translate(-40px);}
+	100% {transform: translate(0px);}
+}
+.line5 {
+	animation: trans5 6s ease 0s infinite;
+}
+.line5:hover {
+	animation-play-state: paused;
+}
+@keyframes trans5 {
+	0%   {transform: translate(0px);}
+	50%  {transform: translate(50px);}
+	100% {transform: translate(0px);}
+}
+.line6 {
+	animation: trans6 5s ease 0s infinite;
+}
+.line6:hover {
+	animation-play-state: paused;
+}
+@keyframes trans6 {
+	0%   {transform: translate(0px);}
+	50%  {transform: translate(-40px);}
+	100% {transform: translate(0px);}
+}
+.line7 {
+	animation: trans7 4s ease 0s infinite;
+}
+.line7:hover {
+	animation-play-state: paused;
+}
+@keyframes trans7 {
+	0%   {transform: translate(0px);}
+	50%  {transform: translate(30px);}
+	100% {transform: translate(0px);}
+}
+.line8 {
+	animation: trans8 3s ease 0s infinite;
+}
+.line8:hover {
+	animation-play-state: paused;
+}
+@keyframes trans8 {
+	0%   {transform: translate(0px);}
+	50%  {transform: translate(-20px);}
+	100% {transform: translate(0px);}
+}
+.line9 {
+	animation: trans9 2s ease 0s infinite;
+}
+.line9:hover {
+	animation-play-state: paused;
+}
+@keyframes trans9 {
+	0%   {transform: translate(0px);}
+	50%  {transform: translate(10px);}
+	100% {transform: translate(0px);}
+}

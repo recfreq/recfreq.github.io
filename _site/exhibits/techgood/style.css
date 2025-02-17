@@ -1,0 +1,117 @@
+* {
+/*  border: 1px solid rgba(0, 0, 0, 0.3);*/
+}
+html {
+    height: 100%;
+}
+body {
+    font-family: "AccidentalPrez", sans-serif;
+    font-size: 100%;
+    color: #ff0076;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+h1 {
+    font-family: "AccidentalPrez", sans-serif;
+    font-size: 400%;
+    color: #ff0076;
+}
+h2 {
+    font-family: "AccidentalPrez", sans-serif;
+    font-size: 140%;
+    color: #ff0076;
+}
+h3 {
+    font-family: "LeagueSpartan", sans-serif;
+    font-size: 100%;
+    color: #b3b3b3;
+}
+@font-face {
+    font-family: "AccidentalPrez";
+    src: url("lib/AccidentalPrez.ttf") format("woff2");
+}
+@font-face {
+    font-family: "LeagueSpartan";
+    src: url("lib/LeagueSpartan.otf") format("woff2");
+}
+a:link {
+    font-family: 'AccidentalPrez', sans-serif;
+    font-size: 100%;
+    color: #ff0076;
+    text-decoration: underline;
+}
+a:visited {
+    font-family: 'AccidentalPrez', sans-serif;
+    font-size: 100%;
+    color: #ff0076;
+    text-decoration: underline;
+}
+a:hover {
+    font-family: 'AccidentalPrez', sans-serif;
+    font-size: 100%;
+    color: #ff0076;
+    text-decoration: underline;
+}
+
+
+
+.drag {
+    border: 3px;
+    border-color: #ff0076;
+    border-radius: 10PX;
+    background-color: #feffed;
+    position: absolute;
+    transition: opacity .25s ease-in-out;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5
+}
+.drag:hover {
+    opacity: 1.0;
+}
+#ico {
+    width: 15%; height: same-as-width;
+}
+#ico2 {
+    width: 55%;
+}
+#ico img, #ico2 img {
+    width: 100%;
+}
+#tit {
+    text-align: center;
+    vertical-align: top;
+    width: 60%; height: 50%;
+}
+#tit2 {
+    text-align: center;
+    vertical-align: top;
+    width: 60%; height: 15%;
+}
+#sub {
+    text-align: center;
+    width: 60%; height: 30%;
+}
+#title {
+    left: 66%; top: 22vh;
+    width: 30%; height: 72vh;
+    padding: 0.5em;
+}
+#talk {
+    left: 2.5%; top: 5vh;
+    width: 20%; height: 35vh;
+    padding: 0.5em;
+}
+#label {
+    right: 3%;
+    top: 3.5vh;
+    opacity: 1;
+    background: rgb(0, 0, 0, 0);
+}
+#strike {
+    text-decoration: line-through;
+}

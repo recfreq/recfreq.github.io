@@ -1,0 +1,437 @@
+<html>
+<head>
+<title>ray luo</title>
+</head>
+
+<body link=#000000 vlink=#000000 alink=#000000>
+<table width=640 cellpadding=0 cellspacing=0 align=center>
+<tr><td bgcolor=#ffffff><br></td></tr></table>
+
+<!-- Begin. -->
+
+<table width=640 cellpadding=0 cellspacing=0 align=center>
+<tr><td bgcolor=#555555 align=right>
+<font face="courier new" size=2 color=#dddddd>
+<a href="../../index.html"><font color=#dddddd>home</a> |
+<a href="../../projects/index.html"><font color=#dddddd>projects</a> |
+<a href="../../opinions/index.html"><font color=#dddddd>opinions</a> |
+<a href="../../contact/index.html"><font color=#dddddd>contact</a> &nbsp
+</td></tr></table>
+
+<table width=640 cellpadding=0 cellspacing=0 align=center>
+<tr><td bgcolor=#dddddd align=left>
+<font face="courier new" size=2 color=#555555>
+<b>&nbsp ray luo : projects : penimation</b>
+</td></tr></table>
+
+<table width=640 cellpadding=0 cellspacing=0 align=center>
+<tr><td bgcolor=#ffffff><br></td></tr></table>
+
+<!-- Content. -->
+
+<table width=640 cellpadding=10 cellspacing=0 align=center>
+<tr><td align=left>
+<font face="courier new" size=2 color=#000000>
+
+
+
+  <P><HR WIDTH = "60%" ALIGN = CENTER></P>
+
+  <H1 ALIGN = CENTER>
+   <A NAME = "TITLE">CS 184 Penimation Final Project</A>
+  </H1>
+
+
+
+  <P><HR WIDTH = "60%" ALIGN = CENTER></P>
+
+  <P ALIGN = CENTER>| <A HREF = "#LINKS">Links</A>
+                    | <A HREF = "#STATUS">Current Status</A>
+                    | <A HREF = "#PROPOSAL">Project Proposal</A>
+                    | <A HREF = "#NOV27">First Deliverable</A>
+                    | <A HREF = "#DEC4">Second Deliverable</A>
+                    | <A HREF = "#DEC10">Third Deliverable</A> 
+                    | <A HREF = "#WRAPUP">Project Wrapup</A> |</P>
+
+
+
+  <P><HR WIDTH = "60%" ALIGN = CENTER></P>
+
+  <H3 ALIGN = CENTER>
+   <A NAME = "LINKS">Downloadable Links</A>
+  </H3>
+
+  <P ALIGN = CENTER><A HREF = "penimation_dec17.zip">Download Penimation Updated
+     Version</A>(Fixed some bugs that caused out of memory error, etc)</P>
+
+  <P ALIGN = CENTER>Check out the <A HREF = "#DEC10">Third Deliverable</A> for 
+     some screen shots</P>
+
+
+
+  <P><HR WIDTH = "60%" ALIGN = CENTER></P>
+
+  <H3 ALIGN = CENTER>
+   <A NAME = "STATUS">Current Status</A>
+  </H3>
+
+  <P>The updated version of Penimation is <A HREF = "penimation_dec17.zip">here</A>
+     as a zip file (2.5MB).  I added some widgets and got rid of a bunch of 
+     animation frames so that out-of-memory exceptions don't occur any more.
+     Also fix some other bugs and added simple stroke preference support.
+     Finally, I changed the bouncing ball and space flight animations.  Note 
+     that the space flight still takes a while to load (a progress bar should
+     be implemented in the future).</P>
+
+  <P>The latest version of Penimation (as of December 10) can be 
+     <A HREF = "penimation_dec10.zip">downloaded here</A> as a zip file (2.9MB).
+     No installation necessary; easy to use; easy to build.  Read the 
+     README that comes with the zip file for simple setup instructions.
+     Penimation requires <A HREF = "http://java.sun.com">Java 2</A>
+     JDK 1.3 to run.  I haven't tested it for UNIX systems, but it works
+     fine on any PC with JDK 1.3.</P>
+
+  <P>Penimation comes with C++ code with Renderman binding for generating 
+     animation sequences that come with Penimation.  You'll need 
+     <A HREF = "http://msdn.microsoft.com/visualc/default.asp">Visual C++</A>
+     and <A HREF = "http://www.bmrt.org/BMRTdownload/index.html">BMRT</A>
+     to run and build this portion of the application.</P>
+
+  <P>Penimation comes with an unmodified redistribution of the binaries
+     for the Satin Version 2.2 Toolkit for your convenience.  See the
+     copy right statement in the classes directory.  You can also get
+     the full version of SATIN from 
+     <A HREF = "http://guir.berkeley.edu/projects/satin/download.html">
+     GUIR</A>.  Only two isolated areas of code uses SATIN.  You can 
+     modify it easily to use your own gesture recognizer.  In particular,
+     I did not use <I>any</I> of the SATIN core or optional library
+     classes beyond Sheet and RubineInterpreter.  You can replace Sheet
+     with your own glass pane and RubineInterpreter with your own gesture
+     interpreter if you wish.  On the other hand, the good folks at GUIR
+     of Berkeley spent a lot of time making the toolkit powerful and easy 
+     to use, so you may consider taking advantage of it.</P>
+
+
+
+  <P><HR WIDTH = "60%" ALIGN = CENTER></P>
+
+  <H3 ALIGN = CENTER>
+   <A NAME = "PROPOSAL">Project Proposal</A>
+  </H3>
+
+  <P>It is often difficult to manipulate moving pictures is a precise and
+     intuitive way.  One problem is that video button controls don't tell
+     us enough about how fast the animation is moving, where in the 
+     animation are we interested in, and how we can manipulate animation
+     sequences.  Hence the development of Penimation.</P>
+
+  <P>This project is a case study in developing one or more animation 
+     sequences and a gesture-based graphical interface for viewing and
+     manipulating these sequences.  The animation will be developed using
+     <A HREF = "http:\\www.bmrt.org">BMRT 2.5</A> to ensure a high degree
+     of realism.  I will write an interactive tool for generating these
+     sequences, although they will not be part of the final user interface.
+     The animation viewer will be developed using 
+     <A HREF = "http:\\java.sun.com">Java Swing</A>, with gesture 
+     recognition support coming from the 
+     <A HREF = "http://guir.berkeley.edu/projects/satin">SATIN toolkit</A>.
+     The gesture set will be trained using 
+     <A HREF = "http://guir.berkeley.edu/projects/quill">GDT</A>, the 
+     gesture design tool.</P>  
+
+  <P>Most of the work in the Penimation project focuses on
+     methods for generating animation sequences that are optimized for
+     gesture-based interaction.  The animation will be supported by an
+     interaction tool that supports gestures for playing, fast forwarding,
+     and rewinding the animation at different speeds as determined from
+     the gestures.  The user will also be able to zoom into a region of 
+     interest, zoom out, manipulate a set of sequences (moving, deleting,
+     duplicating), and possibly making changes to the way the animation is
+     displayed or the animation sequence itself, all supported by informal
+     pen-based interaction.</P>
+ 
+  <P>Penimation will experiment with novel interaction techniques in 
+     viewing and manipulating animation sequences.  Gesture-based interaction
+     techniques will be used to support precise yet intuitive animation
+     control.</P>
+
+  <P>By November 27, I hope to finish most of essential components of the
+     GUI, using an example animation to demonstrate it.  This includes
+     getting gesture recognition to work, displaying the animation using
+     Java at an acceptable speed, timing the animation sequence, 
+     building the GUI, and modeling user interaction.  By December 4,
+     I hope to finish creating one extensive animation sequence, or
+     two or more simpler animation sequences.  The RenderMan code (given
+     in C-binding form, using Visual C++) will have to be completed.
+     This includes rendering the scene, modeling the objects in space
+     and time, achieving a compression format, negotiating with the GUI,
+     and improving realism using shaders, texture-map, motion-blur,
+     and other utilities provided by BMRT.</P>
+
+  <P>The Penimation project focuses on animation, novel pen-based user
+     interfaces, modelling in animation, and to some extent, rendering 
+     of sophisticated scenes using lighting and shading models.  
+     Approximately 30% of the work will be in animation, 40% in user
+     interface (aka other), 20% in modelling, and 10% in rendering.
+     In particular, the work in modelling and animation accounts for
+     a total of 50% in creating the animation sequences, with another
+     10% for shading, texture, etc.  There may well be more work in
+     the 40% in user interface due to the use of gesture recognition,
+     user interaction, and timing sequences.  This may take the user
+     interface component to 50% while subtracting from the modelling
+     component.</P>
+
+
+
+  <P><HR WIDTH = "60%" ALIGN = CENTER></P>
+
+  <H3 ALIGN = CENTER>
+   <A NAME = "NOV27">Update on Deliverable, November 27</A>
+  </H3>
+
+  <P>The essentials of the pen-based GUI has now been completed.  I used
+     an example animation from BMRT to test the rendering, and performance
+     appears to be acceptable.  Basically, I used a Timer object in Java
+     to fire action events to my animation engine, which renders the
+     the animation sequence from file.  There are still problems with
+     the way the animation proceeds.  For example, I get a noticeably
+     discrete animation sequence for certain frame rates.</P>
+
+  <P>The gesture recognition is acceptable.  Some commands are easier to
+     to detect than others.  File command, for example, tends to be
+     missed more often than others.  The essential commands, however,
+     perform rather well.  The stop command, for example, is always
+     recognized and produces no noticeable latency between gesture
+     interpretation and command execution.  The following commands have
+     been implemented, both as gestures and as button/icons: file menu,
+     play, reverse, rewind, fast forward, stop.  There will be more
+     to come.  While the skeletal code can be demonstrated right away,
+     the details (such as creating jpeg button icons, maximizing 
+     performance, acheiving file compression, and embedding sound) have
+     not been dealt with.  Instead, I began the animation component
+     by writing some template Visual C++ code to be used for generating
+     the animation sequences.</P>
+
+  <P>I came across some other ideas that I thought were interesting if
+     I could incorporate them into Penimation.  First, there ought
+     to be an intuitive way to edit an animation frame or add components
+     to a collection of animation frames.  It would be useful to come up
+     a novel way to interact with the frames within the GUI so that 
+     animations can be changed dynamically using a pen.  Second, the
+     animation modelling ideas presented in 
+     <A HREF = "http://www-inst.eecs.berkeley.edu/~cs184">CS 184</A>
+     were very interesting.  I will incorporate some of the ideas (such
+     as modelling a water fall or explosion) in my animation.  I project
+     to spend most of the rest of time rendering and modelling the
+     animation sequences.  The interaction with the sequences will also
+     be high in the list of agendas.</P>
+
+
+
+  <P><HR WIDTH = "60%" ALIGN = CENTER></P>
+
+  <H3 ALIGN = CENTER>
+   <A NAME = "DEC4">Update on Deliverable, December 4</A>
+  </H3>
+
+  <P>An early version of Penimation can be downloaded.  
+     I have developed two simple animation sequences, one dealing 
+     with a bouncing ball, and one emulating a space flight.  Lighting,
+     texture, and other rendering considerations have not been 
+     applied to the frames yet.  Simple models for animating the
+     fully developed sequences are complete.  For the final deliverable,
+     I need to make the model more sophisticated (dents for bouncing ball,
+     background for space flight, etc), apply custom lighting, textures,
+     and shading, and make the images more attractive.  The basic
+     framework is complete.</P>
+
+  <P>Meanwhile, I've added a file chooser to the GUI and eradicated some
+     non-standard behavior.  I've tried to change the timing mechanism
+     to yield a smoother animation display.  Loading animations, however,
+     still took a lot of time.  I need to make a progress bar to keep the
+     user busy while I load in the animation frames.  I also need to
+     find a way for users to draw on the animations, so that the gesture
+     set will be less limiting and more powerful.</P>
+
+  <P>The first priority at this point is to refine the animation model
+     for the bouncing ball to include damping and slow down frames for
+     which the ball is near a local maximum.  Refine also the space
+     flight sequence to enable movement in three dimensions with turns
+     and rotations.  Then complete the renderings with textures and
+     custom lighting and shading.  Finallly, refine the interface to
+     allow for user pen interaction directly with the frames and speed
+     up loading and execution.</P>
+
+
+
+  <P><HR WIDTH = "60%" ALIGN = CENTER></P>
+
+  <H3 ALIGN = CENTER>
+   <A NAME = "DEC10">Final Update on Deliverable, December 10</A>
+  </H3>
+
+  <P>When the program starts up, three frames are shown: the main 
+     Penimation animation window, the toolbar, and the palette.  The
+     latter two are for gesture commands and editing options,
+     respectively.  The main window is where all commands and 
+     editing ultimately being drawn.  The two modes supported by
+     the system are gesture commands (left mouse button) and
+     editing scribbles (right mouse button).</P>
+
+  <P ALIGN = "CENTER"><IMG SRC = "startup.gif"
+                       WIDTH = 700
+                       HEIGHT = 550
+                       ALT = "Penimation when first start up"></P>
+
+  <P>Here's a screen shot of the toolbar.  Each icon corresponds to a 
+     particular animation snippet for the gesture corresponding to
+     the action specified by the action.  The black dots in the pictures
+     shows where the gesture should begin.  The gray paths indicate
+     the directions appropriate for each gesture from the starting
+     point.  Clicking on the buttons also invoke the action, but
+     button actions are more limited.  For example, we can't indicate
+     how fast to play an animation with simply a button press.  We can,
+     however, determine the desired speed from the "play" gesture, by
+     taking longer strokes to mean a faster animation speed.</P>
+
+  <P ALIGN = "CENTER"><IMG SRC = "toolbar_static.gif"
+			     ALT = "a static PenimationToolbarFrame"></P>
+
+  <P>When the pen (or mouse) rolls over an icon, the animation begins to
+     play, showing the user how a gesture is performed.  Note that the
+     mouse is hidden in this screenshot.  In this case, the mouse is over
+     the rewind icon, where the animation has already shown half of the 
+     frames.  The animation starts off slow and accelerate to match the
+     view of a natural human stroke.</P>
+
+  <P ALIGN = "CENTER"><IMG SRC = "toolbar_action.gif"
+                       ALT = "PenimationToolbarFrame in action"></P>
+
+  <P>Here is a shot of a rewind command made on the Penimation window, 
+     with the space flight animation playing in the background (Mouse is
+     hidden).  The thick lines and gray color indicates that the stroke
+     is a gesture that will be interpreted by the system.  Gesture
+     commands are made using left mouse drags (or unmodified pen 
+     strokes).  Some gesture commands can also be performed using the
+     tool bar frame.</P>
+
+  <P ALIGN = "CENTER"><IMG SRC = "gesture_frame.gif"
+                       ALT = "Rewind gesture over space flight animation"></P>
+
+  <P>Here is a view of an edit on the color spheres animation (comes with
+     BMRT, by Larry Gritz).  You cannot see that the mouse in picture has 
+     changed to a pencil/paper, clearly indicating which mode the user is in.  
+     Editing is done using right mouse drags (or modified pen strokes).
+     Note also that the color and stroke of the edits can be changed using
+     the palette frame.</P>
+
+  <P ALIGN = "CENTER"><IMG SRC = "edit_frame.gif"
+                       ALT = "Scribbling over the color spheres animation"></P>
+
+  <P>Here is a look of the palette in the latest version.  I added support
+     for stroke size.</P>
+
+  <P ALIGN = "CENTER"><IMG SRC = "palette.gif"
+                       ALT = "Palette frame with stroke size support"></P>
+
+  <P>The next screen shot shows a stop gesture on the space flight animation
+     sequence, one of the animations that comes with Penimation.  Note that
+     this particular sequence takes a long time to load.  A progress bar
+     should be implemented.</P>
+
+  <P ALIGN = "CENTER"><IMG SRC = "stop_flight.gif"
+                       ALT = "Telling the space flight animation to pause"></P>
+
+  <P>Here is another shot of the entire interface.  It also shows me drawing 
+     on the bouncing ball animation sequence.  With time, I would have liked
+     to make the ball look more bouncy, with appropriate dents and a proper
+     texture map.  A basket ball court would have been nice too.  Note that you
+     can draw on the animation as it plays in different colors and line widths.
+     I would have liked to be able to save the edits in a file with the animation
+     frames modified, but this turned out to be difficult.  Also, the picture
+     shows a coherent view of the desktop, with three frames that could be
+     placed where ever the user wants.  This makes the animation frame more
+     minimalist and thus suggests a movie screen.  One can make a case for 
+     combining the other two frames, however.  Sorry about the image quality.
+
+  <P ALIGN = "CENTER"><IMG SRC = "draw_ball.gif"
+                       WIDTH = 700
+                       HEIGHT = 550
+                       ALT = "Drawing a circle around a bouncing ball"></P>
+
+
+
+  <P><HR WIDTH = "60%" ALIGN = CENTER></P>
+
+  <H3 ALIGN = CENTER>
+   <A NAME = "WRAPUP">Project Wrapup and Future Directions</A>
+  </H3>
+
+  <P>This was an individual project.  I used Java to construct the GUI and 
+     perform the animation, and BMRT to create all of the non-trivial 
+     animation images, including the icon animations.  I was able to create
+     an interface for interacting with animations using gestures.  Two main
+     features of using gesture-based interaction are providing speed 
+     information during playback and the ability to edit the animation.
+     The editing I've accomplished is very simple.  I wrote the skeleton for
+     changing the editing attributes but only color changes are now supported.
+     I created a total of 8 animation sequences, 6 of which are intended for
+     gesture explanations (see section above).  The tool bar is the most
+     complete part of the project.  It should be intuitive for everyone to
+     use (I hope).</P>
+
+  <P>I've done more work on the interface than I had expected.  For example, I
+     chose to implement the animation of the button icons, which took a lot
+     of time.  I did not write sophisticated shaders or used complex lighting
+     models.  I had intended to fully utilize the shading language in BMRT.
+     Due to time constraints, I ended up using only the basics of RenderMan.
+     The modelling, however, was appropriate for the scenes I constructed.</P>
+
+  <P>In the future, I hope to extend Penimation to allow for different ways of
+     editing the animation sequence.  There are two main ways to go here.  One
+     can edit the animation as it plays, creating a "trail" that can be displayed
+     when the sequence is displayed again.  One can also edit individual frames
+     which are extrapolated to multiple frame changes using some interpolation
+     algorithm.  Both of these topics would give Penimation the real edge over
+     other animation players because this is where the real power of gestures come
+     in.  I had experimented with gestures in this project by using them to
+     determine play speed and adding strokes to a frame.  I need to, however, 
+     take the pen-animation interaction idea further by daring to accomplish
+     everything you could do with a traditional animation interface using a 
+     gesture-based interface.</P>
+
+  <P>Some things I can do in the near future follow.  I can play the command
+     button animation once everytime the corresponding gesture is made on the
+     main animation frame.  This gives feedback that the gesture was interpreted.
+     I also want to implement a progress bar for loading long animation sequences.
+     It is also easy to make the animations themselves look a lot nicer, using
+     RenderMan's texture map, bump map, and other utilities.  Finally, I want to
+     extend the editing support to allow for typing in text on the animations, 
+     and inserting images.  The difficult part there is to save the pictures to
+     some archive somewhere.  I need to figure out how to do that without having
+     to mess around with the internals of the file compression format.</P>
+
+
+
+  <P><HR WIDTH = "60%" ALIGN = CENTER></P>
+
+  <P>Created by Ray Luo</P>
+
+
+
+</td></tr></table>
+
+<!-- End. -->
+
+<table width=640 cellpadding=0 cellspacing=0 align=center>
+<tr><td bgcolor=#ffffff><br></td></tr></table>
+
+<table width=640 cellpadding=0 cellspacing=0 align=center>
+<tr><td bgcolor=#555555 align=right>
+<font face="courier new" size=2 color=#dddddd>
+<a href="../index.html"><font color=#dddddd>up</a> |
+<a href="#top"><font color=#dddddd>top</a> &nbsp
+</td></tr></table>
+
+</body>
+</html>

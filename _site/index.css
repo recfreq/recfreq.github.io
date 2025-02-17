@@ -1,0 +1,120 @@
+* {
+/*	border: 1px solid rgba(0, 0, 0, 0.3);*/
+}
+body {
+	background-color: white;
+	color: black;
+	font-family: 'Quicksand', sans-serif;
+	text-decoration: none;
+	font-size: 0.95em;
+}
+@font-face {
+	font-family: 'Quicksand';
+	src: url('lib/Quicksand.otf') format('woff2');
+}
+a:link {
+	font-family: 'Quicksand', sans-serif;
+	text-decoration: none;	
+}
+a:visited {
+	font-family: 'Quicksand', sans-serif;
+	text-decoration: none;	
+}
+a:hover {
+	font-family: 'Quicksand', sans-serif;
+	text-decoration: none;
+}
+.ui-tooltip {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 0.95em;
+}
+select {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 0.95em;
+}
+
+
+
+.draggable {
+	position: relative;
+	float: left;
+	border-radius: 50%;
+	width: 19.5%;
+	height: 0;
+	padding-bottom: 19.5%; /*to get h equal to w*/
+}
+.draggable > * {
+  margin: 0;
+  padding: 0;
+}
+.draggable:hover {
+	cursor: pointer;
+}
+.draggable img {
+	width: 100%;
+	top: 0%;
+	border-radius: 50%;
+	-webkit-transition: opacity 0.6s ease-in-out;
+	-moz-transition: opacity 0.6s ease-in-out;
+	-o-transition: opacity 0.6s ease-in-out;
+	transition: opacity 0.6s ease-in-out;
+}
+.draggable img.static {
+	position: absolute;
+	z-index: 1;
+}
+.draggable img.rollover {
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	z-index: 2;
+	opacity: 0;
+}
+.draggable img.rollover:hover {
+	opacity: 1;
+	border-radius: 50%;
+}
+.draggable:active {  /*for long touch on mobile*/
+	opacity: 1;
+	border-radius: 50%;
+}
+/* #banner {
+	position: absolute;
+	padding-top: 65%;
+	font-size: 1.5em;
+	text-align: center;	
+	left: 0;
+	right: 0;
+	z-index: 10;
+	-webkit-transition: opacity 0.6s ease-in-out;
+	-moz-transition: opacity 0.6s ease-in-out;
+	-o-transition: opacity 0.6s ease-in-out;
+	transition: opacity 0.6s ease-in-out;
+	opacity: 0;
+}
+#banner:hover {
+	opacity: 1;
+} */
+#header {
+	font-size: 0.95em;
+}
+#header:active {
+	font-weight: bold;
+}
+
+
+
+@media only screen and (max-width : 500px) {
+	body {
+		overflow-y: scroll;
+	}
+	.draggable {
+		width: 48%;
+		padding-bottom: 48%;
+	}
+}
+element:hover, element:active {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-user-select: none;
+	-webkit-touch-callout: none; /*only to disable context menu on long press*/
+}

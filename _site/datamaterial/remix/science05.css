@@ -1,0 +1,51 @@
+* {
+/*	border: 1px solid rgba(0, 0, 0, 0.3);
+*/}
+body {
+	background-color: white;
+	color: black;
+	font-family: "Existence", sans-serif;
+	font-size: 1.3em;
+}
+@font-face {
+	font-family: "Existence";
+	src: url("Existence.otf") format("woff2");
+}
+a:link {
+	text-decoration: none;	
+}
+a:hover {
+	text-decoration: none;
+	font-weight: bold;
+}
+a:visited {
+	text-decoration: none;	
+	color: black;
+}
+
+
+
+.side {
+	width: 20%;
+	height: 28vh;
+	float: left;
+	text-align:center;
+}
+.title {
+	padding-top: 10vh;
+}
+.row {
+	width: 100%;
+	padding-top: 8vh;
+}
+.col {
+	width: 40%;
+	height: 28vh;
+	float: left;
+}
+.rep1 {
+	padding: 1em;
+}
+.rep2 {
+	padding: 1em;
+}

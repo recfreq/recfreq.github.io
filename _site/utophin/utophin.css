@@ -1,0 +1,24 @@
+body {
+	background-color: white;
+	color: black;
+}
+@font-face {
+	font-family: "Quicksand";
+	src: url("../lib/Quicksand.otf") format("woff2");
+}
+a:link {
+	font-family: 'Quicksand', sans-serif;
+	text-decoration: none;	
+	color: black;
+}
+a:visited {
+	font-family: 'Quicksand', sans-serif;
+	text-decoration: none;	
+	color: black;
+}
+a:hover {
+	font-family: 'Quicksand', sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}

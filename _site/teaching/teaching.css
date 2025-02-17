@@ -1,0 +1,152 @@
+* {
+/*border: 1px solid rgba(0, 0, 0, 0.3);*/
+}
+body {
+    /*background-image: url("images/background01.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;*/
+	background-color: black;
+	font-family: "Accidental", sans-serif;
+	font-size: 100%;
+    color: white;
+}
+@font-face {
+    font-family: "Fantasy";
+    src: url("lib/FinalFantasy.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Accidental";
+    src: url("lib/AccidentalPresidency.ttf") format('truetype');
+}
+a:link {
+	font-family: 'Accidental', sans-serif;
+	text-decoration: none;	
+	color: white;
+}
+a:visited {
+	font-family: 'Accidental', sans-serif;
+	text-decoration: none;	
+	color: white;
+}
+a:hover {
+	font-family: 'Accidental', sans-serif;
+	text-decoration: underline;
+	font-weight: bold;
+	color: white;
+}
+
+
+.drag {
+    border: 3px solid white;
+    border-radius: 10px;
+    background-color: #000063;
+    position: absolute;
+    color: white;
+}
+.ban {
+    display: flex;
+    align-items: center; /*to align the title text vertically*/
+}   
+.ico {
+    width: 25%;
+    height: same-as-width;
+}
+.ico img {
+    border-radius: 5%;
+    width: 100%;
+}
+.tit {
+    font-family: 'Fantasy', sans-serif;
+    color: white;
+    font-size: 80%;
+    width: 72%;
+    padding-left: 3%;
+    text-align: center; /*to align the title text horizontally*/
+}
+.con {
+    width: 100%;
+}
+
+
+#bootcamp {
+    left: 2%; top: 3vh;
+    width: 20%; padding: 0.5em;
+}
+#wasedaipsebio {
+    right: 6%; top: 5vh;
+    width: 20%; padding: 0.5em;
+}
+#dance {
+    right: 1%; top: 72vh;
+    width: 20%; padding: 0.5em;
+}
+#wasedasils {
+    right: 21%; top: 62vh;
+    width: 20%; padding: 0.5em;
+}
+#lectures {
+    left: 0.5%; top: 56vh;
+    width: 21%; padding: 0.5em;
+}
+#talks {
+    left: 22%; top: 6vh;
+    width: 22%; padding: 0.5em;
+}
+#northeastern {
+    right: 0.5%; top: 39vh;
+    width: 20%; padding: 0.5em;
+}
+#cityu {
+    left: 22%; top: 65vh;
+    width: 24%; padding: 0.5em;
+}
+
+
+@media only screen and (orientation:portrait) {
+    .ico {
+        width: 7%;
+    }
+    .tit {
+        width: 90%;
+        padding-left: 3%;
+    }
+    #bootcamp {
+        left: 2%; top: 1vh;
+        width: 90%; padding: 0.5em;
+    }
+    #wasedaipsebio {
+        right: 2%; top: 21vh;
+        width: 90%; padding: 0.5em;
+    }
+    #wasedasils {
+        right: 2%; top: 41vh;
+        width: 90%; padding: 0.5em;
+    }
+    #dance {
+        right: 2%; top: 59vh;
+        width: 90%; padding: 0.5em;
+    }
+    #lectures {
+        left: 2%; top: 71vh;
+        width: 90%; padding: 0.5em;
+    }
+    #talks {
+        left: 2%; top: 91vh;
+        width: 90%; padding: 0.5em;
+    }    
+    #northeastern {
+        right: 2%; top: 121vh;
+        width: 90%; padding: 0.5em;
+    }
+    #cityu {
+        left: 2%; top: 100vh;
+        width: 90%; padding: 0.5em;
+    }
+}
+/*rotate screen if on phone.*/
+/*@media only screen and (orientation:portrait) {
+  body {
+    height: 100vw;
+    transform: rotate(90deg);
+  }
+}*/

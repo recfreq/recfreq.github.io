@@ -1,0 +1,129 @@
+* {
+/*	border: 1px solid rgba(0, 0, 0, 0.3);
+*/}
+body {
+	background-color: white;
+	color: black;
+	font-family: "Existence", sans-serif;
+	font-size: 100%;
+}
+@font-face {
+	font-family: "Quicksand";
+	src: url("../lib/Quicksand.otf") format("woff2");
+}
+@font-face {
+	font-family: "Existence";
+	src: url("../lib/Existence.otf") format("woff2");
+}
+a:link {
+	font-family: 'Quicksand', sans-serif;
+	text-decoration: none;	
+	color: black;
+}
+a:visited {
+	font-family: 'Quicksand', sans-serif;
+	text-decoration: none;	
+	color: black;
+}
+a:hover {
+	font-family: 'Quicksand', sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
+
+
+.video {
+	display: inline-block;
+	float: left;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+}
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+ 	height: 50%;
+}
+.poster1 {
+	float: left;
+	padding-top: 49vh;
+	width: 50%;
+}
+.poster1 img {
+	width: 100%;
+}
+.poster2 {
+	float: right;
+	margin-top: -1vh;
+	width: 50%;
+}
+.poster2 img {
+	width: 100%;
+}
+
+
+
+#gallery{
+	float: right;
+    display: block;
+    width: 50%;
+}
+.column{
+    display: block;
+    width:100%;
+    float: right;
+}
+.column img{
+    cursor: pointer;
+    width: 25%;
+    filter: grayscale(100%);
+    transition: all 0.3s ease-in-out;
+    vertical-align: bottom;
+}
+.column img:hover{
+    filter: grayscale(0%);
+}
+#popup{
+    top:0;
+    margin:0;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    display: none;
+    background: rgba(0,0,0,0.6);
+}
+#pic-container{
+    z-index: 1;
+    margin-left: 5%;
+    width: 90%;
+    overflow-y: auto;
+}
+#pic{
+    cursor: pointer;
+    width: 100%;
+    height:auto;
+}
+#left{
+    margin-left: 3%;
+    width:5%;
+}
+#right{
+    margin-left: 92%;
+    width:5%;
+}
+.direction{
+    cursor: pointer;
+    color: #303030;
+    position: fixed;
+    margin-top:46vh;
+    height:8vh;
+    transition: all 0.3s ease-in-out;
+    font-size: 90px;
+    line-height: 8vh;
+}
+.direction:hover{
+    color: white;
+}

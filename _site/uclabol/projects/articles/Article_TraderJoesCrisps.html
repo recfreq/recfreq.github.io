@@ -1,0 +1,437 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+	<title>The Daily Bruin - Joe knows groceries</title>
+	<link type="text/css" media="screen" rel="stylesheet" href="http://128.97.251.217:8080/css/dailybruin/global.css" />
+    <!-- Tabbed interface -->
+   	<script type="text/javascript" src="http://128.97.251.217:8080/js/base.js"></script>
+   	<script type="text/javascript" src="http://img.video.ap.org/p/j/apovn.js "></script>
+    <script type="text/javascript">
+        function vAlign(elements){
+            height = elements[0].getCoordinates().height;
+            for (i=1; i < elements.length; i++) {
+                if (elements[i].getCoordinates().height > height)
+                    height = elements[i].getCoordinates().height;
+            }
+            for (i=0; i < elements.length; i++) {
+                elements[i].setStyle('height', height+'px');
+            }
+        };
+        window.addEvent('domready', function(){            
+            info_tabs = new tabSwapper({
+                selectedClass: 'active',
+                deselectedClass: '',
+                tabSelector: '#info_tabs li',
+                clickSelector: '#info_tabs li a',
+                sectionSelector: '#info_tabs div',
+                /*remember what the last tab the user clicked was*/
+                cookieName: 'DailyBruinTabbedBox',
+                /*use transitions to fade across*/
+                smooth: false
+            });
+            info_tabs.swap(0);
+            
+            classified_tabs = new tabSwapper({
+                selectedClass: 'active',
+                deselectedClass: '',
+                tabSelector: '#classifieds_tabs li',
+                clickSelector: '#classifieds_tabs li a',
+                sectionSelector: '#classifieds_tabs div',
+                cookieName: 'DailyBruinTabbedBox',
+                smooth: false
+            });
+            classified_tabs.swap(0);
+        });
+    </script>
+	<script type="text/javascript" src="http://128.97.251.217:8080/js/tsr.js"></script>
+    <!-- Navigation -->
+    <script type="text/javascript" src="http://128.97.251.217:8080/js/navigation.js"></script>
+    
+	<link rel="stylesheet" href="http://128.97.251.217:8080/css/dailybruin/story.css" type="text/css" media="screen" />
+</head>
+<body>
+<a name="top"></a>
+
+
+<div id="page"><!--  -->
+<div id="header">
+    <span style="float: right;"><a href="http://www.southcoastplaza.com"><img src="http://128.97.251.217:8080/img/ads/graphic/2008/11/18/29432-09-UCLA-728x90_v2.gif" width="728" height="90" alt="Brogan Tennyson" /></a></span>
+	<div id="navi_top" style="clear: both;">
+		<div id="navi_top_left"></div>
+		<div id="navi_top_right">
+		<!--<a href="/accounts/login/">Login</a> | <a href="/accounts/register/">Register</a>-->
+		
+		</div>
+	</div>
+	<div id="logo"><a href="/"><img src="http://128.97.251.217:8080/img/logo5.gif" id="banner" width="500px" height="64px" alt="Daily Bruin" /></a></div>
+</div><!-- END header -->
+
+<ul id="dbnav">
+    <li id="dbnav_news"><a href="/news/news/">News</a>
+        <ul>
+            <li><a href="/news/topics/closer_look" title="Stories tagged with 'A Closer Look'">A Closer Look</a></li>
+            <li><a href="/news/topics/campus" title="Stories tagged with 'Campus'">Campus</a></li>
+            <li><a href="/news/topics/usac" title="Stories tagged with 'USAC'">USAC</a></li>
+            <li><a href="/news/topics/gsa" title="Stories tagged with 'GSA'">GSA</a></li>
+            <li><a href="/news/topics/the_hill" title="Stories tagged with 'The Hill'">The Hill</a></li>
+            <li><a href="/news/topics/westwood" title="Stories tagged with 'Westwood'">Westwood</a></li>
+            <li><a href="/news/topics/regents" title="Stories tagged with 'Regents'">Regents</a></li>
+            <li><a href="/news/topics/technology" title="Stories tagged with 'Technology'">Technology</a></li>
+            <li><a href="/news/topics/environment" title="Stories tagged with 'Environment'">Environment</a></li>
+            <li><a href="/news/topics/obituaries" title="Stories tagged with 'Obituaries'">Obituaries</a></li>
+            <li><a href="/news/topics/sciencehealth" title="Stories tagged with 'Science&Health'">Science&Health</a></li>
+            <li><a href="/news/topics/week-photos" title="Stories tagged with 'Week in Photos'">Week in Photos</a></li>
+            <li><a href="/news/topics/elections-2008" title="Stories tagged with 'Elections 2008'">Elections 2008</a></li>
+        </ul>
+    </li>
+    <li id="dbnav_sports"><a href="/news/sports/">Sports</a>
+        <ul>
+            <li><a href="/news/topics/mens_basketball" title="Stories tagged with 'Men's Basketball'">Men's Basketball</a></li>
+            <li><a href="/news/topics/football" title="Stories tagged with 'Football'">Football</a></li>
+            <li><a href="/news/topics/softball" title="Stories tagged with 'Softball'">Softball</a></li>
+            <li><a href="/news/topics/womens_basketball" title="Stories tagged with 'Women's Basketball'">Women's Basketball</a></li>
+            <li><a href="/news/topics/mens_volleyball" title="Stories tagged with 'Men's Volleyball'">Men's Volleyball</a></li>
+            <li><a href="/news/topics/womens_soccer" title="Stories tagged with 'Women's Soccer'">Women's Soccer</a></li>
+            <li><a href="/news/topics/mens_water_polo" title="Stories tagged with 'Men's Water Polo'">Men's Water Polo</a></li>
+            <li><a href="/news/topics/womens_water_polo" title="Stories tagged with 'Women's Water Polo'">Women's Water Polo</a></li>
+            <li><a href="/news/topics/mens_soccer" title="Stories tagged with 'Men's Soccer'">Men's Soccer</a></li>
+        </ul>
+    </li>
+    <li id="dbnav_ae"><a href="/news/ae/">A&#38;E</a>
+        <ul>
+            <li><a href="/news/topics/film_tv" title="Stories tagged with 'Film & TV'">Film & TV</a></li>
+            <li><a href="/news/topics/food" title="Stories tagged with 'Food'">Food</a></li>
+            <li><a href="/news/topics/music" title="Stories tagged with 'Music'">Music</a></li>
+            <li><a href="/news/topics/theatre" title="Stories tagged with 'Theater & Arts'">Theater & Arts</a></li>
+            <li><a href="/news/topics/life_style" title="Stories tagged with 'Life & Style'">Life & Style</a></li>
+            <li><a href="/news/topics/games_comics" title="Stories tagged with 'Games & Comics'">Games & Comics</a></li>
+            <li><a href="/news/topics/calendar" title="Stories tagged with 'Calendar'">Calendar</a></li>
+            <li><a href="/news/topics/festival-books-2008" title="Stories tagged with 'Festival of Books 2008'">Festival of Books 2008</a></li>
+        </ul>
+    </li>
+    <li id="dbnav_viewpoint"><a href="/news/viewpoint/">Viewpoint</a>
+        <ul>
+            <li><a href="/news/topics/columns" title="Stories tagged with 'Columns'">Columns</a></li>
+            <li><a href="/news/topics/editorial" title="Stories tagged with 'Editorials'">Editorials</a></li>
+            <li><a href="/news/topics/editorial_cartoon" title="Stories tagged with 'Editorial Cartoons'">Editorial Cartoons</a></li>
+            <li><a href="/news/topics/submissions" title="Stories tagged with 'Submissions'">Submissions</a></li>
+            <li><a href="/news/topics/letters_editor" title="Stories tagged with 'Letters to the Editor'">Letters to the Editor</a></li>
+            <li><a href="/news/topics/campus-life" title="Stories tagged with 'Campus Life'">Campus Life</a></li>
+            <li><a href="/news/topics/usac" title="Stories tagged with 'USAC'">USAC</a></li>
+            <li><a href="/news/topics/national-elections-2008" title="Stories tagged with 'National Elections 2008'">National Elections 2008</a></li>
+            <li><a href="/news/topics/international-politics" title="Stories tagged with 'International Politics'">International Politics</a></li>
+        </ul>
+    </li>
+    <li id="dbnav_blogs"><a href="/blogs/">Blogs</a></li>
+    
+    <li id="dbnav_archives" title="link to archives"><a href="/archives/">Archives</a>
+        <ul>
+            <li><a href="/archives/">News</a></li>
+            <li><a href="/dbtv/archives/">DBTV</a></li>
+            <!--<li><a href="#">Print Edition</a></li>-->
+        </ul>
+    </li>
+    <li id="dbnav_classifieds" title="link to classifieds"><a href="/advertising/classifieds/">Classifieds</a>
+        <ul>
+            <li><a href="/advertising/classifieds/order/">Place a classified ad</a></li>
+        </ul>
+    </li>
+    <li id="dbnav_dbtv" title="link to DB TV"><a href="/dbtv/">DBTV</a>
+        <ul>
+            <li><a href="/dbtv/news/">news</a></li>
+            <li><a href="/dbtv/sports/">sports</a></li>
+            <li><a href="/dbtv/ae/">arts &#38; entertainment</a></li>
+            <li><a href="/dbtv/viewpoint/">viewpoint</a></li>
+        </ul>
+    </li>
+    <li id="dbnav_bruinwalk" title="external link to bruinwalk"><a href="http://www.bruinwalk.com">Bruinwalk</a></li>
+    <li id="dbnav_about" title="about us"><a href="/about/">About Us</a>
+		<ul>
+            <li><a href="/contact/">Contact Us</a></li>
+            <li><a href="/stafflist/">The Staff</a></li>
+            <li><a href="/corrections/">Corrections</a></li>
+            <li><a href="/apply/">Apply to the Daily Bruin</a></li>
+        </ul>
+	</li>
+</ul><!-- END menu -->
+
+<div id="topSpan">
+	<p id="date_today">Sunday, December 14th, 2008</p>
+    <!-- <p style="float: right;"><a href="#">View print edition</a></p> -->
+	<!--<p style="float: right;">The Daily Bruin has just gone through an exstensive overhaul, please bear with us as we continue improving the site!</p>-->
+</div>
+	
+<div id="content">
+
+
+
+<div id="columnLeft">
+    <div id="storyDetail">
+        <div id="storyTools">
+            <ul>
+                <li id="print"><a href="/news/2008/dec/08/joe-knows-groceries/print/" target="_blank">printer friendly</a></li>
+                <li id="email"><a href="/mailfriend/66/46367/928d1b2669/" target="_blank">mail this article</a></li>
+                <li id="ipod"><a href="/news/2008/dec/08/joe-knows-groceries/ipod/" target="_blank">iPod format</a></li>
+                <li id="digg"><a href="http://digg.com/submit?phase=2&url=http://www.dailybruin.com/news/2008/dec/08/joe-knows-groceries/&title=Joe%20knows%20groceries&bodytext=With%20the%20Trader%20Joe%E2%80%99s%20on%20Glendon%20Avenue%20opening%20this%20week%2C%20the%20task%20of%20attending%20college%20and%20eating%20healthy%20just%20got%20easier.%20With%20no%20artificial%20flavors%20or%20preservatives%20and%20a%20variety%20of%20original%20items%2C%20Trader%20Joe%E2%80%99s%20is%20not%20your%20average%20grocery%20store.%20Whether%20you%E2%80%99re%20snack-deprived%20or%20craving%20a%20vegetarian%20dish%2C%20we%20encourage%20you%20to%20give%20A%26E%E2%80%99..." class="digg">digg</a></li>
+            </ul>
+            <div class="inline">
+<h4>Photo</h4>
+<a onclick="window.open('/photos/2008/dec/08/28721/','photowin','width=880,height=650,scrollbars=yes,resizable=yes'); return false;" href="/photos/2008/dec/08/28721/" title="Click to enlarge photo"><img src="http://128.97.251.217:8080/img/photos/2008/12/08/web.ae.traderjoes.picA_t135.jpg" /></a>
+
+
+	<p class="photographer">Photo by Christopher Wu</p>
+
+
+
+
+
+	
+		<p class="caption">Los Angeles-based grocery store Trader Joe’s is set to open this week in Westwood.</p>
+	
+</div>
+        </div>
+        
+
+        <h1>Joe knows groceries</h1>
+        
+		<ul class="byline">
+		  
+		  
+          
+          
+          <li class="date">Published: Monday, December 8, 2008</li>
+          
+		</ul>
+        <div id="storyText">
+            
+
+
+
+<p ><em >With the Trader Joe’s on Glendon Avenue opening this week, the task of attending college and eating healthy just got easier. With no artificial flavors or preservatives and a variety of original items, Trader Joe’s is not your average grocery store. Whether you’re snack-deprived or craving a vegetarian dish, we encourage you to give A&E’s top picks a try.</em></p>
+
+<p ><strong >Peanut Butter Filled Pretzels</strong></p>
+
+<p >Pretzels are boring. Their placement in most grocery stores right next to all the chips only highlights their unappealing-ness, compared to the lime-infused tortilla chips and the Flavor-Blasted Cheetos.</p>
+
+<p >However, Trader Joe’s has figured out how to make pretzels great and defy their boring origins. Trader Joe’s Peanut Butter Filled Pretzels are shaped a little bit like rectangular ravioli, with the hard pretzel shell concealing the delicious morsel of peanut butter within. The peanut butter seems to be the perfectly sweet complement to the salty, starchy pretzels and the very coarse salt grains on top. If any pretzels are  capable of being crave-worthy, these are definitely the ones.</p>
+
+<p ><em >– Jennifer Bastien</em></p>
+
+<p ><strong >Refrigerated Margherita Pizza</strong></p>
+
+<p >After returning from a long day of sleeping through class, the last thing any student wants to do is get out some pots and pans. Thankfully, TJ’s has some of the best ready-mades on the market, especially the Margherita Pizza. It’s a small-medium heavenly disk covered with some fresh, tastefully garlicky sauce, fresh mozzarella, fresh tomatoes and fresh basil. The fact that it’s refrigerated and not frozen means you have to eat it pretty quickly, but it’s so unbelievably good that it doesn’t normally present a problem. On top of that, it takes six to eight minutes to cook, so you don’t have to wait as long compared to frozen pizza.</p>
+
+<p ><em >– Jake Ayres</em></p>
+
+<p ><strong >Banana Crisps</strong></p>
+
+<p >Bags and bags of these little guys are sitting in my apartment. Why? Because each one-ounce serving is just 40 calories, and despite the lack of sugary taste like in other banana crisps, these healthy alternatives from Trader Joe’s are so addictive that for some of us, we really can’t have just one crisp. There’s a milk-chocolate-covered version of these small chips, but they’re not quite as crispy, and they also have triple the number of calories. So if you really can’t stop munching on something while watching TV, spend an hour or two with a bag of Trader Joe’s banana crisps, and burn the calories by working out your eye muscles.</p>
+
+<p ><em >– Ray Luo</em></p>
+
+<p ><strong >Frozen Orange Chicken</strong></p>
+
+<p >Stopping by Panda Express on the way back from class can be easy and tasty but only good ol’ Trader’s could come up with an alternative both better tasting and better for you. The portions ofTrader Joe’s Frozen Orange Chicken make for not one but two great meals, which means they even help the wallet! The frozen pieces only require 20 minutes in the oven before they are hot and crispy, and each package comes with microwavable (and delicious!) sauce to drizzle over the pieces. This dish is best served on top of white or brown rice, and make sure to have a big appetite.</p>
+
+<p ><em >– Kate Stanhope</em></p>
+
+<p ><strong >Aioli Garlic Mustard Sauce</strong></p>
+
+<p >There is no room in your sandwich for boring old mayonnaise anymore. Trader Joe’s Aioli Garlic Mustard Sauce is healthier, more versatile and will radically change the way you think about mustard. Unlike traditional aioli, the medium-yellow mustard contains no mayonnaise (and at only 10 calories a tablespoon, you can shamelessly add more slices of Trader Joe’s specialty cheeses to your sandwich). The creamy taste is milder than Dijon, but a hint of garlic gives it an added kick, making it an excellent choice for a sandwich or burger spread, a tasty rub for chicken, or a superb dip for sweet potato fries. It is also delicious as a vegetable dip or on seafood. Filled with nine ounces of mustardy goodness, it is not a jumbo-sized monster that always seems to spoil before you can use all of it. Instead, its size fits nicely in a dorm Microfridge for any late-night sandwich cravings, study snacks or lunches on the go.</p>
+
+<p ><em >– Kelsey Ramos</em></p>
+
+<p ><strong >Frozen Eggplant Parmesan </strong></p>
+
+<p >For the love of all that is delicious in the world, never resort to a TV dinner as a last-minute, quick meal solution to a busy evening. There is no reason why a fast meal cannot taste like it took hours to prepare, and nothing proves that better then the joys of the Trader Joe’s frozen-food aisle, specifically the Frozen Eggplant Parmesan. Apartment life gives few opportunities to indulge in a fancy meal, and this frozen dinner feels like a gourmet treat with the two big pieces of eggplant that are far from the rubbery, bitter or gooey textures frozen eggplant is known for. It only takes about five minutes to heat in the microwave, and even though it’s just vegetables coated in tomato sauce and topped with a sprinkling of parmesan and mozzarella cheese, it feels like a complete, flavorful and filling entree – even for the most picky and carnivorous eaters.</p>
+
+<p ><em >- Jenae Cohn</em></p>
+
+<p ><strong >Tortilla Chips with an Identity Crisis</strong></p>
+
+<p >Nestled within the masses of Trader Joe’s chip shelf is a neon-checkered bag that screams, “Buy me or your taste buds will never forgive you.” These low-sodium, whole grain, gluten-free, wheat-free treasure trove tortilla chips are known as Tortilla Chips with an Identity Crisis and are changing the face of “regular” tortilla chips forever with their combination of corn, potato and brown rice.</p>
+
+<p >The chips themselves are identically triangular and flat, though with enough groovage to encourage salsafication and not have it slide off in a goopy mess.</p>
+
+<p >However, versatile to the last, they are equally enjoyable without salsa, cheese or topping, and even the crumbs that accumulate at the bottom of the bag – the sewer rats of any freshly popped package – are lusted after to the very last morsel.</p>
+
+<p ><em >- Michael Lowe</em></p>
+
+<p ><strong >Truly Handmade Low-Fat Sun-dried Tomato and Habanero Tortillas</strong></p>
+
+<p >It’s not just Britney. Apparently, the tortilla can reinvent itself, too.</p>
+
+<p >Case in point: Trader Joe’s Truly Handmade Low-Fat Sun-dried Tomato and Habanero Tortillas, which have a mouthful of a name and a taste to match.</p>
+
+<p >The sun-dried tomatoes add an unexpected Italian influence to the tortillas while the habaneros bring a spicy kick that is still tame enough for the mild-at-heart.</p>
+
+<p >This redesign is a welcome change from the standard flour or corn tortilla.</p>
+
+<p >They add extra seasoning to any meal that they complement and can spice up some bland chicken and rice like a helping of fresh salsa.</p>
+
+<p >Baked with cheese, these thick, zesty tortillas produce a delicious twist on a traditional quesadilla.</p>
+
+<p ><em >- Lauren Schick</em></p>
+
+<p ><strong >Vegetable Masala Burger with Authentic Indian Spices</strong></p>
+
+<p >Fact: 90 percent of veggie burgers are boring and flavorless. But not this one. TJ’s own Vegetable Masala Burger with Authentic Indian Spices takes out the unidentifiable multicolored veggie chunks that make up most burgers and replaces them with velvety potatoes, sweet carrots, green beans, corn, peppers, onions and just the right amount of flavorful spices.</p>
+
+<p >At 120 calories, 8 grams of fat, 12 grams of carbohydrates and 2 grams of protein, the burgers aren’t terribly nutritious, but they’re not unhealthy either. The frozen four-packs give you just enough to entertain or tailgate, or unlike ground beef burgers, store until whenever you decide to grill them. Use them for sandwiches or wraps, dice one up and eat it over pasta, or eat one plain with a little ketchup for a snack. No matter how you use them, these spicy vegan burgers will add a little flavor to any meal.</p>
+
+<p ><em >- Christie McCollum</em></p>
+
+<p ><strong >Pre-cooked Lentils </strong></p>
+
+<p >Lurking near the pre-cooked beets and bags of spinach, Trader Joe’s pre-cooked lentils don’t exactly scream for attention. The packaging is not aesthetically pleasing; in fact, they look like a mound of brown clay pebbles. However, after hearing culinary connoisseurs raving about these “incredible” pre-cooked lentils, they had to be given a fair shot. These lentils make for a quick yet healthy lunch when mixed with some olive oil, cherry tomatoes, diced garlic and balsamic vinegar reduction. The texture of the lentils is an unexpected delight: soft, but with a slight crunch. Because the lentils are versatile and easily absorb flavors, they’re fun to cook with. Put them in a soup, serve them hot as a side dish, or eat them in a large salad. The pre-cooked lentils are definitely a hidden gem.</p>
+
+<p ><em >- Leela Subramaniam</em></p>
+
+
+        </div>
+        <p class="hBorderTop" style="padding-top: 7px;"><em>Compiled by Jenae Cohn, Michael Lowe, Christie McCollum, Lauren Schick and Leela Subramaniam. E-mail them at jcohn@media.ucla.edu, mlowe@media.ucla.edu, cmccollum@media.ucla.edu, lschick@media.ucla.edu, lsubramaniam@media.ucla.edu. </em></p>
+    </div>
+</div><!-- END columnLeft -->
+
+<!-- Contains: DBTV Video Box, Recent Box, Text Ads and Coupons -->
+<div id="columnRight">
+	<div id="searchBox" class=rod><form action="/search/" method="get"><input type="text" name="q" size="30" value="search daily bruin"   onfocus="if(this.value==this.defaultValue) this.value='';"></form></div>
+    	
+    	
+    
+
+    <div id="info_tabs" class="domtab hBorderTop">
+        <ul class="domtabs recent">
+            <li><a>Most viewed</a></li>
+            <li><a>Most e-mailed</a></li>
+            <li><a>Recently blogged</a></li>
+        </ul>
+        <div class="reg_tab">
+            <a name="t1" id="t1"></a>
+            <dl class="most_viewed">
+    <dt><a href="/news/2008/dec/08/undie-run-route-revised/">Undie Run route revised</a></dt>
+    
+    <dt><a href="/news/2008/nov/19/china-ucla-clothing-all-about-style/">In China, UCLA clothing is all about the style</a></dt>
+    
+    <dt><a href="/news/2008/dec/08/free-screening-pirates-ii-sails-smoothly/">Free screening of ‘Pirates II’ sails smoothly</a></dt>
+    
+    <dt><a href="/news/2008/dec/01/booty-high-production-seas/">Booty on the high-production seas</a></dt>
+    
+    <dt><a href="/news/2008/dec/08/football-falls-rival-usc-final-matchup/">Football falls to rival USC in final matchup</a></dt>
+    
+</dl>
+        </div>
+        <div class="reg_tab" style="display: none">
+            <a name="t2" id="t2"></a>
+            <dl class="most_emailed">
+	<dt><a href="/news/2008/nov/19/china-ucla-clothing-all-about-style/">In China, UCLA clothing is all...</a></dt>
+	<dd>By Audrey Kuo</dd>
+	<dt><a href="/news/2008/nov/25/bruin-hands-reach-out-tanzanian-orphans/">Bruin hands reach out to Tanza...</a></dt>
+	<dd>By Jennifer Carcamo</dd>
+	<dt><a href="/news/2008/nov/21/grieving-residents-come-together/">Grieving residents come togeth...</a></dt>
+	<dd>By Jessica Roy</dd>
+	<dt><a href="/news/2008/dec/01/trader-joes-coffeehouse-deli-open-month/">Trader Joe’s, coffeehouse, d...</a></dt>
+	<dd>By Samantha Masunaga</dd>
+	<dt><a href="/news/2008/nov/19/em-reporters-travels-overseasem/">A reporter’s travels oversea...</a></dt>
+	<dd>By Audrey Kuo</dd>
+</dl>
+        </div>
+        <div class="reg_tab" style="display: none">
+            <a name="t3" id="t3"></a>
+            <dl class="recent_blogged">
+                <dt class="item1">Sam Allen</dt>
+                <dd><a href="/blogs/ball-quarter/2008/dec/13/wooden/">We are live from the Wood...</a></dd>
+                <dt class="item2">Sam Allen</dt>
+                <dd><a href="/blogs/ball-quarter/2008/dec/06/second/">Sanchez went 8-9 in that ...</a></dd>
+                <dt class="item3">Sam Allen</dt>
+                <dd><a href="/blogs/ball-quarter/2008/dec/06/first/">USC won the toss, but ele...</a></dd>
+                <dt class="item4">Sam Allen</dt>
+                <dd><a href="/blogs/ball-quarter/2008/dec/06/farewell/">Here is a list of seniors...</a></dd>
+            </dl>
+       </div>
+    </div>
+
+	<div class="vText">
+        <div class="TextAdCoupon"><a onclick="window.open('http://www.web-host-coupons.com/lunarpages-coupon.php','adwin','width=510,height=600,scrollbars=yes,resizable=yes'); return false;" href="http://www.web-host-coupons.com/lunarpages-coupon.php">Lunarpages Coupon</a><br /></div>
+        <div class="TextAdCoupon"><a onclick="window.open('http://www.condomman.com','adwin','width=510,height=600,scrollbars=yes,resizable=yes'); return false;" href="http://www.condomman.com">Condoms</a><br /></div>
+        <div class="TextAdCoupon"><a onclick="window.open('http://www.garyaustinadvertising.com/koozies/','adwin','width=510,height=600,scrollbars=yes,resizable=yes'); return false;" href="http://www.garyaustinadvertising.com/koozies/">Koozies</a><br /></div>
+        <div class="TextAdCoupon"><a onclick="window.open('http://www.healthinsuranceapplication.com/california-health-insurance/','adwin','width=510,height=600,scrollbars=yes,resizable=yes'); return false;" href="http://www.healthinsuranceapplication.com/california-health-insurance/">California Health Insurance</a><br /></div>
+        <div class="TextAdCoupon"><a onclick="window.open('http://www.healthplanone.com/healthinsurancecarriers/tonik/','adwin','width=510,height=600,scrollbars=yes,resizable=yes'); return false;" href="http://www.healthplanone.com/healthinsurancecarriers/tonik/">Tonik Student Health Insurance</a><br /></div>
+        <div class="TextAdCoupon"><a onclick="window.open('http://www.travelersthoughts.com','adwin','width=510,height=600,scrollbars=yes,resizable=yes'); return false;" href="http://www.travelersthoughts.com">Travel Thoughts</a><br /></div>
+        <div class="TextAdCoupon"><a onclick="window.open('http://www.globalcomsatphone.com/hughesnet/','adwin','width=510,height=600,scrollbars=yes,resizable=yes'); return false;" href="http://www.globalcomsatphone.com/hughesnet/">Satellite Internet</a><br /></div>
+        <div class="TextAdCoupon"><a onclick="window.open('http://www.cheapflights.com/','adwin','width=510,height=600,scrollbars=yes,resizable=yes'); return false;" href="http://www.cheapflights.com/">airline tickets</a><br /></div>
+        <div class="TextAdCoupon"><a onclick="window.open('http://www.goldpaq.com','adwin','width=510,height=600,scrollbars=yes,resizable=yes'); return false;" href="http://www.goldpaq.com">Sell  Gold</a><br /></div>
+        <div class="TextAdCoupon"><a onclick="window.open('http://www.sellgold.com','adwin','width=510,height=600,scrollbars=yes,resizable=yes'); return false;" href="http://www.sellgold.com">Sell Gold</a><br /></div>
+        <div class="TextAdCoupon"><a onclick="window.open('http://www.inkhead.com','adwin','width=510,height=600,scrollbars=yes,resizable=yes'); return false;" href="http://www.inkhead.com">Promotional Products</a><br /></div>
+        <div class="TextAdCoupon"><a onclick="window.open('http://www.myspacemaster.net','adwin','width=510,height=600,scrollbars=yes,resizable=yes'); return false;" href="http://www.myspacemaster.net">myspace layouts</a><br /></div>
+        
+    <span style="padding-top: 10px; padding-bottom: 5px;"><!-- No ad was found with that ID --></span>
+    <span style="padding-top: 5px; padding-bottom: 5px;"><!-- No ad was found with that ID --></span>
+    <span style="padding-top: 5px; padding-bottom: 5px;"><!-- No ad was found with that ID --></span>
+    <span style="padding-top: 5px; padding-bottom: 10px;"><!-- No ad was found with that ID --></span>
+    
+    
+    
+
+		<script type="text/javascript"><!--
+        google_ad_client = "pub-9018387847278529";
+        google_ad_width = 160;
+        google_ad_height = 600;
+        google_ad_format = "160x600_as";
+        google_ad_type = "text";
+        //2006-11-10: DailyBruin:General
+        google_ad_channel = "6267586096";
+        google_color_border = "FFFFFF";
+        google_color_bg = "FFFFFF";
+        google_color_link = "FFFFFF";
+        google_color_text = "444444";
+        google_color_url = "325397";
+        //--></script>
+        <script type="text/javascript"
+          src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+        </script>
+		
+        <div id="advertising_links" class="hidden">
+    		<div id="advertising_links" class="hBorderBottom">
+    			<h3>Advertising Links</h3>
+    		</div>
+
+            <p><a href="/advertising/classifieds/list/">See All Classifieds</a></p>
+    		<p><a href="/advertising/coupons/">See All Coupons</a></p>
+    		<p><a href="/advertising/graphicads/">See All Graphic Ads</a></p>
+    		<p><a href="/advertising/textads/">See All Text Ads</a></p>
+        </div>
+	</div><!--END vText-->
+</div><!--END columnRight -->
+
+
+</div><!-- END content -->
+
+<div id="footer">
+	<div id="footer_logo">
+		<a href="http://www.studentmedia.ucla.edu/"><img src="http://128.97.251.217:8080/img/icons/student_media_logo.gif" alt="footer" /></a>
+	</div>
+	<div id="footer_links">
+		<a href="/advertising/"><img src="http://128.97.251.217:8080/img/icons/famfamfam_onBlack/information.gif" alt="advertise" width="16px" height="16px" />&#32;advertise</a><br />
+		<a href="/contact/"><img src="http://128.97.251.217:8080/img/icons/famfamfam_onBlack/comments.gif" alt="contact" width="16px" height="16px" />&#32;contact us</a><br />
+		<a href="#top"><img src="http://128.97.251.217:8080/img/icons/famfamfam_onBlack/arrow_up.gif" alt="top of page" width="16px" height="16px" />&#32;top of page</a><br />
+	</div>
+	<div id="footer_content">
+		<p>© 2007 <a href="http://www.studentmedia.ucla.edu/">ASUCLA Student Media</a></p>
+	</div>
+</div><!-- END footer -->
+
+</div><!-- END page -->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-948905-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+</body>
+</html>
