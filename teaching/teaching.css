@@ -89,7 +89,7 @@ a:hover {
     width: 21%; padding: 0.5em;
 }
 #talks {
-    left: 22%; top: 6vh;
+    left: 22%; top: 1vh;
     width: 22%; padding: 0.5em;
 }
 #northeastern {
@@ -97,8 +97,8 @@ a:hover {
     width: 20%; padding: 0.5em;
 }
 #cityu {
-    left: 22%; top: 65vh;
-    width: 24%; padding: 0.5em;
+    left: 24%; top: 60vh;
+    width: 22%; padding: 0.5em;
 }
 
 
